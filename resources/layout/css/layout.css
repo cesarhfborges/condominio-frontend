@@ -1600,7 +1600,8 @@ html {
   font-size: 14px;
   margin: 0;
   padding: 0;
-  background-color: #edf0f5; }
+  background-color: #edf0f5;
+  height: 100%; }
 
 .wrapper {
   padding: 0; }
@@ -2609,3 +2610,25 @@ h2 {
     padding: 0px 20px; }
     .landing-wrapper .landing-footer .landing-footer-content {
       width: 100%; } }
+.main-body .splash-screen {
+  width: 100%;
+  height: 100%;
+  background-color: #4e5159;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4e5159), to(#1f2023));
+  background-image: -webkit-linear-gradient(top, #4e5159, #1f2023);
+  background-image: -moz-linear-gradient(top, #4e5159, #1f2023);
+  background-image: -ms-linear-gradient(top, #4e5159, #1f2023);
+  background-image: -o-linear-gradient(top, #4e5159, #1f2023);
+  background-image: linear-gradient(top, #4e5159, #1f2023);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#4e5159', end-colourStr='#1f2023'); }
+  .main-body .splash-screen .splash-wrapper {
+    text-align: center;
+    width: 333px;
+    margin: 0 auto;
+    padding-top: 100px; }
+    .main-body .splash-screen .splash-wrapper .splash-title {
+      color: #ffffff;
+      font-size: 24px;
+      margin-bottom: 20px; }
+    .main-body .splash-screen .splash-wrapper .splash-loading {
+      margin-top: 20px; }
