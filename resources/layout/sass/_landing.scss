@@ -24,6 +24,11 @@
         }
     }
     
+    .ui-button:hover {
+        border: 1px solid #156090;
+        background: #1f89ce;
+    }
+    
     .landing-header {
         height: 80px;
         background-color: #0388e5;
@@ -54,7 +59,7 @@
                     
                     a {
                         text-decoration: none;
-                        padding: 4px 10px;
+                        padding: 8px 14px;
                         color: #ffffff;
                         @include border-radius(2px);
                         

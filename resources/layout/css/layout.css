@@ -2297,6 +2297,9 @@ h2 {
   margin-top: -5px; }
   .landing-wrapper #menu-button:hover {
     color: #77c7ff; }
+.landing-wrapper .ui-button:hover {
+  border: 1px solid #156090;
+  background: #1f89ce; }
 .landing-wrapper .landing-header {
   height: 80px;
   background-color: #0388e5;
@@ -2321,7 +2324,7 @@ h2 {
         float: left; }
         .landing-wrapper .landing-header .landing-header-content ul li a {
           text-decoration: none;
-          padding: 4px 10px;
+          padding: 8px 14px;
           color: #ffffff;
           -moz-border-radius: 2px;
           -webkit-border-radius: 2px;
