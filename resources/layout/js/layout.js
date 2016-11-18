@@ -136,23 +136,16 @@ Omega = {
                             $this.deactivate($(this));
                         });
                     });
-                    
-                    $this.removeMenuitem(item.attr('id'));
-                    activeSubItems.each(function() {
-                        $this.removeMenuitem($(this).attr('id'));
-                    });
                 }
                 else {
                     item.find('.active-menuitem').each(function() {
                         var subItem = $(this);
                         $this.deactivate(subItem);
-                        $this.removeMenuitem(subItem.attr('id'));
                     });
                 }
             }
             else if(item.hasClass('active-menuitem')) {
                 $this.deactivate(item);
-                $this.removeMenuitem(item.attr('id'));
             }
         }
     },
