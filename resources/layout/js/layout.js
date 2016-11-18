@@ -14,13 +14,13 @@ Omega = {
         this.topbarIcons = $('#topbar-icons');
 
         $('.nano').nanoScroller({flash: true});
-        this.bindEvents();        
+        this.bindEvents();
     },
     
     bindEvents: function() {
         var $this = this;
         
-        this.menulinks.off('click').on('click', function(e) {
+        this.menu.off('click.omega', 'a').on('click.omega', 'a', function(e) {
             var link = $(this),
             item = link.parent(),
             submenu = item.children('ul');
@@ -46,7 +46,7 @@ Omega = {
             }
         });
                 
-        this.menuButton.off('click').on('click', function(e) {
+        this.menuButton.off('click.omega').on('click.omega', function(e) {
             $(this).toggleClass('active');
             
             if($this.isDesktop()) {
@@ -68,7 +68,7 @@ Omega = {
             e.preventDefault();
         });
         
-        this.profileButton.off('click').on('click', function(e) {
+        this.profileButton.off('click.omega').on('click.omega', function(e) {
             var profileMenu = $(this).next('ul');
             if(profileMenu.is(':visible')) {
                 profileMenu.slideUp();
@@ -80,7 +80,7 @@ Omega = {
             e.preventDefault();
         });
         
-        this.optionsMenuButton.off('click').on('click', function(e) {
+        this.optionsMenuButton.off('click.omega').on('click.omega', function(e) {
             if(!$this.animatingOptionsMenu) {
                 $this.animatingOptionsMenu = true;
                 if($this.topbarIcons.hasClass('topbar-icons-visible')) {
