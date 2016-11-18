@@ -2623,12 +2623,8 @@ h2 {
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#4e5159', end-colourStr='#1f2023'); }
   .main-body .splash-screen .splash-wrapper {
     text-align: center;
-    width: 333px;
+    width: 200px;
     margin: 0 auto;
-    padding-top: 100px; }
-    .main-body .splash-screen .splash-wrapper .splash-title {
-      color: #ffffff;
-      font-size: 24px;
-      margin-bottom: 20px; }
+    padding-top: 150px; }
     .main-body .splash-screen .splash-wrapper .splash-loading {
       margin-top: 20px; }

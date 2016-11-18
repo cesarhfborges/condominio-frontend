@@ -18,6 +18,8 @@ export class DashboardDemo implements OnInit {
     events: any[];
     
     selectedCity: any;
+    
+    scheduleHeader: any;
 
     constructor(private carService: CarService, private eventService: EventService) { }
     
@@ -51,5 +53,11 @@ export class DashboardDemo implements OnInit {
                 }
             ]
         }
+        
+        this.scheduleHeader = {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+        };
     }
 }
