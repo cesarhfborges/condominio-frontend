@@ -88,14 +88,14 @@
                         Button
                     </div>
                     <div class="ui-g-12 ui-md-4">
-                        <button pButton type="button" label="Edit" icon="ui-icon-edit"></button>
+                        <button pButton type="button" label="Edit" icon="fa-pencil"></button>
                     </div>
                     
                     <div class="ui-g-12 ui-md-2">
                         SplitButton
                     </div>
                     <div class="ui-g-12 ui-md-4">
-                        <p-splitButton label="Save" icon="ui-icon-save" [model]="splitButtonItems"></p-splitButton>
+                        <p-splitButton label="Save" icon="fa-check" [model]="splitButtonItems"></p-splitButton>
                     </div>
                     <div class="ui-g-12 ui-md-2">
                         <label for="multiselect">MultiSelect</label>
@@ -127,29 +127,23 @@
                         Dialog
                     </div>
                     <div class="ui-g-12 ui-md-4">
-                        <button type="button" label="Login" icon="ui-icon-open-in-new" (click)="dialogVisible=true" pButton></button>
+                        <button type="button" label="Login" icon="fa-external-link" (click)="dialogVisible=true" pButton></button>
                     </div>
                 </div>
 
                 <p-dialog header="Login" [resizable]="false" responsive="true" [(visible)]="dialogVisible">
                     <div class="ui-g form-group" style="margin-bottom: 16px;">
                         <div class="ui-g-12">
-                            <span class="md-inputfield">
-                                <input type="text" pInputText>
-                                <label>Name</label>
-                            </span>
+                            <input type="text" pInputText placeholder="Name">
                         </div>
                         <div class="ui-g-12">
-                            <span class="md-inputfield">
-                                <input type="password" pInputText>
-                                <label>Password</label>
-                            </span>
+                            <input type="password" pInputText placeholder="Password">
                         </div>
                     </div>
                     
                     <footer>
                         <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
-                            <button type="button" label="Login" icon="ui-icon-person" (click)="dialogVisible=false" pButton></button>
+                            <button type="button" label="Login" icon="fa-user" (click)="dialogVisible=false" pButton style="width:auto"></button>
                         </div>
                     </footer>
                 </p-dialog>
@@ -159,10 +153,10 @@
                 <h1>DataTable</h1>
                 <p-dataTable [value]="cars" selectionMode="single" [(selection)]="selectedCar3">
                     <header>DataTable</header>
-                    <p-column field="vin" header="Vin"></p-column>
-                    <p-column field="year" header="Year"></p-column>
-                    <p-column field="brand" header="Brand"></p-column>
-                    <p-column field="color" header="Color"></p-column>
+                    <p-column field="vin" header="Vin" sortable="true"></p-column>
+                    <p-column field="year" header="Year" sortable="true"></p-column>
+                    <p-column field="brand" header="Brand" sortable="true"></p-column>
+                    <p-column field="color" header="Color" sortable="true"></p-column>
                 </p-dataTable>
             </div>
         </div>

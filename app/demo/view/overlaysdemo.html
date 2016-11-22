@@ -49,11 +49,6 @@
 
             <button type="text" (click)="confirm()" pButton icon="fa-check" label="Confirm"></button>
         </div>
-        
-        <div class="card">
-            <h1>Tooltip</h1>
-            <input type="text" pInputText pTooltip="Enter your username" placeholder="Right">
-        </div>
     </div>
     
     <div class="ui-g-12 ui-lg-6">
@@ -61,6 +56,11 @@
         <div class="card">
             <h1>LightBox</h1>
             <p-lightbox [images]="images"></p-lightbox>
+        </div>
+        
+        <div class="card">
+            <h1>Tooltip</h1>
+            <input type="text" pInputText pTooltip="Enter your username" placeholder="Username" tooltipPosition="bottom">
         </div>
     </div>
 </div>

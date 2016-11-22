@@ -339,6 +339,7 @@ a {
     }
     
     .footer {
+        @include transition(margin-left .3s);
         margin-left: 250px;
         height: 40px;
         background-color: #ffffff;

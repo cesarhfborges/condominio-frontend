@@ -43,13 +43,13 @@ export class DashboardDemo implements OnInit {
                     label: 'First Dataset',
                     data: [65, 59, 80, 81, 56, 55, 40],
                     fill: false,
-                    borderColor: '#FFC107'
+                    borderColor: '#007be5'
                 },
                 {
                     label: 'Second Dataset',
                     data: [28, 48, 40, 19, 86, 27, 90],
                     fill: false,
-                    borderColor: '#03A9F4'
+                    borderColor: '#20d077'
                 }
             ]
         }
