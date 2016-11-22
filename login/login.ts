@@ -1,7 +1,7 @@
 import {Component,NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {ButtonModule,PasswordModule,InputTextModule} from 'primeng/primeng';
+import {ButtonModule,PasswordModule,InputTextModule,CheckboxModule} from 'primeng/primeng';
 
 @Component({
     selector: 'login-app',
@@ -14,7 +14,8 @@ export class LoginApplication {}
         BrowserModule,
         ButtonModule,
         PasswordModule,
-        InputTextModule
+        InputTextModule,
+        CheckboxModule
     ],
     declarations: [
         LoginApplication

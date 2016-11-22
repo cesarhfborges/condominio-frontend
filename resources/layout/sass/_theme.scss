@@ -1,0 +1,176 @@
+body {
+    .ui-rating {
+        .ui-rating-cancel {
+            float: none;
+            display: inline-block;
+            
+            a {
+                color: #cd0a0a;
+                @include icon_override("\f05e");
+                display: block;
+                @include transition(color .3s);
+                font-size: 20px;
+                height: 20px;
+                width: 20px;
+            }
+        }
+        
+        .ui-rating-star {
+            float: none;
+            display: inline-block;
+            
+            a {
+                @include icon_override("\f006");
+                display: block;
+                font-size: 20px;
+                height: 20px;
+                width: 20px;
+            }
+        }
+        
+        .ui-rating-star-on {
+            a {
+                color: #186ba0;
+                @include icon_override("\f005");
+                display: block;
+                font-size: 20px;
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+    
+    /* Button Colors */
+    /* Colored Buttons */
+    /*Green Button*/
+    .ui-button {
+        &.ui-state-default {
+            &.green-button {
+                background-color: $greenButton;
+                border-color: $greenButtonBorder;
+                
+                &.ui-state-hover {
+                    background-color: $greenButtonHover;
+                }
+                
+                &.ui-state-active {
+                    background-color: $greenButtonActive;
+                }
+            }
+        }
+    }
+
+    /*Yellow Button*/
+    .ui-button {
+        &.ui-state-default {
+            &.yellow-button {
+                background-color: $yellowButton;
+                border-color: $yellowButtonBorder;
+                
+                &.ui-state-hover {
+                    background-color: $yellowButtonHover;
+                }
+                
+                &.ui-state-active {
+                    background-color: $yellowButtonActive;
+                }
+            }
+        }
+    }
+
+    /*Red Button*/
+    .ui-button {
+        &.ui-state-default {
+            &.red-button {
+                background-color: $redButton;
+                border-color: $redButtonBorder;
+                
+                &.ui-state-hover {
+                    background-color: $redButtonHover;
+                }
+                
+                &.ui-state-active {
+                    background-color: $redButtonActive;
+                }
+            }
+        }
+    }
+
+    /*Aqua Button*/
+    .ui-button {
+        &.ui-state-default {
+            &.aqua-button {
+                background-color: $aquaButton;
+                border-color: $aquaButtonBorder;
+                
+                &.ui-state-hover {
+                    background-color: $aquaButtonHover;
+                }
+                
+                &.ui-state-active {
+                    background-color: $aquaButtonActive;
+                }
+            }
+        }    
+    }
+
+    /*Navy Button*/
+    .ui-button {
+        &.ui-state-default {
+            &.navy-button {
+                background-color: $navyButton;
+                border-color: $navyButtonBorder;
+                
+                &.ui-state-hover {
+                    background-color: $navyButtonHover;
+                }
+                
+                &.ui-state-active {
+                    background-color: $navyButtonActive;
+                }
+            }
+        }
+    }
+
+    /*Black Button*/
+    .ui-button {
+        &.ui-state-default {
+            &.black-button {
+                background-color: $blackButton;
+                border-color: $blackButtonBorder;
+                
+                &.ui-state-hover {
+                    background-color: $blackButtonHover;
+                }
+                
+                &.ui-state-active {
+                    background-color: $blackButtonActive;
+                }
+            }
+        }
+    }
+
+    /*Grey Button*/
+    .ui-button {
+        &.ui-state-default {
+            &.gray-button {
+                background-color: $greyButton;
+                border-color: $greyButtonBorder;
+                
+                &.ui-button {
+                    span.ui-button-text {
+                        color: $greyButtonText;
+                    }
+                }
+                
+                &.ui-state-hover {
+                    background-color: $greyButtonHover;
+                }
+                
+                &.ui-state-active {
+                    background-color: $greyButtonActive;
+                }
+            }
+        }
+    }
+}

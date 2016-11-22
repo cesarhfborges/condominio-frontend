@@ -10,1587 +10,6 @@
 /* BlueButton */
 /* AquaButton */
 /* NavyButton */
-/* UI ICONS */
-/* positioning */
-.ui-icon-blank {
-  background-position: 16px 16px; }
-
-.ui-icon-carat-1-n {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-carat-1-n:before {
-    content: ""; }
-
-.ui-icon-carat-1-ne {
-  background-position: -16px 0; }
-
-.ui-icon-carat-1-e {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-carat-1-e:before {
-    content: ""; }
-
-.ui-icon-carat-1-se {
-  background-position: -48px 0; }
-
-.ui-icon-carat-1-s {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-carat-1-s:before {
-    content: ""; }
-
-.ui-icon-carat-1-sw {
-  background-position: -80px 0; }
-
-.ui-icon-carat-1-w {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-carat-1-w:before {
-    content: ""; }
-
-.ui-icon-carat-1-nw {
-  background-position: -112px 0; }
-
-.ui-icon-carat-2-n-s {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-carat-2-n-s:before {
-    content: ""; }
-
-.ui-icon-carat-2-e-w {
-  background-position: -144px 0; }
-
-.ui-icon-triangle-1-n {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-triangle-1-n:before {
-    content: ""; }
-
-.ui-icon-triangle-1-ne {
-  background-position: -16px -16px; }
-
-.ui-icon-triangle-1-e {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-triangle-1-e:before {
-    content: ""; }
-
-.ui-icon-triangle-1-se {
-  background-position: -48px -16px; }
-
-.ui-icon-triangle-1-s {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-triangle-1-s:before {
-    content: ""; }
-
-.ui-icon-triangle-1-sw {
-  background-position: -80px -16px; }
-
-.ui-icon-triangle-1-w {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-triangle-1-w:before {
-    content: ""; }
-
-.ui-icon-triangle-1-nw {
-  background-position: -112px -16px; }
-
-.ui-icon-triangle-2-n-s {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-triangle-2-n-s:before {
-    content: ""; }
-
-.ui-icon-triangle-2-e-w {
-  background-position: -144px -16px; }
-
-.ui-icon-arrow-1-n {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrow-1-n:before {
-    content: ""; }
-
-.ui-icon-arrow-1-ne {
-  background-position: -16px -32px; }
-
-.ui-icon-arrow-1-e {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrow-1-e:before {
-    content: ""; }
-
-.ui-icon-arrow-1-se {
-  background-position: -48px -32px; }
-
-.ui-icon-arrow-1-s {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrow-1-s:before {
-    content: ""; }
-
-.ui-icon-arrow-1-sw {
-  background-position: -80px -32px; }
-
-.ui-icon-arrow-1-w {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrow-1-w:before {
-    content: ""; }
-
-.ui-icon-arrow-1-nw {
-  background-position: -112px -32px; }
-
-.ui-icon-arrow-2-n-s {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrow-2-n-s:before {
-    content: ""; }
-
-.ui-icon-arrow-2-ne-sw {
-  background-position: -144px -32px; }
-
-.ui-icon-arrow-2-e-w {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrow-2-e-w:before {
-    content: ""; }
-
-.ui-icon-arrow-2-se-nw {
-  background-position: -176px -32px; }
-
-.ui-icon-arrowstop-1-n {
-  background-position: -192px -32px; }
-
-.ui-icon-arrowstop-1-e {
-  background-position: -208px -32px; }
-
-.ui-icon-arrowstop-1-s {
-  background-position: -224px -32px; }
-
-.ui-icon-arrowstop-1-w {
-  background-position: -240px -32px; }
-
-.ui-icon-arrowthick-1-n {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrowthick-1-n:before {
-    content: ""; }
-
-.ui-icon-arrowthick-1-ne {
-  background-position: -16px -48px; }
-
-.ui-icon-arrowthick-1-e {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrowthick-1-e:before {
-    content: ""; }
-
-.ui-icon-arrowthick-1-se {
-  background-position: -48px -48px; }
-
-.ui-icon-arrowthick-1-s {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrowthick-1-s:before {
-    content: ""; }
-
-.ui-icon-arrowthick-1-sw {
-  background-position: -80px -48px; }
-
-.ui-icon-arrowthick-1-w {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrowthick-1-w:before {
-    content: ""; }
-
-.ui-icon-arrowthick-1-nw {
-  background-position: -112px -48px; }
-
-.ui-icon-arrowthick-2-n-s {
-  background-position: -128px -48px; }
-
-.ui-icon-arrowthick-2-ne-sw {
-  background-position: -144px -48px; }
-
-.ui-icon-arrowthick-2-e-w {
-  background-position: -160px -48px; }
-
-.ui-icon-arrowthick-2-se-nw {
-  background-position: -176px -48px; }
-
-.ui-icon-arrowthickstop-1-n {
-  background-position: -192px -48px; }
-
-.ui-icon-arrowthickstop-1-e {
-  background-position: -208px -48px; }
-
-.ui-icon-arrowthickstop-1-s {
-  background-position: -224px -48px; }
-
-.ui-icon-arrowthickstop-1-w {
-  background-position: -240px -48px; }
-
-.ui-icon-arrowreturnthick-1-w {
-  background-position: 0 -64px; }
-
-.ui-icon-arrowreturnthick-1-n {
-  background-position: -16px -64px; }
-
-.ui-icon-arrowreturnthick-1-e {
-  background-position: -32px -64px; }
-
-.ui-icon-arrowreturnthick-1-s {
-  background-position: -48px -64px; }
-
-.ui-icon-arrowreturn-1-w {
-  background-position: -64px -64px; }
-
-.ui-icon-arrowreturn-1-n {
-  background-position: -80px -64px; }
-
-.ui-icon-arrowreturn-1-e {
-  background-position: -96px -64px; }
-
-.ui-icon-arrowreturn-1-s {
-  background-position: -112px -64px; }
-
-.ui-icon-arrowrefresh-1-w {
-  background-position: -128px -64px; }
-
-.ui-icon-arrowrefresh-1-n {
-  background-position: -144px -64px; }
-
-.ui-icon-arrowrefresh-1-e {
-  background-position: -160px -64px; }
-
-.ui-icon-arrowrefresh-1-s {
-  background-position: -176px -64px; }
-
-.ui-icon-arrow-4 {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrow-4:before {
-    content: ""; }
-
-.ui-icon-arrow-4-diag {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-arrow-4-diag:before {
-    content: ""; }
-
-.ui-icon-extlink {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-extlink:before {
-    content: ""; }
-
-.ui-icon-newwin {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-newwin:before {
-    content: ""; }
-
-.ui-icon-refresh {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-refresh:before {
-    content: ""; }
-
-.ui-icon-shuffle {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-shuffle:before {
-    content: ""; }
-
-.ui-icon-transfer-e-w {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-transfer-e-w:before {
-    content: ""; }
-
-.ui-icon-transferthick-e-w {
-  background-position: -112px -80px; }
-
-.ui-icon-folder-collapsed {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-folder-collapsed:before {
-    content: ""; }
-
-.ui-icon-folder-open {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-folder-open:before {
-    content: ""; }
-
-.ui-icon-document {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-document:before {
-    content: ""; }
-
-.ui-icon-document-b {
-  background-position: -48px -96px; }
-
-.ui-icon-note {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-note:before {
-    content: ""; }
-
-.ui-icon-mail-closed {
-  background-position: -80px -96px; }
-
-.ui-icon-mail-open {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-mail-open:before {
-    content: ""; }
-
-.ui-icon-suitcase {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-suitcase:before {
-    content: ""; }
-
-.ui-icon-comment {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-comment:before {
-    content: ""; }
-
-.ui-icon-person {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-person:before {
-    content: ""; }
-
-.ui-icon-print {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-print:before {
-    content: ""; }
-
-.ui-icon-trash {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-trash:before {
-    content: ""; }
-
-.ui-icon-locked {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-locked:before {
-    content: ""; }
-
-.ui-icon-unlocked {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-unlocked:before {
-    content: ""; }
-
-.ui-icon-bookmark {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-bookmark:before {
-    content: ""; }
-
-.ui-icon-tag {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-tag:before {
-    content: ""; }
-
-.ui-icon-home {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-home:before {
-    content: ""; }
-
-.ui-icon-flag {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-flag:before {
-    content: ""; }
-
-.ui-icon-calendar {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-calendar:before {
-    content: ""; }
-
-.ui-icon-cart {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-cart:before {
-    content: ""; }
-
-.ui-icon-pencil {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-pencil:before {
-    content: ""; }
-
-.ui-icon-clock {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-clock:before {
-    content: ""; }
-
-.ui-icon-disk {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-disk:before {
-    content: ""; }
-
-.ui-icon-calculator {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-calculator:before {
-    content: ""; }
-
-.ui-icon-zoomin {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-zoomin:before {
-    content: ""; }
-
-.ui-icon-zoomout {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-zoomout:before {
-    content: ""; }
-
-.ui-icon-search {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-search:before {
-    content: ""; }
-
-.ui-icon-wrench {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-wrench:before {
-    content: ""; }
-
-.ui-icon-gear {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-gear:before {
-    content: ""; }
-
-.ui-icon-heart {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-heart:before {
-    content: ""; }
-
-.ui-icon-star {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-star:before {
-    content: ""; }
-
-.ui-icon-link {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-link:before {
-    content: ""; }
-
-.ui-icon-cancel {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-cancel:before {
-    content: ""; }
-
-.ui-icon-plus {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-plus:before {
-    content: ""; }
-
-.ui-icon-plusthick {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-plusthick:before {
-    content: ""; }
-
-.ui-icon-minus {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-minus:before {
-    content: ""; }
-
-.ui-icon-minusthick {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-minusthick:before {
-    content: ""; }
-
-.ui-icon-close {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-close:before {
-    content: ""; }
-
-.ui-icon-closethick {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-closethick:before {
-    content: ""; }
-
-.ui-icon-key {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-key:before {
-    content: ""; }
-
-.ui-icon-lightbulb {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-lightbulb:before {
-    content: ""; }
-
-.ui-icon-scissors {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-scissors:before {
-    content: ""; }
-
-.ui-icon-clipboard {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-clipboard:before {
-    content: ""; }
-
-.ui-icon-copy {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-copy:before {
-    content: ""; }
-
-.ui-icon-contact {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-contact:before {
-    content: ""; }
-
-.ui-icon-image {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-image:before {
-    content: ""; }
-
-.ui-icon-video {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-video:before {
-    content: ""; }
-
-.ui-icon-music {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-music:before {
-    content: ""; }
-
-.ui-icon-script {
-  background-position: -240px -128px; }
-
-.ui-icon-alert {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-alert:before {
-    content: ""; }
-
-.ui-icon-info {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-info:before {
-    content: ""; }
-
-.ui-icon-notice {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-notice:before {
-    content: ""; }
-
-.ui-icon-help {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-help:before {
-    content: ""; }
-
-.ui-icon-check {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-check:before {
-    content: ""; }
-
-.ui-icon-bullet {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-bullet:before {
-    content: ""; }
-
-.ui-icon-radio-on {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-radio-on:before {
-    content: ""; }
-
-.ui-icon-radio-off {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-radio-off:before {
-    content: ""; }
-
-.ui-icon-pin-w {
-  background-position: -128px -144px; }
-
-.ui-icon-pin-s {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-pin-s:before {
-    content: ""; }
-
-.ui-icon-play {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-play:before {
-    content: ""; }
-
-.ui-icon-pause {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-pause:before {
-    content: ""; }
-
-.ui-icon-seek-next {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-seek-next:before {
-    content: ""; }
-
-.ui-icon-seek-prev {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-seek-prev:before {
-    content: ""; }
-
-.ui-icon-seek-end {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-seek-end:before {
-    content: ""; }
-
-.ui-icon-seek-start {
-  background-position: -80px -160px; }
-
-/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
-.ui-icon-seek-first {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-seek-first:before {
-    content: ""; }
-
-.ui-icon-stop {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-stop:before {
-    content: ""; }
-
-.ui-icon-eject {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-eject:before {
-    content: ""; }
-
-.ui-icon-volume-off {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-volume-off:before {
-    content: ""; }
-
-.ui-icon-volume-on {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-volume-on:before {
-    content: ""; }
-
-.ui-icon-power {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-power:before {
-    content: ""; }
-
-.ui-icon-signal-diag {
-  background-position: -16px -176px; }
-
-.ui-icon-signal {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-signal:before {
-    content: ""; }
-
-.ui-icon-battery-0 {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-battery-0:before {
-    content: ""; }
-
-.ui-icon-battery-1 {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-battery-1:before {
-    content: ""; }
-
-.ui-icon-battery-2 {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-battery-2:before {
-    content: ""; }
-
-.ui-icon-battery-3 {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-battery-3:before {
-    content: ""; }
-
-.ui-icon-circle-plus {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-circle-plus:before {
-    content: ""; }
-
-.ui-icon-circle-minus {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-circle-minus:before {
-    content: ""; }
-
-.ui-icon-circle-close {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-circle-close:before {
-    content: ""; }
-
-.ui-icon-circle-triangle-e {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-circle-triangle-e:before {
-    content: ""; }
-
-.ui-icon-circle-triangle-s {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-circle-triangle-s:before {
-    content: ""; }
-
-.ui-icon-circle-triangle-w {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-circle-triangle-w:before {
-    content: ""; }
-
-.ui-icon-circle-triangle-n {
-  background: none !important;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-indent: 0px !important;
-  text-align: center; }
-  .ui-icon-circle-triangle-n:before {
-    content: ""; }
-
-.ui-icon-circle-arrow-e {
-  background-position: -112px -192px; }
-
-.ui-icon-circle-arrow-s {
-  background-position: -128px -192px; }
-
-.ui-icon-circle-arrow-w {
-  background-position: -144px -192px; }
-
-.ui-icon-circle-arrow-n {
-  background-position: -160px -192px; }
-
-.ui-icon-circle-zoomin {
-  background-position: -176px -192px; }
-
-.ui-icon-circle-zoomout {
-  background-position: -192px -192px; }
-
-.ui-icon-circle-check {
-  background-position: -208px -192px; }
-
-.ui-icon-circlesmall-plus {
-  background-position: 0 -208px; }
-
-.ui-icon-circlesmall-minus {
-  background-position: -16px -208px; }
-
-.ui-icon-circlesmall-close {
-  background-position: -32px -208px; }
-
-.ui-icon-squaresmall-plus {
-  background-position: -48px -208px; }
-
-.ui-icon-squaresmall-minus {
-  background-position: -64px -208px; }
-
-.ui-icon-squaresmall-close {
-  background-position: -80px -208px; }
-
-.ui-icon-grip-dotted-vertical {
-  background-position: 0 -224px; }
-
-.ui-icon-grip-dotted-horizontal {
-  background-position: -16px -224px; }
-
-.ui-icon-grip-solid-vertical {
-  background-position: -32px -224px; }
-
-.ui-icon-grip-solid-horizontal {
-  background-position: -48px -224px; }
-
-.ui-icon-gripsmall-diagonal-se {
-  background-position: -64px -224px; }
-
-.ui-icon-grip-diagonal-se {
-  background-position: -80px -224px; }
-
 html {
   height: 100%; }
 
@@ -1602,6 +21,9 @@ html {
   padding: 0;
   background-color: #edf0f5;
   height: 100%; }
+
+a {
+  text-decoration: none; }
 
 .wrapper {
   padding: 0; }
@@ -2628,3 +1050,922 @@ h2 {
     padding-top: 150px; }
     .main-body .splash-screen .splash-wrapper .splash-loading {
       margin-top: 20px; }
+
+/*!
+ * Quill Editor v1.0.0-beta.3
+ * https://quilljs.com/
+ * Copyright (c) 2014, Jason Chen
+ * Copyright (c) 2013, salesforce.com
+ */
+.ql-container {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  height: 100%;
+  margin: 0px;
+  position: relative; }
+
+.ql-clipboard {
+  left: -100000px;
+  position: absolute;
+  top: 50%; }
+
+.ql-clipboard p {
+  margin: 0;
+  padding: 0; }
+
+.ql-editor {
+  box-sizing: border-box;
+  cursor: text;
+  line-height: 1.42;
+  height: 100%;
+  outline: none;
+  overflow-y: auto;
+  padding: 12px 15px;
+  tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap; }
+
+.ql-editor p,
+.ql-editor ol,
+.ql-editor ul,
+.ql-editor pre,
+.ql-editor blockquote,
+.ql-editor h1,
+.ql-editor h2,
+.ql-editor h3,
+.ql-editor h4,
+.ql-editor h5,
+.ql-editor h6 {
+  margin: 0;
+  padding: 0;
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8; }
+
+.ql-editor ol {
+  padding-left: 20px; }
+
+.ql-editor ul {
+  padding-left: 8px;
+  list-style: disc inside; }
+
+.ql-editor ol > li {
+  list-style-type: none; }
+
+.ql-editor ol {
+  list-style-type: none;
+  position: relative; }
+
+.ql-editor ol li {
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8;
+  counter-increment: list-num; }
+
+.ql-editor ol li:before {
+  content: counter(list-num,decimal) ". ";
+  margin-right: -16px;
+  position: absolute;
+  right: 100%;
+  text-align: right; }
+
+.ql-editor ol li.ql-indent-1 {
+  counter-increment: list-1; }
+
+.ql-editor ol li.ql-indent-1:before {
+  content: counter(list-1,lower-alpha) ". ";
+  margin-right: -56px; }
+
+.ql-editor ol li.ql-indent-1 {
+  counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8; }
+
+.ql-editor ol li.ql-indent-2 {
+  counter-increment: list-2; }
+
+.ql-editor ol li.ql-indent-2:before {
+  content: counter(list-2,lower-roman) ". ";
+  margin-right: -96px; }
+
+.ql-editor ol li.ql-indent-2 {
+  counter-reset: list-3 list-4 list-5 list-6 list-7 list-8; }
+
+.ql-editor ol li.ql-indent-3 {
+  counter-increment: list-3; }
+
+.ql-editor ol li.ql-indent-3:before {
+  content: counter(list-3,decimal) ". ";
+  margin-right: -136px; }
+
+.ql-editor ol li.ql-indent-3 {
+  counter-reset: list-4 list-5 list-6 list-7 list-8; }
+
+.ql-editor ol li.ql-indent-4 {
+  counter-increment: list-4; }
+
+.ql-editor ol li.ql-indent-4:before {
+  content: counter(list-4,lower-alpha) ". ";
+  margin-right: -176px; }
+
+.ql-editor ol li.ql-indent-4 {
+  counter-reset: list-5 list-6 list-7 list-8; }
+
+.ql-editor ol li.ql-indent-5 {
+  counter-increment: list-5; }
+
+.ql-editor ol li.ql-indent-5:before {
+  content: counter(list-5,lower-roman) ". ";
+  margin-right: -216px; }
+
+.ql-editor ol li.ql-indent-5 {
+  counter-reset: list-6 list-7 list-8; }
+
+.ql-editor ol li.ql-indent-6 {
+  counter-increment: list-6; }
+
+.ql-editor ol li.ql-indent-6:before {
+  content: counter(list-6,decimal) ". ";
+  margin-right: -256px; }
+
+.ql-editor ol li.ql-indent-6 {
+  counter-reset: list-7 list-8; }
+
+.ql-editor ol li.ql-indent-7 {
+  counter-increment: list-7; }
+
+.ql-editor ol li.ql-indent-7:before {
+  content: counter(list-7,lower-alpha) ". ";
+  margin-right: -296px; }
+
+.ql-editor ol li.ql-indent-7 {
+  counter-reset: list-8; }
+
+.ql-editor ol li.ql-indent-8 {
+  counter-increment: list-8; }
+
+.ql-editor ol li.ql-indent-8:before {
+  content: counter(list-8,lower-roman) ". ";
+  margin-right: -336px; }
+
+.ql-editor .ql-indent-1 {
+  padding-left: 40px; }
+
+.ql-editor .ql-indent-2 {
+  padding-left: 80px; }
+
+.ql-editor .ql-indent-3 {
+  padding-left: 120px; }
+
+.ql-editor .ql-indent-4 {
+  padding-left: 160px; }
+
+.ql-editor .ql-indent-5 {
+  padding-left: 200px; }
+
+.ql-editor .ql-indent-6 {
+  padding-left: 240px; }
+
+.ql-editor .ql-indent-7 {
+  padding-left: 280px; }
+
+.ql-editor .ql-indent-8 {
+  padding-left: 320px; }
+
+.ql-editor .ql-video {
+  display: block; }
+
+.ql-editor .ql-video.ql-align-center {
+  margin: 0 auto; }
+
+.ql-editor .ql-video.ql-align-right {
+  margin: 0 0 0 auto; }
+
+.ql-editor .ql-bg-black {
+  background-color: #000; }
+
+.ql-editor .ql-bg-red {
+  background-color: #e60000; }
+
+.ql-editor .ql-bg-orange {
+  background-color: #f90; }
+
+.ql-editor .ql-bg-yellow {
+  background-color: #ff0; }
+
+.ql-editor .ql-bg-green {
+  background-color: #008a00; }
+
+.ql-editor .ql-bg-blue {
+  background-color: #06c; }
+
+.ql-editor .ql-bg-purple {
+  background-color: #93f; }
+
+.ql-editor .ql-color-white {
+  color: #fff; }
+
+.ql-editor .ql-color-red {
+  color: #e60000; }
+
+.ql-editor .ql-color-orange {
+  color: #f90; }
+
+.ql-editor .ql-color-yellow {
+  color: #ff0; }
+
+.ql-editor .ql-color-green {
+  color: #008a00; }
+
+.ql-editor .ql-color-blue {
+  color: #06c; }
+
+.ql-editor .ql-color-purple {
+  color: #93f; }
+
+.ql-editor .ql-font-serif {
+  font-family: Georgia, Times New Roman, serif; }
+
+.ql-editor .ql-font-monospace {
+  font-family: Monaco, Courier New, monospace; }
+
+.ql-editor .ql-size-small {
+  font-size: 10px; }
+
+.ql-editor .ql-size-large {
+  font-size: 18px; }
+
+.ql-editor .ql-size-huge {
+  font-size: 32px; }
+
+.ql-editor .ql-direction-rtl {
+  direction: rtl;
+  text-align: inherit; }
+
+.ql-editor .ql-align-center {
+  text-align: center; }
+
+.ql-editor .ql-align-justify {
+  text-align: justify; }
+
+.ql-editor .ql-align-right {
+  text-align: right; }
+
+.ql-editor.ql-blank::before {
+  color: rgba(0, 0, 0, 0.6);
+  content: attr(data-placeholder);
+  font-style: italic;
+  pointer-events: none;
+  position: absolute; }
+
+.ql-hidden {
+  display: none; }
+
+.ql-tooltip {
+  position: absolute; }
+
+.ql-tooltip a {
+  cursor: pointer;
+  text-decoration: none; }
+
+.ql-toolbar:before,
+.ql-toolbar:after {
+  content: ' ';
+  display: table; }
+
+.ql-toolbar:after {
+  clear: both; }
+
+.ql-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 24px;
+  outline: none;
+  padding: 3px 5px;
+  width: 24px; }
+
+.ql-toolbar button svg {
+  height: 100%; }
+
+.ql-toolbar .ql-stroke {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2; }
+
+.ql-toolbar .ql-stroke-mitter {
+  fill: none;
+  stroke-mitterlimit: 10;
+  stroke-width: 2; }
+
+.ql-toolbar .ql-empty {
+  fill: none; }
+
+.ql-toolbar .ql-even {
+  fill-rule: evenodd; }
+
+.ql-toolbar .ql-thin,
+.ql-toolbar .ql-stroke.ql-thin {
+  stroke-width: 1; }
+
+.ql-toolbar .ql-transparent {
+  opacity: 0.4; }
+
+.ql-editor h1 {
+  font-size: 2em; }
+
+.ql-editor h2 {
+  font-size: 1.5em; }
+
+.ql-editor h3 {
+  font-size: 1.17em; }
+
+.ql-editor h4 {
+  font-size: 1em; }
+
+.ql-editor h5 {
+  font-size: 0.83em; }
+
+.ql-editor h6 {
+  font-size: 0.67em; }
+
+.ql-editor pre {
+  white-space: pre-wrap; }
+
+.ql-editor a {
+  text-decoration: underline; }
+
+.ql-editor blockquote {
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px; }
+
+.ql-editor pre.hljs {
+  overflow: visible; }
+
+.ql-editor code,
+.ql-editor pre:not(.hljs) {
+  background-color: #f0f0f0; }
+
+.ql-editor code,
+.ql-editor pre {
+  border-radius: 3px; }
+
+.ql-editor code {
+  font-size: 85%;
+  padding-bottom: 2px;
+  padding-top: 2px; }
+
+.ql-editor code:before,
+.ql-editor code:after {
+  content: "\A0";
+  letter-spacing: -2px; }
+
+.ql-editor *:not(pre) + pre,
+.ql-editor pre:first-of-type {
+  margin-top: 5px;
+  padding-top: 5px; }
+
+.ql-editor pre {
+  margin-bottom: 5px;
+  padding: 0px 10px 5px; }
+
+.ql-editor pre + pre {
+  margin-top: -10px; }
+
+.ql-editor img {
+  max-width: 100%; }
+
+.ql-snow .ql-image-tooltip {
+  padding: 10px;
+  text-align: center;
+  width: 300px; }
+
+.ql-snow .ql-image-tooltip input[type=text] {
+  height: 30px;
+  width: 100%; }
+
+.ql-snow .ql-image-tooltip a.ql-cancel,
+.ql-snow .ql-image-tooltip a.ql-action {
+  border: 1px solid #06c;
+  display: inline-block;
+  float: left;
+  line-height: 18px;
+  padding: 5px;
+  width: 50%; }
+
+.ql-snow .ql-image-tooltip a.ql-cancel::before {
+  color: #06c;
+  content: 'Cancel'; }
+
+.ql-snow .ql-image-tooltip a.ql-action {
+  background-color: #06c; }
+
+.ql-snow .ql-image-tooltip a.ql-action::before {
+  color: #fff;
+  content: 'Insert'; }
+
+.ql-snow .ql-image-tooltip .ql-preview {
+  height: 200px;
+  margin: 10px 0px;
+  position: relative; }
+
+.ql-snow .ql-image-tooltip .ql-preview img {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.ql-snow .ql-image-tooltip .ql-empty.ql-preview::before {
+  border: 1px dashed #ccc;
+  color: #ccc;
+  content: 'Preview';
+  display: block;
+  line-height: 200px; }
+
+.ql-snow .ql-link-tooltip::before {
+  content: "Visit URL:";
+  line-height: 26px;
+  margin-right: 8px; }
+
+.ql-snow .ql-link-tooltip {
+  margin-top: 10px;
+  padding: 5px 12px;
+  white-space: nowrap; }
+
+.ql-snow .ql-link-tooltip input[type=text] {
+  display: none;
+  height: 26px;
+  width: 170px; }
+
+.ql-snow .ql-link-tooltip a.ql-preview {
+  display: inline-block;
+  max-width: 200px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top; }
+
+.ql-snow .ql-link-tooltip a.ql-action::before {
+  color: #444;
+  content: '-';
+  line-height: 26px;
+  margin-left: 8px; }
+
+.ql-snow .ql-link-tooltip a.ql-action::after {
+  border-right: 1px solid #ccc;
+  content: 'Edit';
+  margin-left: 8px;
+  padding-right: 8px; }
+
+.ql-snow .ql-link-tooltip a.ql-remove::before {
+  content: 'Remove';
+  margin-left: 8px; }
+
+.ql-snow .ql-link-tooltip a {
+  line-height: 26px; }
+
+.ql-snow .ql-link-tooltip.ql-editing a.ql-preview,
+.ql-snow .ql-link-tooltip.ql-editing a.ql-remove {
+  display: none; }
+
+.ql-snow .ql-link-tooltip.ql-editing input[type=text] {
+  display: inline-block; }
+
+.ql-snow .ql-link-tooltip.ql-editing a.ql-action::after {
+  border-right: 0px;
+  content: 'Save';
+  padding-right: 0px; }
+
+.ql-toolbar.ql-snow {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 8px; }
+
+.ql-toolbar.ql-snow * {
+  box-sizing: border-box; }
+
+.ql-toolbar.ql-snow .ql-formats {
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle; }
+
+.ql-toolbar.ql-snow button:hover,
+.ql-toolbar.ql-snow button.ql-active,
+.ql-toolbar.ql-snow .ql-picker-label:hover,
+.ql-toolbar.ql-snow .ql-picker-label.ql-active,
+.ql-toolbar.ql-snow .ql-picker-item:hover,
+.ql-toolbar.ql-snow .ql-picker-item.ql-selected {
+  color: #06c; }
+
+.ql-toolbar.ql-snow button:hover .ql-fill,
+.ql-toolbar.ql-snow button.ql-active .ql-fill,
+.ql-toolbar.ql-snow .ql-picker-label:hover .ql-fill,
+.ql-toolbar.ql-snow .ql-picker-label.ql-active .ql-fill,
+.ql-toolbar.ql-snow .ql-picker-item:hover .ql-fill,
+.ql-toolbar.ql-snow .ql-picker-item.ql-selected .ql-fill,
+.ql-toolbar.ql-snow button:hover .ql-stroke.ql-fill,
+.ql-toolbar.ql-snow button.ql-active .ql-stroke.ql-fill,
+.ql-toolbar.ql-snow .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-toolbar.ql-snow .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-toolbar.ql-snow .ql-picker-item:hover .ql-stroke.ql-fill,
+.ql-toolbar.ql-snow .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+  fill: #06c; }
+
+.ql-toolbar.ql-snow button:hover .ql-stroke,
+.ql-toolbar.ql-snow button.ql-active .ql-stroke,
+.ql-toolbar.ql-snow .ql-picker-label:hover .ql-stroke,
+.ql-toolbar.ql-snow .ql-picker-label.ql-active .ql-stroke,
+.ql-toolbar.ql-snow .ql-picker-item:hover .ql-stroke,
+.ql-toolbar.ql-snow .ql-picker-item.ql-selected .ql-stroke,
+.ql-toolbar.ql-snow button:hover .ql-stroke-mitter,
+.ql-toolbar.ql-snow button.ql-active .ql-stroke-mitter,
+.ql-toolbar.ql-snow .ql-picker-label:hover .ql-stroke-mitter,
+.ql-toolbar.ql-snow .ql-picker-label.ql-active .ql-stroke-mitter,
+.ql-toolbar.ql-snow .ql-picker-item:hover .ql-stroke-mitter,
+.ql-toolbar.ql-snow .ql-picker-item.ql-selected .ql-stroke-mitter {
+  stroke: #06c; }
+
+.ql-toolbar.ql-snow .ql-stroke {
+  stroke: #444; }
+
+.ql-toolbar.ql-snow .ql-stroke-mitter {
+  stroke: #444; }
+
+.ql-toolbar.ql-snow .ql-fill,
+.ql-toolbar.ql-snow .ql-stroke.ql-fill {
+  fill: #444; }
+
+.ql-toolbar.ql-snow .ql-direction svg:last-child {
+  display: none; }
+
+.ql-toolbar.ql-snow .ql-direction.ql-active svg:last-child {
+  display: inline; }
+
+.ql-toolbar.ql-snow .ql-direction.ql-active svg:first-child {
+  display: none; }
+
+.ql-toolbar.ql-snow .ql-picker {
+  color: #444;
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  height: 24px;
+  position: relative;
+  vertical-align: middle; }
+
+.ql-toolbar.ql-snow .ql-picker-label {
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 2px;
+  position: relative;
+  width: 100%; }
+
+.ql-toolbar.ql-snow .ql-picker-label svg {
+  float: right;
+  height: 18px;
+  margin-top: 2px;
+  width: 18px; }
+
+.ql-toolbar.ql-snow .ql-picker-label::before {
+  vertical-align: middle; }
+
+.ql-toolbar.ql-snow .ql-picker-options {
+  background-color: #fff;
+  border: 1px solid transparent;
+  display: none;
+  min-width: 100%;
+  padding: 4px 8px;
+  position: absolute;
+  white-space: nowrap; }
+
+.ql-toolbar.ql-snow .ql-picker-options .ql-picker-item {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  border-color: #ccc;
+  color: #ccc;
+  z-index: 2; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-fill {
+  fill: #ccc; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-stroke {
+  stroke: #ccc; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  border-color: #ccc;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px;
+  display: block;
+  margin-top: -1px;
+  z-index: 1; }
+
+.ql-toolbar.ql-snow .ql-color-picker,
+.ql-toolbar.ql-snow .ql-icon-picker {
+  width: 28px; }
+
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-label,
+.ql-toolbar.ql-snow .ql-icon-picker .ql-picker-label {
+  padding: 2px 4px; }
+
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-label svg,
+.ql-toolbar.ql-snow .ql-icon-picker .ql-picker-label svg {
+  margin-top: 0px; }
+
+.ql-toolbar.ql-snow .ql-icon-picker .ql-picker-options {
+  padding: 4px 0px; }
+
+.ql-toolbar.ql-snow .ql-icon-picker .ql-picker-item {
+  height: 24px;
+  padding: 2px 4px; }
+
+.ql-toolbar.ql-snow .ql-color-picker.ql-expanded .ql-picker-options,
+.ql-toolbar.ql-snow .ql-icon-picker.ql-expanded .ql-picker-options {
+  margin-top: -6px; }
+
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-options {
+  padding: 5px;
+  width: 152px; }
+
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-item {
+  border: 1px solid transparent;
+  float: left;
+  height: 16px;
+  margin: 2px;
+  padding: 0px;
+  width: 16px; }
+
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-item.ql-primary-color {
+  margin-bottom: toolbarPadding; }
+
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-item.ql-selected,
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-item:hover {
+  border-color: #000; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-toolbar.ql-snow .ql-picker.ql-font .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-label]:not([data-label=''])::before,
+.ql-toolbar.ql-snow .ql-picker.ql-font .ql-picker-item[data-label]:not([data-label=''])::before,
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-item[data-label]:not([data-label=''])::before {
+  content: attr(data-label); }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header {
+  width: 98px; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+  content: 'Normal'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  content: 'Heading 1'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  content: 'Heading 2'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  content: 'Heading 3'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="4"]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  content: 'Heading 4'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="5"]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  content: 'Heading 5'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="6"]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  content: 'Heading 6'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  font-size: 2em; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  font-size: 1.5em; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  font-size: 1.17em; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  font-size: 1em; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  font-size: 0.83em; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  font-size: 0.67em; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-font {
+  width: 108px; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-font .ql-picker-label::before,
+.ql-toolbar.ql-snow .ql-picker.ql-font .ql-picker-item::before {
+  content: 'Sans Serif'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=serif]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  content: 'Serif'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=monospace]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  content: 'Monospace'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  font-family: Georgia, Times New Roman, serif; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  font-family: Monaco, Courier New, monospace; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-size {
+  width: 98px; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-label::before,
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  content: 'Normal'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=small]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  content: 'Small'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=large]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  content: 'Large'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=huge]::before,
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  content: 'Huge'; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  font-size: 10px; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  font-size: 18px; }
+
+.ql-toolbar.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  font-size: 32px; }
+
+.ql-toolbar.ql-snow .ql-color-picker.ql-background .ql-picker-item {
+  background-color: #fff; }
+
+.ql-toolbar.ql-snow .ql-color-picker.ql-color .ql-picker-item {
+  background-color: #000; }
+
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border-top: 0px; }
+
+.ql-snow .ql-tooltip {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px #ddd;
+  color: #444; }
+
+.ql-snow .ql-tooltip input[type=text] {
+  border: 1px solid #ccc;
+  font-size: 13px;
+  margin: 0px;
+  padding: 3px 5px; }
+
+.ql-container.ql-snow {
+  border: 1px solid #ccc; }
+
+.ql-container.ql-snow a {
+  color: #06c; }
+
+.ql-container.ql-snow * {
+  box-sizing: border-box; }
+
+body {
+  /* Button Colors */
+  /* Colored Buttons */
+  /*Green Button*/
+  /*Yellow Button*/
+  /*Red Button*/
+  /*Aqua Button*/
+  /*Navy Button*/
+  /*Black Button*/
+  /*Grey Button*/ }
+  body .ui-rating .ui-rating-cancel {
+    float: none;
+    display: inline-block; }
+    body .ui-rating .ui-rating-cancel a {
+      color: #cd0a0a;
+      background: none !important;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-indent: 0px !important;
+      text-align: center;
+      display: block;
+      -moz-transition: color 0.3s;
+      -o-transition: color 0.3s;
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s;
+      font-size: 20px;
+      height: 20px;
+      width: 20px; }
+      body .ui-rating .ui-rating-cancel a:before {
+        content: ""; }
+  body .ui-rating .ui-rating-star {
+    float: none;
+    display: inline-block; }
+    body .ui-rating .ui-rating-star a {
+      background: none !important;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-indent: 0px !important;
+      text-align: center;
+      display: block;
+      font-size: 20px;
+      height: 20px;
+      width: 20px; }
+      body .ui-rating .ui-rating-star a:before {
+        content: ""; }
+  body .ui-rating .ui-rating-star-on a {
+    color: #186ba0;
+    background: none !important;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-indent: 0px !important;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    height: 20px;
+    width: 20px; }
+    body .ui-rating .ui-rating-star-on a:before {
+      content: ""; }
+  body .ui-button.ui-state-default.green-button {
+    background-color: #1f9e53;
+    border-color: #107533; }
+    body .ui-button.ui-state-default.green-button.ui-state-hover {
+      background-color: #2eb971; }
+    body .ui-button.ui-state-default.green-button.ui-state-active {
+      background-color: #178544; }
+  body .ui-button.ui-state-default.yellow-button {
+    background-color: #eed511;
+    border-color: #cdb80d; }
+    body .ui-button.ui-state-default.yellow-button.ui-state-hover {
+      background-color: #f8e653; }
+    body .ui-button.ui-state-default.yellow-button.ui-state-active {
+      background-color: #d4b301; }
+  body .ui-button.ui-state-default.red-button {
+    background-color: #b8312e;
+    border-color: #9c1627; }
+    body .ui-button.ui-state-default.red-button.ui-state-hover {
+      background-color: #d2524f; }
+    body .ui-button.ui-state-default.red-button.ui-state-active {
+      background-color: #9c1627; }
+  body .ui-button.ui-state-default.aqua-button {
+    background-color: #0084b4;
+    border-color: #087298; }
+    body .ui-button.ui-state-default.aqua-button.ui-state-hover {
+      background-color: #03A8E4; }
+    body .ui-button.ui-state-default.aqua-button.ui-state-active {
+      background-color: #087298; }
+  body .ui-button.ui-state-default.navy-button {
+    background-color: #1f3b59;
+    border-color: #21374f; }
+    body .ui-button.ui-state-default.navy-button.ui-state-hover {
+      background-color: #3C6592; }
+    body .ui-button.ui-state-default.navy-button.ui-state-active {
+      background-color: #21374f; }
+  body .ui-button.ui-state-default.black-button {
+    background-color: #353535;
+    border-color: #212121; }
+    body .ui-button.ui-state-default.black-button.ui-state-hover {
+      background-color: #4a4a4a; }
+    body .ui-button.ui-state-default.black-button.ui-state-active {
+      background-color: #212121; }
+  body .ui-button.ui-state-default.gray-button {
+    background-color: #ECEFF1;
+    border-color: #CCCFD2; }
+    body .ui-button.ui-state-default.gray-button.ui-button span.ui-button-text {
+      color: #525252; }
+    body .ui-button.ui-state-default.gray-button.ui-state-hover {
+      background-color: #F5FBFF; }
+    body .ui-button.ui-state-default.gray-button.ui-state-active {
+      background-color: #CCCFD2; }
