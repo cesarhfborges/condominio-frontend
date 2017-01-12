@@ -302,16 +302,11 @@ a {
                     
                     > ul {
                         background-color: $menuitemActiveBgColor;
-                        max-height: 500px;
                     }
                 }
                 
                 > ul {
-                    max-height: 0;
                     overflow: hidden;
-                    -webkit-transition: max-height .8s;
-                    -moz-transition: max-height .8s;
-                    transition: max-height .8s;
                     padding-left: 20px;
                     
                     li {
