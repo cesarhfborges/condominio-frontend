@@ -1,13 +1,13 @@
-<div class="wrapper">
+<div class="wrapper" [ngClass]="{'sidebar-inactive-l':menuInactiveDesktop, 'sidebar-active-m':menuActiveMobile}">
     <div class="topbar clearfix">
-        <a id="omega-menu-button" href="#">
+        <a id="omega-menu-button" href="#" (click)="toggleMenu($event)">
             <span class="fa fa-bars"></span>
         </a>
         <span class="topbar-title"></span>
-        <a id="options-menu-button" href="#">
+        <a id="options-menu-button" href="#" (click)="toggleTopMenu($event)">
             <span class="fa fa-ellipsis-h"></span>
         </a>
-        <div id="topbar-icons" class="animated">
+        <div id="topbar-icons" class="animated" [ngClass]="{'topbar-icons-visible flipInX':topMenuActive,'flipOutX':topMenuLeaving}">
             <span class="topbar-search">
                 <input type="text" placeholder="Search" />
                 <span class="topbar-search-icon fa fa-search"></span>
@@ -35,11 +35,11 @@
                 </div>
                 <div class="profile">
                     <img src="assets/layout/images/profile.png" alt="" />
-                    <a id="profile-button" href="#">
+                    <a id="profile-button" href="#" (click)="toggleProfile($event)">
                         <span class="username">Peggy Olson</span>
                         <i class="fa fa-fw fa-cog"></i>
                     </a>
-                    <ul>
+                    <ul [@submenu]="profileActive ? 'visible' : 'hidden'">
                         <li><a href="#"><i class="fa fa-fw fa-sliders"></i><span>Account</span></a></li>
                         <li><a href="#"><i class="fa fa-fw fa-bell"></i><span>Notifications</span><span class="menu-badge">2</span></a></li>
                         <li><a href="#"><i class="fa fa-fw fa-sign-out"></i><span>Logout</span></a></li>

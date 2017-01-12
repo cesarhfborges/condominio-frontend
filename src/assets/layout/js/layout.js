@@ -46,7 +46,7 @@ Omega = {
             }
         });
                 
-        this.menuButton.off('click.omega').on('click.omega', function(e) {
+        /*this.menuButton.off('click.omega').on('click.omega', function(e) {
             $(this).toggleClass('active');
             
             if($this.isDesktop()) {
@@ -66,9 +66,9 @@ Omega = {
             
             $this.topbarIcons.removeClass('topbar-icons-visible');
             e.preventDefault();
-        });
+        });*/
         
-        this.profileButton.off('click.omega').on('click.omega', function(e) {
+        /*this.profileButton.off('click.omega').on('click.omega', function(e) {
             var profileMenu = $(this).next('ul');
             if(profileMenu.is(':visible')) {
                 profileMenu.slideUp();
@@ -98,7 +98,7 @@ Omega = {
 
             $this.wrapper.removeClass('sidebar-active-m sidebar-inactive-l');
             e.preventDefault();
-        });
+        });*/
     },
     
     activate: function(item) {

@@ -211,9 +211,9 @@ a {
             
             > ul {
                 margin-bottom: -20px;
-                display: none;
                 background-color: $menuitemActiveBgColor;
                 text-align: left;
+                overflow: hidden;
                 
                 li {
                     a {
