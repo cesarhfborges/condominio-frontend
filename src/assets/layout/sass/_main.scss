@@ -1,4 +1,4 @@
-html {
+-html {
     height: 100%;
 }
 
@@ -210,7 +210,6 @@ a {
             }
             
             > ul {
-                margin-bottom: -20px;
                 background-color: $menuitemActiveBgColor;
                 text-align: left;
                 overflow: hidden;
@@ -233,9 +232,11 @@ a {
             display: block;
             height: 100%;
             position: relative;
-                
-            .menu-container {
-                padding-bottom: 80px;
+            
+            .menu {
+                > ul {
+                    padding-bottom: 80px;
+                }
             }
         }
                 
@@ -301,11 +302,16 @@ a {
                     
                     > ul {
                         background-color: $menuitemActiveBgColor;
+                        max-height: 500px;
                     }
                 }
                 
                 > ul {
-                    display: none;
+                    max-height: 0;
+                    overflow: hidden;
+                    -webkit-transition: max-height .8s;
+                    -moz-transition: max-height .8s;
+                    transition: max-height .8s;
                     padding-left: 20px;
                     
                     li {
