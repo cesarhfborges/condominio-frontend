@@ -1,7 +1,7 @@
 {
   "name": "omega",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "1.0.1-SNAPSHOT",
+  "license": "Commercial",
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
