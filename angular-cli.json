@@ -34,8 +34,7 @@
         "../node_modules/moment/moment.js",
         "../node_modules/fullcalendar/dist/fullcalendar.js",
         "../node_modules/quill/dist/quill.js",
-        "../node_modules/nanoscroller/bin/javascripts/jquery.nanoscroller.js",
-        "assets/layout/js/layout.js"
+        "../node_modules/nanoscroller/bin/javascripts/jquery.nanoscroller.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

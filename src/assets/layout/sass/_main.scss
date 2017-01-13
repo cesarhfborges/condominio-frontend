@@ -161,7 +161,7 @@ a {
     	height: 100%;
         z-index: 102;
         @include transition(margin-left .3s);
-        @include background-gradient-top2bottom(#4e5159, #1f2023);
+        @include linear-gradient(#4e5159, #1f2023);
                 
         .logo {
             text-align: center;
@@ -428,7 +428,7 @@ a {
                 top: 50px;
                 padding-bottom: 5px;
                 text-align: left;
-                @include background-gradient-top2bottom(#4e5159, #1f2023);
+                @include linear-gradient(#4e5159, #1f2023);
                 @include border-radius-bottom(3px);
                 
                 a {

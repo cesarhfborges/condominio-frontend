@@ -1,6 +1,6 @@
-import {Component,AfterViewInit,ElementRef,trigger,state,transition,style,animate} from '@angular/core';
+import {Component,AfterViewInit,OnDestroy,ViewChild,ElementRef,Renderer,trigger,state,transition,style,animate} from '@angular/core';
 
-declare var Omega: any;
+declare var jQuery: any;
 
 @Component({
     selector: 'app-root',
@@ -18,9 +18,7 @@ declare var Omega: any;
         ])
     ]
 })
-export class AppComponent implements AfterViewInit {
-
-    constructor(private el: ElementRef) {}
+export class AppComponent implements AfterViewInit,OnDestroy {
 
     public menuInactiveDesktop: boolean;
     
@@ -31,13 +29,42 @@ export class AppComponent implements AfterViewInit {
     public topMenuActive: boolean;
     
     public topMenuLeaving: boolean;
+    
+    @ViewChild('scroller') public scrollerViewChild: ElementRef;
+    
+    public scroller: HTMLDivElement;
+    
+    documentClickListener: Function;
+    
+    menuClick: boolean;
+    
+    topMenuButtonClick: boolean;
+    
+    constructor(public renderer: Renderer) {}
 
     ngAfterViewInit() {
-        //Omega.init(this.el.nativeElement);
+        this.scroller = <HTMLDivElement> this.scrollerViewChild.nativeElement;
+        
+        //hides the overlay menu and top menu if outside is clicked
+        this.documentClickListener = this.renderer.listenGlobal('body', 'click', (event) => {
+            if(!this.isDesktop()) {
+                if(!this.menuClick) {
+                    this.menuActiveMobile = false;
+                }
+                
+                if(!this.topMenuButtonClick) {
+                    this.hideTopMenu();
+                }
+                
+                this.menuClick = false;
+                this.topMenuButtonClick = false;
+            }
+        });
     }    
     
     toggleMenu(event: Event) {
-        if(this.desktop) {
+        this.menuClick = true;
+        if(this.isDesktop()) {
             this.menuInactiveDesktop = !this.menuInactiveDesktop;
             if(this.menuInactiveDesktop) {
                 this.menuActiveMobile = false;
@@ -63,6 +90,7 @@ export class AppComponent implements AfterViewInit {
     }
     
     toggleTopMenu(event: Event) {
+        this.topMenuButtonClick = true;
         this.menuActiveMobile = false;
         
         if(this.topMenuActive) {
@@ -82,8 +110,26 @@ export class AppComponent implements AfterViewInit {
             this.topMenuLeaving = false;
         }, 500);
     }
+        
+    onMenuClick() {
+        this.menuClick = true;
+        
+        setTimeout(() => {
+            jQuery(this.scroller).nanoScroller();
+        }, 600);
+    }
     
-    get desktop() {
+    isDesktop() {
         return window.innerWidth > 1024;
+    }
+    
+    onSearchClick() {
+        this.topMenuButtonClick = true;
+    }
+    
+    ngOnDestroy() {
+        if(this.documentClickListener) {
+            this.documentClickListener();
+        }
     }
 }
