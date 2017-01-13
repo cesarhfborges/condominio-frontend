@@ -39,9 +39,9 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     {label: 'Empty Page', icon: 'fa-square-o', routerLink: ['/empty']},
                     {label: 'Login Page', icon: 'fa-sign-in', url: 'login.html'},
-                    {label: 'Error Page', icon: 'fa-exclamation-circle', url: 'login.html'},
-                    {label: '404 Page', icon: 'fa-times', url: 'login.html'},
-                    {label: 'Access Denied Page', icon: 'fa-exclamation-triangle', url: 'login.html'}
+                    {label: 'Error Page', icon: 'fa-exclamation-circle', url: 'error.html'},
+                    {label: '404 Page', icon: 'fa-times', url: '404.html'},
+                    {label: 'Access Denied Page', icon: 'fa-exclamation-triangle', url: 'access.html'}
                 ]
             },
             {
