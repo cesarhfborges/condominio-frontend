@@ -33,7 +33,7 @@ export class AppMenuComponent implements OnInit {
                     {label: 'File', icon: 'fa-arrow-circle-o-up', routerLink: ['/misc']}
                 ]
             },
-            {label: 'Landing', icon: 'fa-certificate', routerLink: ['/']},
+            {label: 'Landing', icon: 'fa-certificate', url: 'landing.html'},
             {
                 label: 'Template Pages', icon: 'fa-life-saver', routerLink: ['/'],
                 items: [
