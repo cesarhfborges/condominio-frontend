@@ -27,10 +27,10 @@ export class AppMenuComponent implements OnInit {
                     {label: 'Panels', icon: 'fa-list-alt', routerLink: ['/panels']},
                     {label: 'Overlays', icon: 'fa-square', routerLink: ['/overlays']},
                     {label: 'Menus', icon: 'fa-minus-square-o', routerLink: ['/menus']},
-                    {label: 'Menus', icon: 'fa-circle-o-notch', routerLink: ['/messages']},
-                    {label: 'Messages', icon: 'fa-area-chart', routerLink: ['/charts']},
-                    {label: 'Charts', icon: 'fa-columns', routerLink: ['/file']},
-                    {label: 'File', icon: 'fa-arrow-circle-o-up', routerLink: ['/misc']}
+                    {label: 'Messages', icon: 'fa-circle-o-notch', routerLink: ['/messages']},
+                    {label: 'Charts', icon: 'fa-area-chart', routerLink: ['/charts']},
+                    {label: 'File', icon: 'fa-columns', routerLink: ['/file']},
+                    {label: 'Misc', icon: 'fa-arrow-circle-o-up', routerLink: ['/misc']}
                 ]
             },
             {label: 'Landing', icon: 'fa-certificate', url: 'landing.html'},
