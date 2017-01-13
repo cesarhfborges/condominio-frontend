@@ -355,10 +355,15 @@ a {
         }
     }
     
-    .nano > .nano-pane > .nano-slider {
-      background:rgba(255,255,255,0.1);
-    }
-    
+    .nano {
+        .nano-pane {
+            background: transparent;
+            
+            .nano-slider {
+                background: rgba(255,255,255,0.1);
+            }
+        }
+    }    
 }
 
 /* Responsive */
