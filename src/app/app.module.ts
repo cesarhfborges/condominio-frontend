@@ -180,7 +180,7 @@ import {NodeService} from './demo/service/nodeservice';
         EmptyDemo,
         FileDemo,
         UtilsDemo,
-        Documentation,
+        Documentation
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
