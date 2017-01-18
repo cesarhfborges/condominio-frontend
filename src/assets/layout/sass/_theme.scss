@@ -1,47 +1,4 @@
 body {
-    .ui-rating {
-        .ui-rating-cancel {
-            float: none;
-            display: inline-block;
-            
-            a {
-                color: #cd0a0a;
-                @include icon_override("\f05e");
-                display: block;
-                @include transition(color .3s);
-                font-size: 20px;
-                height: 20px;
-                width: 20px;
-            }
-        }
-        
-        .ui-rating-star {
-            float: none;
-            display: inline-block;
-            
-            a {
-                @include icon_override("\f006");
-                display: block;
-                font-size: 20px;
-                height: 20px;
-                width: 20px;
-            }
-        }
-        
-        .ui-rating-star-on {
-            a {
-                color: #186ba0;
-                @include icon_override("\f005");
-                display: block;
-                font-size: 20px;
-                height: 20px;
-                width: 20px;
-            }
-        }
-    }
-    
-    /* Button Colors */
-    /* Colored Buttons */
     /*Green Button*/
     .ui-button {
         &.ui-state-default {
