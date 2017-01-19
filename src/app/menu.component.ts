@@ -94,7 +94,6 @@ export class AppMenuComponent implements OnInit {
     }
 }
 
-
 @Component({
     selector: '[app-submenu]',
     template: `
