@@ -6,11 +6,11 @@ body {
                 background-color: $greenButton;
                 border-color: $greenButtonBorder;
                 
-                &.ui-state-hover {
+                &:enabled:hover {
                     background-color: $greenButtonHover;
                 }
                 
-                &.ui-state-active {
+                &:enabled:active {
                     background-color: $greenButtonActive;
                 }
             }
@@ -24,11 +24,11 @@ body {
                 background-color: $yellowButton;
                 border-color: $yellowButtonBorder;
                 
-                &.ui-state-hover {
+                &:enabled:hover {
                     background-color: $yellowButtonHover;
                 }
                 
-                &.ui-state-active {
+                &:enabled:active {
                     background-color: $yellowButtonActive;
                 }
             }
@@ -42,11 +42,11 @@ body {
                 background-color: $redButton;
                 border-color: $redButtonBorder;
                 
-                &.ui-state-hover {
+                &:enabled:hover {
                     background-color: $redButtonHover;
                 }
                 
-                &.ui-state-active {
+                &:enabled:active {
                     background-color: $redButtonActive;
                 }
             }
@@ -60,11 +60,11 @@ body {
                 background-color: $aquaButton;
                 border-color: $aquaButtonBorder;
                 
-                &.ui-state-hover {
+                &:enabled:hover {
                     background-color: $aquaButtonHover;
                 }
                 
-                &.ui-state-active {
+                &:enabled:active {
                     background-color: $aquaButtonActive;
                 }
             }
@@ -78,11 +78,11 @@ body {
                 background-color: $navyButton;
                 border-color: $navyButtonBorder;
                 
-                &.ui-state-hover {
+                &:enabled:hover {
                     background-color: $navyButtonHover;
                 }
                 
-                &.ui-state-active {
+                &:enabled:active {
                     background-color: $navyButtonActive;
                 }
             }
@@ -96,11 +96,11 @@ body {
                 background-color: $blackButton;
                 border-color: $blackButtonBorder;
                 
-                &.ui-state-hover {
+                &:enabled:hover {
                     background-color: $blackButtonHover;
                 }
                 
-                &.ui-state-active {
+                &:enabled:active {
                     background-color: $blackButtonActive;
                 }
             }
@@ -120,11 +120,11 @@ body {
                     }
                 }
                 
-                &.ui-state-hover {
+                &:enabled:hover {
                     background-color: $greyButtonHover;
                 }
                 
-                &.ui-state-active {
+                &:enabled:active {
                     background-color: $greyButtonActive;
                 }
             }
