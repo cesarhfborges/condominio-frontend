@@ -152,7 +152,7 @@
             <div class="card card-w-title">
                 <h1>DataTable</h1>
                 <p-dataTable [value]="cars" selectionMode="single" [(selection)]="selectedCar3">
-                    <header>DataTable</header>
+                    <p-header>DataTable</p-header>
                     <p-column field="vin" header="Vin" sortable="true"></p-column>
                     <p-column field="year" header="Year" sortable="true"></p-column>
                     <p-column field="brand" header="Brand" sortable="true"></p-column>
@@ -166,9 +166,9 @@
             <div class="card card-w-title">
                 <h1>DataGrid</h1>
                 <p-dataGrid [value]="carsLarge" [paginator]="true" [rows]="20">
-                    <header>
+                    <p-header>
                         List of Cars
-                    </header>
+                    </p-header>
                     <template let-car pTemplate="item">
                         <div style="padding:3px" class="ui-g-12 ui-md-3">
                             <p-panel [header]="car.vin" [style]="{'text-align':'center'}">
