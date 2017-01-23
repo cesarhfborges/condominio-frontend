@@ -9,12 +9,16 @@ import {Component} from '@angular/core';
         
         .docs pre {
             font-family: monospace;
-            background-color: #0C2238;
-            color: #dddddd;
+            background-color: #e5f3fc;
+            color: #474849;
             padding: 1em;
             font-size: 14px;
             border-radius: 3px;
             overflow: auto;
+        }
+
+        .docs p {
+            line-height: 1.5;
         }
         
         .video-container {
