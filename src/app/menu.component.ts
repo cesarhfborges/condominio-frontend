@@ -33,15 +33,15 @@ export class AppMenuComponent implements OnInit {
                     {label: 'Misc', icon: 'fa-arrow-circle-o-up', routerLink: ['/misc']}
                 ]
             },
-            {label: 'Landing', icon: 'fa-certificate', url: 'landing.html'},
+            {label: 'Landing', icon: 'fa-certificate', url: 'assets/pages/landing.html', target: '_blank'},
             {
                 label: 'Template Pages', icon: 'fa-life-saver', routerLink: ['/'],
                 items: [
                     {label: 'Empty Page', icon: 'fa-square-o', routerLink: ['/empty']},
-                    {label: 'Login Page', icon: 'fa-sign-in', url: 'login.html'},
-                    {label: 'Error Page', icon: 'fa-exclamation-circle', url: 'error.html'},
-                    {label: '404 Page', icon: 'fa-times', url: '404.html'},
-                    {label: 'Access Denied Page', icon: 'fa-exclamation-triangle', url: 'access.html'}
+                    {label: 'Login Page', icon: 'fa-sign-in', url: 'assets/pages/login.html', target: '_blank'},
+                    {label: 'Error Page', icon: 'fa-exclamation-circle', url: 'assets/pages/error.html', target: '_blank'},
+                    {label: '404 Page', icon: 'fa-times', url: 'assets/pages/404.html', target: '_blank'},
+                    {label: 'Access Denied Page', icon: 'fa-exclamation-triangle', url: 'assets/pages/access.html', target: '_blank'}
                 ]
             },
             {
@@ -98,7 +98,7 @@ export class AppMenuComponent implements OnInit {
     selector: '[app-submenu]',
     template: `
         <ul>
-            <template ngFor let-child let-i="index" [ngForOf]="(root ? item : item.items)">
+            <ng-template ngFor let-child let-i="index" [ngForOf]="(root ? item : item.items)">
                 <li [ngClass]="{'active-menuitem': isActive(i)}">
                     <a [href]="child.url||'#'" (click)="itemClick($event,child,i)">
                         <i class="fa fa-fw" [ngClass]="child.icon"></i>
@@ -107,7 +107,7 @@ export class AppMenuComponent implements OnInit {
                     </a>
                     <ul app-submenu [item]="child" *ngIf="child.items" [@children]="isActive(i) ? 'visible' : 'hidden'" ></ul>
                 </li>
-            </template>
+            </ng-template>
         </ul>
     `,
     animations: [

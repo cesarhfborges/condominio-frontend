@@ -1,4 +1,5 @@
-import {Component,AfterViewInit,OnDestroy,ViewChild,ElementRef,Renderer,trigger,state,transition,style,animate} from '@angular/core';
+import {Component,AfterViewInit,OnDestroy,ViewChild,ElementRef,Renderer} from '@angular/core';
+import {trigger,state,style,transition,animate} from '@angular/animations';
 
 declare var jQuery: any;
 

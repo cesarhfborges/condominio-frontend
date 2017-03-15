@@ -16,6 +16,14 @@ import {Component} from '@angular/core';
             border-radius: 3px;
             overflow: auto;
         }
+        
+        .inline-code {
+            background-color: #0C2238;
+            color: #dddddd;
+            font-style: normal;
+            font-size: 13px;
+            padding: 0 .5em;
+        }
 
         .docs p {
             line-height: 1.5;

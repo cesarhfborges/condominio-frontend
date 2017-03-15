@@ -1,7 +1,7 @@
 {
   "project": {
     "version": "1.0.0-beta.26",
-    "name": "omega-cli"
+    "name": "omega"
   },
   "apps": [
     {
@@ -36,11 +36,11 @@
         "../node_modules/quill/dist/quill.js",
         "../node_modules/nanoscroller/bin/javascripts/jquery.nanoscroller.js"
       ],
-      "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
+      "environmentSource": "environments/environment.ts",
+        "environments": {
+          "dev": "environments/environment.ts",
+          "prod": "environments/environment.prod.ts"
+        }
     }
   ],
   "addons": [],
