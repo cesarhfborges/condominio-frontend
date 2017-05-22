@@ -6,9 +6,4 @@ describe('omega App', function() {
   beforeEach(() => {
     page = new OmegaPage();
   });
-
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
 });

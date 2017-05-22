@@ -10,6 +10,16 @@
 
 .landing-wrapper {
     
+    .ui-button {
+        border: 1px solid #2399e5;
+        color: #FFFFFF;
+        background: #2399e5;
+        
+        &:hover {
+            background: #1f89ce;
+        }
+    }
+    
     #menu-button {
         display: none;
         font-size: 28px;
@@ -23,12 +33,7 @@
             color: $topbarItemHoverColor;
         }
     }
-    
-    .ui-button:hover {
-        border: 1px solid #156090;
-        background: #1f89ce;
-    }
-    
+        
     .landing-header {
         height: 80px;
         background-color: #0388e5;

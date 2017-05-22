@@ -56,10 +56,10 @@ export class AppComponent implements AfterViewInit,OnDestroy {
                 if(!this.topMenuButtonClick) {
                     this.hideTopMenu();
                 }
-                
-                this.menuClick = false;
-                this.topMenuButtonClick = false;
             }
+            
+            this.menuClick = false;
+            this.topMenuButtonClick = false;
         });
     }    
     

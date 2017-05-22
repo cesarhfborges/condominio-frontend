@@ -1,7 +1,6 @@
-import {Component,Input,OnInit,EventEmitter,ViewChild,trigger,state,transition,style,animate} from '@angular/core';
-import {Location} from '@angular/common';
-import {Router} from '@angular/router';
+import {Component,Input,OnInit,EventEmitter,ViewChild,trigger,state,transition,style,animate,Inject,forwardRef} from '@angular/core';
 import {MenuItem} from 'primeng/primeng';
+import {AppComponent} from './app.component';
 
 @Component({
     selector: 'app-menu',
@@ -19,7 +18,7 @@ export class AppMenuComponent implements OnInit {
         this.model = [
             {label: 'Dashboard', icon: 'fa-home', routerLink: ['/']},
             {
-                label: 'Components', icon: 'fa-home', routerLink: ['/'],
+                label: 'Components', icon: 'fa-home',
                 items: [
                     {label: 'Sample Page', icon: 'fa-columns', routerLink: ['/sample']},
                     {label: 'Forms', icon: 'fa-code', routerLink: ['/forms']},
@@ -35,7 +34,7 @@ export class AppMenuComponent implements OnInit {
             },
             {label: 'Landing', icon: 'fa-certificate', url: 'assets/pages/landing.html', target: '_blank'},
             {
-                label: 'Template Pages', icon: 'fa-life-saver', routerLink: ['/'],
+                label: 'Template Pages', icon: 'fa-life-saver',
                 items: [
                     {label: 'Empty Page', icon: 'fa-square-o', routerLink: ['/empty']},
                     {label: 'Login Page', icon: 'fa-sign-in', url: 'assets/pages/login.html', target: '_blank'},
@@ -100,7 +99,13 @@ export class AppMenuComponent implements OnInit {
         <ul>
             <ng-template ngFor let-child let-i="index" [ngForOf]="(root ? item : item.items)">
                 <li [ngClass]="{'active-menuitem': isActive(i)}">
-                    <a [href]="child.url||'#'" (click)="itemClick($event,child,i)">
+                    <a *ngIf="!child.routerLink" [href]="child.url||'#'" (click)="itemClick($event,child,i)"  [attr.tabindex]="!visible ? '-1' : null"  [attr.target]="child.target">
+                        <i class="fa fa-fw" [ngClass]="child.icon"></i>
+                        <span>{{child.label}}</span>
+                        <i class="fa fa-fw fa-angle-down" *ngIf="child.items"></i>
+                    </a>
+                    <a *ngIf="child.routerLink" (click)="itemClick($event,child,i)" [attr.target]="child.target"
+                        [routerLink]="child.routerLink" routerLinkActive="active-menuitem-routerlink" [routerLinkActiveOptions]="{exact: true}">
                         <i class="fa fa-fw" [ngClass]="child.icon"></i>
                         <span>{{child.label}}</span>
                         <i class="fa fa-fw fa-angle-down" *ngIf="child.items"></i>
@@ -131,20 +136,16 @@ export class AppSubMenu {
         
     activeIndex: number;
         
-    constructor(public router: Router, public location: Location) {}
+    constructor(@Inject(forwardRef(() => AppComponent)) public app: AppComponent) {}
         
-    itemClick(event: Event, item: MenuItem, index: number) {
+    itemClick(event: Event, item: MenuItem, index: number) {        
         if(item.disabled) {
             event.preventDefault();
             return true;
         }
         
         this.activeIndex = (this.activeIndex === index) ? null : index;
-        
-        if(!item.url||item.routerLink) {
-            event.preventDefault();
-        }
-        
+                
         if(item.command) {
             if(!item.eventEmitter) {
                 item.eventEmitter = new EventEmitter();
@@ -156,9 +157,14 @@ export class AppSubMenu {
                 item: item
             });
         }
-
-        if(item.routerLink) {
-            this.router.navigate(item.routerLink);
+        
+        //prevent hash change
+        if(item.items || (!item.url && !item.routerLink)) {
+            event.preventDefault();
+        }
+        
+        if(!item.items) {
+            this.app.menuActiveMobile = false;
         }
     }
     

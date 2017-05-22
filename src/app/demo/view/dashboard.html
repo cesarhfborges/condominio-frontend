@@ -157,12 +157,12 @@
 
     <div class="ui-g-12 ui-md-4">
         <div class="card">
+            <h1 style="font-size:16px">Recent Sales</h1>
             <p-dataTable [value]="cars" [style]="{'margin-bottom':'20px'}">
-                <p-header>Recent Sales</p-header>
-                <p-column field="vin" header="Vin"></p-column>
-                <p-column field="year" header="Year"></p-column>
-                <p-column field="brand" header="Brand"></p-column>
-                <p-column field="color" header="Color"></p-column>
+                <p-column field="vin" header="Vin" sortable="true"></p-column>
+                <p-column field="year" header="Year" sortable="true"></p-column>
+                <p-column field="brand" header="Brand" sortable="true"></p-column>
+                <p-column field="color" header="Color" sortable="true"></p-column>
             </p-dataTable>
         </div>
     </div>

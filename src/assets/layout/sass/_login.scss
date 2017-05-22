@@ -21,7 +21,7 @@
     width: 400px;
     margin: 0 auto;
     text-align: center;
-    
+
     #login-container {
         margin-top: 20px;
         box-sizing: border-box;;
@@ -60,7 +60,20 @@
             &.ui-inputtext {
                 font-size: 1em;
                 color: #4f575b;
+                margin: 0;
+                outline: medium none;
+                padding: .25em;
+                background: #ffffff;
+                font-weight: normal;
+                border: 1px solid #d6d6d6;
+                border-radius: 3px;
+                
+                &:hover {
+                    border-color: #c0c0c0;
+                }
+                
                 &:focus {
+                    outline: 0 none;
                     box-shadow: 0 0 5px #1f89ce;
                 }
             }
@@ -71,14 +84,18 @@
         }
         
         .ui-button {
+            border-radius: 3px;
+            border: 1px solid #2399e5;
+            color: #FFFFFF;
+            background: #2399e5;
             font-size: 16px;
+            
             &:hover {
-                border: 1px solid #156090;
                 background: #1f89ce;
-                outline: 0 none;
             }
-
+            
             &:focus {
+                outline: 0 none;
                 background: #186ba0;
             }
         }
