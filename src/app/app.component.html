@@ -8,7 +8,7 @@
             <span class="fa fa-ellipsis-h"></span>
         </a>
         <div id="topbar-icons" class="animated" [ngClass]="{'topbar-icons-visible flipInX':topMenuActive,'flipOutX':topMenuLeaving}">
-            <span class="topbar-search" (click)="onSearchClick($event)">
+            <span class="topbar-search" (click)="onSearchClick()">
                 <input type="text" placeholder="Search" />
                 <span class="topbar-search-icon fa fa-search"></span>
             </span>
@@ -27,7 +27,7 @@
             </a>
         </div>
     </div>
-    <div class="sidebar" (click)="onMenuClick($event)">
+    <div class="sidebar" (click)="onMenuClick()">
         <div #scroller class="nano">
             <div class="nano-content sidebar-scroll-content">
                 <div class="logo">
