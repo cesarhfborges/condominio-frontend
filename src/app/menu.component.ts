@@ -18,7 +18,7 @@ export class AppMenuComponent implements OnInit {
         this.model = [
             {label: 'Dashboard', icon: 'fa-home', routerLink: ['/']},
             {
-                label: 'Components', icon: 'fa-home',
+                label: 'Components', icon: 'fa-home', badge: '2',
                 items: [
                     {label: 'Sample Page', icon: 'fa-columns', routerLink: ['/sample']},
                     {label: 'Forms', icon: 'fa-code', routerLink: ['/forms']},
@@ -34,7 +34,7 @@ export class AppMenuComponent implements OnInit {
             },
             {label: 'Landing', icon: 'fa-certificate', url: 'assets/pages/landing.html', target: '_blank'},
             {
-                label: 'Template Pages', icon: 'fa-life-saver',
+                label: 'Template Pages', icon: 'fa-life-saver', badge: '8', badgeStyleClass: 'green-badge',
                 items: [
                     {label: 'Empty Page', icon: 'fa-square-o', routerLink: ['/empty']},
                     {label: 'Login Page', icon: 'fa-sign-in', url: 'assets/pages/login.html', target: '_blank'},
@@ -98,16 +98,18 @@ export class AppMenuComponent implements OnInit {
     template: `
         <ul>
             <ng-template ngFor let-child let-i="index" [ngForOf]="(root ? item : item.items)">
-                <li [ngClass]="{'active-menuitem': isActive(i)}">
+                <li [ngClass]="{'active-menuitem': isActive(i)}" [class]="child.badgeStyleClass">
                     <a *ngIf="!child.routerLink" [href]="child.url||'#'" (click)="itemClick($event,child,i)"  [attr.tabindex]="!visible ? '-1' : null"  [attr.target]="child.target">
                         <i class="fa fa-fw" [ngClass]="child.icon"></i>
                         <span>{{child.label}}</span>
+                        <span class="menuitem-badge" *ngIf="child.badge">{{child.badge}}</span>
                         <i class="fa fa-fw fa-angle-down" *ngIf="child.items"></i>
                     </a>
                     <a *ngIf="child.routerLink" (click)="itemClick($event,child,i)" [attr.target]="child.target"
                         [routerLink]="child.routerLink" routerLinkActive="active-menuitem-routerlink" [routerLinkActiveOptions]="{exact: true}">
                         <i class="fa fa-fw" [ngClass]="child.icon"></i>
                         <span>{{child.label}}</span>
+                        <span class="menuitem-badge" *ngIf="child.badge">{{child.badge}}</span>
                         <i class="fa fa-fw fa-angle-down" *ngIf="child.items"></i>
                     </a>
                     <ul app-submenu [item]="child" *ngIf="child.items" [@children]="isActive(i) ? 'visible' : 'hidden'" ></ul>
@@ -146,16 +148,9 @@ export class AppSubMenu {
         
         this.activeIndex = (this.activeIndex === index) ? null : index;
                 
+        //execute command
         if(item.command) {
-            if(!item.eventEmitter) {
-                item.eventEmitter = new EventEmitter();
-                item.eventEmitter.subscribe(item.command);
-            }
-            
-            item.eventEmitter.emit({
-                originalEvent: event,
-                item: item
-            });
+            item.command({originalEvent: event, item: item});
         }
         
         //prevent hash change
