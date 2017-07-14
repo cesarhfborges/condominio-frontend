@@ -281,13 +281,34 @@ $navyButtonBorder: #21374f;
 $navyButtonHover: #3C6592;
 $navyButtonActive: #21374f;
 </pre>
-        </div>
+        
+        
+        <h1>Menu Item Badges</h1>
+        <p>Badges are numerical indicators of how many items are associated with a link.
+           The badge property is value of the badge and badgeStyleClass is style class of the badge.</p>
+<pre>
+label: 'Components', icon: 'list', badge: '2', badgeStyleClass: 'red-badge'
+</pre>  
+        <p>Omega layout has 4 different badge style.There is a default badge which uses the omega blue. And there is 3 other badge class for menu items.</p>
+        <ul>
+            <li>red-badge</li>
+            <li>green-badge</li>
+            <li>yellow-badge</li>
+        </ul>
         
         <h1>Migration Guide</h1> 
+        <p>4.0.1 to 4.1.0</p>
+        <ul>
+            <li>Update layout css files.</li>
+            <li>Update theme css files.</li>
+            <li>Update AppSubmenu component in app.menu.component.ts for menu item badges.</li>
+            <li>Update AppSubmenu component in app.menu.component.ts by replacing the itemClick method implementation.</li>
+        </ul>
+        
         <p>4.0.0 to 4.0.1</p>
         <ul>
             <li>Includes version updates to PrimeNG.</li>
         </ul>
-        
+        </div>
     </div>
 </div>
