@@ -1,4 +1,4 @@
-import {Component,Input,OnInit,EventEmitter,ViewChild,trigger,state,transition,style,animate,Inject,forwardRef} from '@angular/core';
+import {Component, Input, OnInit, trigger, state, transition, style, animate, Inject, forwardRef} from '@angular/core';
 import {MenuItem} from 'primeng/primeng';
 import {AppComponent} from './app.component';
 
@@ -13,7 +13,7 @@ import {AppComponent} from './app.component';
 export class AppMenuComponent implements OnInit {
 
     model: MenuItem[];
-    
+
     ngOnInit() {
         this.model = [
             {label: 'Dashboard', icon: 'fa-home', routerLink: ['/']},
@@ -94,19 +94,23 @@ export class AppMenuComponent implements OnInit {
 }
 
 @Component({
+    /* tslint:disable:component-selector */
     selector: '[app-submenu]',
+    /* tslint:enable:component-selector */
     template: `
         <ul>
             <ng-template ngFor let-child let-i="index" [ngForOf]="(root ? item : item.items)">
                 <li [ngClass]="{'active-menuitem': isActive(i)}" [class]="child.badgeStyleClass">
-                    <a *ngIf="!child.routerLink" [href]="child.url||'#'" (click)="itemClick($event,child,i)"  [attr.tabindex]="!visible ? '-1' : null"  [attr.target]="child.target">
+                    <a *ngIf="!child.routerLink" [href]="child.url||'#'" (click)="itemClick($event,child,i)"
+                       [attr.tabindex]="!visible ? '-1' : null"  [attr.target]="child.target">
                         <i class="fa fa-fw" [ngClass]="child.icon"></i>
                         <span>{{child.label}}</span>
                         <span class="menuitem-badge" *ngIf="child.badge">{{child.badge}}</span>
                         <i class="fa fa-fw fa-angle-down" *ngIf="child.items"></i>
                     </a>
                     <a *ngIf="child.routerLink" (click)="itemClick($event,child,i)" [attr.target]="child.target"
-                        [routerLink]="child.routerLink" routerLinkActive="active-menuitem-routerlink" [routerLinkActiveOptions]="{exact: true}">
+                        [routerLink]="child.routerLink" routerLinkActive="active-menuitem-routerlink"
+                       [routerLinkActiveOptions]="{exact: true}">
                         <i class="fa fa-fw" [ngClass]="child.icon"></i>
                         <span>{{child.label}}</span>
                         <span class="menuitem-badge" *ngIf="child.badge">{{child.badge}}</span>
@@ -130,39 +134,39 @@ export class AppMenuComponent implements OnInit {
         ])
     ]
 })
-export class AppSubMenu {
+export class AppSubMenuComponent {
 
     @Input() item: MenuItem;
-    
+
     @Input() root: boolean;
-        
+
     activeIndex: number;
-        
+
     constructor(@Inject(forwardRef(() => AppComponent)) public app: AppComponent) {}
-        
-    itemClick(event: Event, item: MenuItem, index: number) {        
-        if(item.disabled) {
+
+    itemClick(event: Event, item: MenuItem, index: number) {
+        if (item.disabled) {
             event.preventDefault();
             return true;
         }
-        
+
         this.activeIndex = (this.activeIndex === index) ? null : index;
-                
-        //execute command
-        if(item.command) {
+
+        // execute command
+        if (item.command) {
             item.command({originalEvent: event, item: item});
         }
-        
-        //prevent hash change
-        if(item.items || (!item.url && !item.routerLink)) {
+
+        // prevent hash change
+        if (item.items || (!item.url && !item.routerLink)) {
             event.preventDefault();
         }
-        
-        if(!item.items) {
+
+        if (!item.items) {
             this.app.menuActiveMobile = false;
         }
     }
-    
+
     isActive(index: number): boolean {
         return this.activeIndex === index;
     }
