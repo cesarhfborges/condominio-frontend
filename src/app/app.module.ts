@@ -74,7 +74,7 @@ import {TreeModule} from 'primeng/primeng';
 import {TreeTableModule} from 'primeng/primeng';
 
 import {AppComponent} from './app.component';
-import {AppMenuComponent, AppSubMenuComponent} from './menu.component';
+import {AppMenuComponent, AppSubMenuComponent} from './app.menu.component';
 import {DashboardDemoComponent} from './demo/view/dashboarddemo.component';
 import {SampleDemoComponent} from './demo/view/sampledemo.component';
 import {FormsDemoComponent} from './demo/view/formsdemo.component';

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, trigger, state, transition, style, animate, Inject, forwardRef} from '@angular/core';
+import {Component, Input, OnInit, trigger, state, transition, style, animate} from '@angular/core';
 import {MenuItem} from 'primeng/primeng';
 import {AppComponent} from './app.component';
 
@@ -140,9 +140,11 @@ export class AppSubMenuComponent {
 
     @Input() root: boolean;
 
+    @Input() visible: boolean;
+
     activeIndex: number;
 
-    constructor(@Inject(forwardRef(() => AppComponent)) public app: AppComponent) {}
+    constructor(public app: AppComponent) {}
 
     itemClick(event: Event, item: MenuItem, index: number) {
         if (item.disabled) {
