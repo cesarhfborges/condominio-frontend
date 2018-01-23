@@ -20,7 +20,7 @@
             <span class="count revenue">$3,200</span>
         </div>
     </div>
-    
+
     <div class="ui-g-12 ui-md-6 ui-lg-3">
         <div class="highlight-box">
             <div class="initials" style="background-color:#007be5;color:#00448f">TV</div>
@@ -61,7 +61,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="ui-g-12 ui-md-6 ui-lg-4">
         <p-panel header="Tasks" [style]="{'height':'100%'}">
             <ul class="task-list">
@@ -98,7 +98,7 @@
             </ul>
         </p-panel>
     </div>
-    
+
     <div class="ui-g-12 ui-md-6 ui-lg-4">
         <p-panel header="Contact Us" [style]="{'text-align':'center','background':'#fff','height':'100%'}">
             <div class="ui-g">
@@ -158,12 +158,23 @@
     <div class="ui-g-12 ui-md-4">
         <div class="card">
             <h1 style="font-size:16px">Recent Sales</h1>
-            <p-dataTable [value]="cars" [style]="{'margin-bottom':'20px'}">
-                <p-column field="vin" header="Vin" sortable="true"></p-column>
-                <p-column field="year" header="Year" sortable="true"></p-column>
-                <p-column field="brand" header="Brand" sortable="true"></p-column>
-                <p-column field="color" header="Color" sortable="true"></p-column>
-            </p-dataTable>
+            <p-table [columns]="cols" [value]="cars" selectionMode="single" dataKey="vin" [(selection)]="selectedCar">
+                <ng-template pTemplate="header" let-columns>
+                    <tr>
+                      <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                        {{col.header}}
+                        <p-sortIcon [field]="col.field"></p-sortIcon>
+                      </th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-rowData let-columns="columns">
+                    <tr [pSelectableRow]="rowData">
+                      <td *ngFor="let col of columns">
+                        {{rowData[col.field]}}
+                      </td>
+                    </tr>
+                </ng-template>
+            </p-table>
         </div>
     </div>
     <div class="ui-g-12 ui-md-8">
