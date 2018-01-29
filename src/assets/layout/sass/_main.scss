@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+.ui-state-disabled {
+  cursor: default !important;
+}
+
 .wrapper {
     padding: 0;
 

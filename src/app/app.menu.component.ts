@@ -100,7 +100,7 @@ export class AppMenuComponent implements OnInit {
     template: `
         <ul>
             <ng-template ngFor let-child let-i="index" [ngForOf]="(root ? item : item.items)">
-                <li [ngClass]="{'active-menuitem': isActive(i)}" [class]="child.badgeStyleClass">
+                <li [ngClass]="{'active-menuitem': isActive(i), 'ui-state-disabled':child.disabled}" [class]="child.badgeStyleClass">
                     <a *ngIf="!child.routerLink" [href]="child.url||'#'" (click)="itemClick($event,child,i)"
                        [attr.tabindex]="!visible ? '-1' : null"  [attr.target]="child.target">
                         <i class="fa fa-fw" [ngClass]="child.icon"></i>
@@ -109,7 +109,7 @@ export class AppMenuComponent implements OnInit {
                         <i class="fa fa-fw fa-angle-down" *ngIf="child.items"></i>
                     </a>
                     <a *ngIf="child.routerLink" (click)="itemClick($event,child,i)" [attr.target]="child.target"
-                        [routerLink]="child.routerLink" routerLinkActive="active-menuitem-routerlink"
+                        [routerLink]="!child.disabled?child.routerLink:null" routerLinkActive="active-menuitem-routerlink"
                        [routerLinkActiveOptions]="{exact: true}">
                         <i class="fa fa-fw" [ngClass]="child.icon"></i>
                         <span>{{child.label}}</span>
@@ -149,7 +149,7 @@ export class AppSubMenuComponent {
     itemClick(event: Event, item: MenuItem, index: number) {
         if (item.disabled) {
             event.preventDefault();
-            return true;
+            return;
         }
 
         this.activeIndex = (this.activeIndex === index) ? null : index;
