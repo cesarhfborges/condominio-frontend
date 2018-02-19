@@ -3,7 +3,7 @@
         <div class="card docs">
 
             <h1>Current Version</h1>
-            <p>Angular 5 and PrimeNG 5</p>
+            <p>Angular 5.2 and PrimeNG 5.2</p>
 
             <h1>Getting Started</h1>
             <p>Omega Template is distributed as an Angular CLI project. If you don't have CLI installed already run the following commands to set it up. In case
@@ -147,42 +147,17 @@ export class AppMenuComponent implements OnInit &#123;
             <p>To setup Omega in an existing project, copy the <i>src/assets</i> folder to your projects folder with the same name
                 and replace the contents of as app.component.ts, app.component.html with their counterparts in Omega under <i>src/app</i> folder. In addition, copy the menu.components.ts to your project.</p>
 
-            <p>Dependencies of Omega are listed below and needs to be added to package.json</p>
-<pre>
-"primeng": "^2.0.0",             //required: PrimeNG components
-"font-awesome": "^4.7.0",        //required: PrimeNG Icons
-"jquery": "^3.1.1",              //optional: Schedule and Nanoscroller
-"chart.js": "^2.4.0",            //optional: Chart component
-"fullcalendar": "^3.1.0",        //optional: Schedule component
-"moment": "^2.17.1",             //optional: Chart and Schedule
-"quill": "^1.1.8",               //optional: Editor component
-"animate.css": "^3.5.2"          //optional: Animations
+            <p>Install PrimeNG</p>
+            <pre>
+npm install primeng@latest --save
 </pre>
 
-            <p>Add PrimeNG CSS at styles section in angular-cli.json, full list with all optional dependencies would be;</p>
-<pre>
+            <p>Add PrimeNG CSS at styles section in angular-cli.json.</p>
+
+            <pre>
 "styles": [
-    "../node_modules/font-awesome/css/font-awesome.min.css",
-    "../node_modules/primeng/resources/themes/omega/theme.css",
-    "assets/layout/css/layout.css",
-    "../node_modules/primeng/resources/primeng.min.css",
-    "../node_modules/fullcalendar/dist/fullcalendar.min.css",
-    "../node_modules/quill/dist/quill.snow.css",
-    "../node_modules/nanoscroller/bin/css/nanoscroller.css",
-    "../node_modules/animate.css/animate.css",
-    "styles.css"
-],
-</pre>
-
-            <p>Add the following scripts to your angular-cli.json, full list with all optional dependencies would be;</p>
-<pre>
-"scripts": [
-    "../node_modules/jquery/dist/jquery.js",
-    "../node_modules/chart.js/dist/Chart.js",
-    "../node_modules/moment/moment.js",
-    "../node_modules/fullcalendar/dist/fullcalendar.js",
-    "../node_modules/quill/dist/quill.js",
-    "../node_modules/nanoscroller/bin/javascripts/jquery.nanoscroller.js"
+    "../node_modules/primeng/resources/primeng.min.css",        //required: PrimeNG components
+    "styles.scss"                                               //your styles and overrides
 ],
 </pre>
             <h1 id="noncli">Integration with an Existing Non-CLI Project</h1>
@@ -303,20 +278,30 @@ label: 'Components', icon: 'list', badge: '2', badgeStyleClass: 'red-badge'
         <p>For seamless updates and easier maintenance, we suggest keeping your CSS customizations in a separate sass file so that your changes
         are not overriden with an update.</p>
 
-        <p>4.1.0 to 5.0.0</p>
+        <h4>5.0.0 to 5.2.0</h4>
+        <p>Adds support for PrimeNG 5.2.0 (e.g. TurboTable), replaces nanoscroller with PrimeNG ScrollPanel.</p>
+        <ul>
+            <li>Remove nanoscroller as it is replaced by ScrollPanel component of PrimeNG.</li>
+            <li>Update app.component.ts and app.component.html.</li>
+            <li>Update app.menu.component.ts.</li>
+            <li>Update layout css files.</li>
+            <li>Update theme css files.</li>
+        </ul>
+
+        <h4>4.1.0 to 5.0.0</h4>
         <ul>
             <li>Update theme css files.</li>
             <li>Includes version updates to PrimeNG 5 and Angular 5.</li>
         </ul>
 
-        <p>4.0.1 to 4.1.0</p>
+        <h4>4.0.1 to 4.1.0</h4>
         <ul>
             <li>Update layout css files.</li>
             <li>Update theme css files.</li>
             <li>Update AppSubmenu component in app.app.menu.component.ts.</li>
         </ul>
 
-        <p>4.0.0 to 4.0.1</p>
+        <h4>4.0.0 to 4.0.1</h4>
         <ul>
             <li>Includes version updates to PrimeNG.</li>
         </ul>
