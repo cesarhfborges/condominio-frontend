@@ -401,13 +401,21 @@ a {
         }
     }
 
-    .nano {
-        .nano-pane {
-            background: transparent;
+    .ui-scrollpanel {
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        .ui-scrollpanel-bar {
+            background: rgba(255,255,255,0.1);
+        }
+        .ui-scrollpanel-hidden {
+            display: block;
+            visibility: hidden;
+        }
 
-            .nano-slider {
-                background: rgba(255,255,255,0.1);
-            }
+        .sidebar-scroll-content {
+            padding-right: 18px;
+            padding-bottom: 120px;
         }
     }
 }

@@ -4,6 +4,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { AppMenuComponent, AppSubMenuComponent } from './app.menu.component';
+import {ScrollPanel} from 'primeng/primeng';
 
 describe('AppComponent', () => {
   beforeEach(() => {
@@ -11,7 +12,8 @@ describe('AppComponent', () => {
       imports: [ RouterTestingModule ],
       declarations: [ AppComponent,
         AppMenuComponent,
-        AppSubMenuComponent
+        AppSubMenuComponent,
+          ScrollPanel
       ]
     });
     TestBed.compileComponents();

@@ -1,7 +1,6 @@
 import {Component, AfterViewInit, OnDestroy, ViewChild, ElementRef, Renderer} from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
-
-declare var jQuery: any;
+import {ScrollPanel} from 'primeng/primeng';
 
 @Component({
     selector: 'app-root',
@@ -31,9 +30,7 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
     public topMenuLeaving: boolean;
 
-    @ViewChild('scroller') public scrollerViewChild: ElementRef;
-
-    public scroller: HTMLDivElement;
+    @ViewChild('scroller') public scrollerViewChild: ScrollPanel;
 
     documentClickListener: Function;
 
@@ -44,7 +41,7 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     constructor(public renderer: Renderer) {}
 
     ngAfterViewInit() {
-        this.scroller = <HTMLDivElement> this.scrollerViewChild.nativeElement;
+        setTimeout(() => {this.scrollerViewChild.moveBar(); }, 100);
 
         // hides the overlay menu and top menu if outside is clicked
         this.documentClickListener = this.renderer.listenGlobal('body', 'click', (event) => {
@@ -113,9 +110,7 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     onMenuClick() {
         this.menuClick = true;
 
-        setTimeout(() => {
-            jQuery(this.scroller).nanoScroller();
-        }, 600);
+        setTimeout(() => {this.scrollerViewChild.moveBar(); }, 500);
     }
 
     isDesktop() {
