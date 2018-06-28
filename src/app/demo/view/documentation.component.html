@@ -3,7 +3,7 @@
         <div class="card docs">
 
             <h1>Current Version</h1>
-            <p>Angular 5.2 and PrimeNG 5.2</p>
+            <p>Angular 6 and PrimeNG 6</p>
 
             <h1>Getting Started</h1>
             <p>Omega Template is distributed as an Angular CLI project. If you don't have CLI installed already run the following commands to set it up. In case
@@ -150,13 +150,15 @@ export class AppMenuComponent implements OnInit &#123;
             <p>Install PrimeNG</p>
             <pre>
 npm install primeng@latest --save
+npm install primeicons@latest --save
 </pre>
 
-            <p>Add PrimeNG CSS at styles section in angular-cli.json.</p>
+            <p>Add PrimeNG CSS at styles section in angular.json.</p>
 
             <pre>
 "styles": [
     "../node_modules/primeng/resources/primeng.min.css",        //required: PrimeNG components
+    "node_modules/primeicons/primeicons.css",                   //required: PrimeIcons
     "styles.scss"                                               //your styles and overrides
 ],
 </pre>
@@ -278,33 +280,45 @@ label: 'Components', icon: 'list', badge: '2', badgeStyleClass: 'red-badge'
         <p>For seamless updates and easier maintenance, we suggest keeping your CSS customizations in a separate sass file so that your changes
         are not overriden with an update.</p>
 
-        <h4>5.0.0 to 5.2.0</h4>
-        <p>Adds support for PrimeNG 5.2.0 (e.g. TurboTable), replaces nanoscroller with PrimeNG ScrollPanel.</p>
-        <ul>
-            <li>Remove nanoscroller as it is replaced by ScrollPanel component of PrimeNG.</li>
-            <li>Update app.component.ts and app.component.html.</li>
-            <li>Update app.menu.component.ts.</li>
-            <li>Update layout css files.</li>
-            <li>Update theme css files.</li>
-        </ul>
+            <h4>5.2.0 to 6.0.0</h4>
+            <p>Brings support for Angular 6 and RxJS 6, adds theming for new components in PrimeNG such as the new TreeTable
+                and improves behaviors of the layout menus.</p>
+            <ul>
+                <li>Add PrimeIcons package.</li>
+                <li>Update app.module.ts.</li>
+                <li>Update app.component.ts.</li>
+                <li>Update app.menu.component.ts.</li>
+                <li>Update layout css files.</li>
+                <li>Update theme css files.</li>
+            </ul>
 
-        <h4>4.1.0 to 5.0.0</h4>
-        <ul>
-            <li>Update theme css files.</li>
-            <li>Includes version updates to PrimeNG 5 and Angular 5.</li>
-        </ul>
+            <h4>5.0.0 to 5.2.0</h4>
+            <p>Adds support for PrimeNG 5.2.0 (e.g. TurboTable), replaces nanoscroller with PrimeNG ScrollPanel.</p>
+            <ul>
+                <li>Remove nanoscroller as it is replaced by ScrollPanel component of PrimeNG.</li>
+                <li>Update app.component.ts and app.component.html.</li>
+                <li>Update app.menu.component.ts.</li>
+                <li>Update layout css files.</li>
+                <li>Update theme css files.</li>
+            </ul>
 
-        <h4>4.0.1 to 4.1.0</h4>
-        <ul>
-            <li>Update layout css files.</li>
-            <li>Update theme css files.</li>
-            <li>Update AppSubmenu component in app.app.menu.component.ts.</li>
-        </ul>
+            <h4>4.1.0 to 5.0.0</h4>
+            <ul>
+                <li>Update theme css files.</li>
+                <li>Includes version updates to PrimeNG 5 and Angular 5.</li>
+            </ul>
 
-        <h4>4.0.0 to 4.0.1</h4>
-        <ul>
-            <li>Includes version updates to PrimeNG.</li>
-        </ul>
+            <h4>4.0.1 to 4.1.0</h4>
+            <ul>
+                <li>Update layout css files.</li>
+                <li>Update theme css files.</li>
+                <li>Update AppSubmenu component in app.app.menu.component.ts.</li>
+            </ul>
+
+            <h4>4.0.0 to 4.0.1</h4>
+            <ul>
+                <li>Includes version updates to PrimeNG.</li>
+            </ul>
         </div>
     </div>
 </div>
