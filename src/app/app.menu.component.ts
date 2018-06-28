@@ -7,7 +7,7 @@ import {AppComponent} from './app.component';
     selector: 'app-menu',
     template: `
         <div class="menu">
-            <ul app-submenu [item]="model" root="true"></ul>
+            <ul app-submenu [item]="model" root="true" parentActive="true"></ul>
         </div>
     `
 })
@@ -117,7 +117,8 @@ export class AppMenuComponent implements OnInit {
                         <span class="menuitem-badge" *ngIf="child.badge">{{child.badge}}</span>
                         <i class="fa fa-fw fa-angle-down" *ngIf="child.items"></i>
                     </a>
-                    <ul app-submenu [item]="child" *ngIf="child.items" [@children]="isActive(i) ? 'visible' : 'hidden'" ></ul>
+                    <ul app-submenu [item]="child" *ngIf="child.items"
+                        [@children]="isActive(i) ? 'visible' : 'hidden'"  [parentActive]="isActive(i)"></ul>
                 </li>
             </ng-template>
         </ul>
@@ -144,6 +145,8 @@ export class AppSubMenuComponent {
     @Input() visible: boolean;
 
     activeIndex: number;
+
+    _parentActive: boolean;
 
     constructor(public app: AppComponent) {}
 
@@ -173,5 +176,17 @@ export class AppSubMenuComponent {
 
     isActive(index: number): boolean {
         return this.activeIndex === index;
+    }
+
+    @Input() get parentActive(): boolean {
+        return this._parentActive;
+    }
+
+    set parentActive(val: boolean) {
+        this._parentActive = val;
+
+        if (!this._parentActive) {
+            this.activeIndex = null;
+        }
     }
 }
