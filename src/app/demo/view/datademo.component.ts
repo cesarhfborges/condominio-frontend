@@ -1,25 +1,12 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit } from '@angular/core';
 import {CarService} from '../service/carservice';
 import {NodeService} from '../service/nodeservice';
 import {EventService} from '../service/eventservice';
 import {Car} from '../domain/car';
-import {TreeNode} from 'primeng/primeng';
+import {TreeNode, SelectItem} from 'primeng/primeng';
 
 @Component({
-    templateUrl: './datademo.component.html',
-    styles: [`
-        .cars-datalist ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        @media (max-width:640px) {
-            .cars-datalist .text-column {
-                text-align: center;
-            }
-        }
-    `],
-    encapsulation: ViewEncapsulation.None
+    templateUrl: './datademo.component.html'
 })
 export class DataDemoComponent implements OnInit {
 
@@ -28,7 +15,7 @@ export class DataDemoComponent implements OnInit {
     cars2: Car[];
 
     cols: any[];
-    
+
     cols2: any[];
 
     data: TreeNode[];
@@ -49,24 +36,28 @@ export class DataDemoComponent implements OnInit {
 
     files2: TreeNode[];
 
+    files3: TreeNode[];
+
+    files4: TreeNode[];
+
     events: any[];
-    
+
     selectedNode1: TreeNode;
-    
+
     selectedNode2: TreeNode;
-    
+
     selectedNode3: TreeNode;
-    
+
     selectedNodes: TreeNode[];
 
     scheduleHeader: any;
-    
+
     sortOptions: SelectItem[];
-    
+
     sortKey: string;
-    
+
     sortField: string;
-    
+
     sortOrder: number;
 
     constructor(private carService: CarService, private eventService: EventService, private nodeService: NodeService) { }
@@ -138,17 +129,17 @@ export class DataDemoComponent implements OnInit {
                 }
             ]
         }];
-    
+
         this.sortOptions = [
             { label: 'Newest First', value: '!year' },
             { label: 'Oldest First', value: 'year' },
             { label: 'Brand', value: 'brand' }
         ];
     }
-    
+
     onSortChange(event) {
         const value = event.value;
-        
+
         if (value.indexOf('!') === 0) {
             this.sortOrder = -1;
             this.sortField = value.substring(1, value.length);
