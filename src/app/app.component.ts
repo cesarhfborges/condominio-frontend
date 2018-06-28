@@ -1,4 +1,4 @@
-import {Component, AfterViewInit, OnDestroy, ViewChild, ElementRef, Renderer} from '@angular/core';
+import {Component, AfterViewInit, OnDestroy, ViewChild, Renderer2} from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
 import {ScrollPanel} from 'primeng/primeng';
 
@@ -38,13 +38,13 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
     topMenuButtonClick: boolean;
 
-    constructor(public renderer: Renderer) {}
+    constructor(public renderer: Renderer2) {}
 
     ngAfterViewInit() {
         setTimeout(() => {this.scrollerViewChild.moveBar(); }, 100);
 
         // hides the overlay menu and top menu if outside is clicked
-        this.documentClickListener = this.renderer.listenGlobal('body', 'click', (event) => {
+        this.documentClickListener = this.renderer.listen('body', 'click', (event) => {
             if (!this.isDesktop()) {
                 if (!this.menuClick) {
                     this.menuActiveMobile = false;
