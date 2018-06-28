@@ -17,79 +17,79 @@ export class AppMenuComponent implements OnInit {
 
     ngOnInit() {
         this.model = [
-            {label: 'Dashboard', icon: 'fa-home', routerLink: ['/']},
+            {label: 'Dashboard', icon: 'fa fa-fw fa-home', routerLink: ['/']},
             {
-                label: 'Components', icon: 'fa-home', badge: '2',
+                label: 'Components', icon: 'fa fa-fw fa-home', badge: '2',
                 items: [
-                    {label: 'Sample Page', icon: 'fa-columns', routerLink: ['/sample']},
-                    {label: 'Forms', icon: 'fa-code', routerLink: ['/forms']},
-                    {label: 'Data', icon: 'fa-table', routerLink: ['/data']},
-                    {label: 'Panels', icon: 'fa-list-alt', routerLink: ['/panels']},
-                    {label: 'Overlays', icon: 'fa-square', routerLink: ['/overlays']},
-                    {label: 'Menus', icon: 'fa-minus-square-o', routerLink: ['/menus']},
-                    {label: 'Messages', icon: 'fa-circle-o-notch', routerLink: ['/messages']},
-                    {label: 'Charts', icon: 'fa-area-chart', routerLink: ['/charts']},
-                    {label: 'File', icon: 'fa-columns', routerLink: ['/file']},
-                    {label: 'Misc', icon: 'fa-arrow-circle-o-up', routerLink: ['/misc']}
+                    {label: 'Sample Page', icon: 'fa fa-fw fa-columns', routerLink: ['/sample']},
+                    {label: 'Forms', icon: 'fa fa-fw fa-code', routerLink: ['/forms']},
+                    {label: 'Data', icon: 'fa fa-fw fa-table', routerLink: ['/data']},
+                    {label: 'Panels', icon: 'fa fa-fw fa-list-alt', routerLink: ['/panels']},
+                    {label: 'Overlays', icon: 'fa fa-fw fa-square', routerLink: ['/overlays']},
+                    {label: 'Menus', icon: 'fa fa-fw fa-minus-square-o', routerLink: ['/menus']},
+                    {label: 'Messages', icon: 'fa fa-fw fa-circle-o-notch', routerLink: ['/messages']},
+                    {label: 'Charts', icon: 'fa fa-fw fa-area-chart', routerLink: ['/charts']},
+                    {label: 'File', icon: 'fa fa-fw fa-columns', routerLink: ['/file']},
+                    {label: 'Misc', icon: 'fa fa-fw fa-arrow-circle-o-up', routerLink: ['/misc']}
                 ]
             },
-            {label: 'Landing', icon: 'fa-certificate', url: 'assets/pages/landing.html', target: '_blank'},
+            {label: 'Landing', icon: 'fa fa-fw fa-certificate', url: 'assets/pages/landing.html', target: '_blank'},
             {
-                label: 'Template Pages', icon: 'fa-life-saver', badge: '8', badgeStyleClass: 'green-badge',
+                label: 'Template Pages', icon: 'fa fa-fw fa-life-saver', badge: '8', badgeStyleClass: 'green-badge',
                 items: [
-                    {label: 'Empty Page', icon: 'fa-square-o', routerLink: ['/empty']},
-                    {label: 'Login Page', icon: 'fa-sign-in', url: 'assets/pages/login.html', target: '_blank'},
-                    {label: 'Error Page', icon: 'fa-exclamation-circle', url: 'assets/pages/error.html', target: '_blank'},
-                    {label: '404 Page', icon: 'fa-times', url: 'assets/pages/404.html', target: '_blank'},
-                    {label: 'Access Denied Page', icon: 'fa-exclamation-triangle', url: 'assets/pages/access.html', target: '_blank'}
+                    {label: 'Empty Page', icon: 'fa fa-fw fa-square-o', routerLink: ['/empty']},
+                    {label: 'Login Page', icon: 'fa fa-fw fa-sign-in', url: 'assets/pages/login.html', target: '_blank'},
+                    {label: 'Error Page', icon: 'fa fa-fw fa-exclamation-circle', url: 'assets/pages/error.html', target: '_blank'},
+                    {label: '404 Page', icon: 'fa fa-fw fa-times', url: 'assets/pages/404.html', target: '_blank'},
+                    {label: 'Access Denied', icon: 'fa fa-fw fa-exclamation-triangle', url: 'assets/pages/access.html', target: '_blank'}
                 ]
             },
             {
-                label: 'Menu Hierarchy', icon: 'fa-gg',
+                label: 'Menu Hierarchy', icon: 'fa fa-fw fa-gg',
                 items: [
                     {
-                        label: 'Submenu 1', icon: 'fa-sign-in',
+                        label: 'Submenu 1', icon: 'fa fa-fw fa-sign-in',
                         items: [
                             {
-                                label: 'Submenu 1.1', icon: 'fa-sign-in',
+                                label: 'Submenu 1.1', icon: 'fa fa-fw fa-sign-in',
                                 items: [
-                                    {label: 'Submenu 1.1.1', icon: 'fa-sign-in'},
-                                    {label: 'Submenu 1.1.2', icon: 'fa-sign-in'},
-                                    {label: 'Submenu 1.1.3', icon: 'fa-sign-in'},
+                                    {label: 'Submenu 1.1.1', icon: 'fa fa-fw fa-sign-in'},
+                                    {label: 'Submenu 1.1.2', icon: 'fa fa-fw fa-sign-in'},
+                                    {label: 'Submenu 1.1.3', icon: 'fa fa-fw fa-sign-in'},
                                 ]
                             },
                             {
-                                label: 'Submenu 1.2', icon: 'fa-sign-in',
+                                label: 'Submenu 1.2', icon: 'fa fa-fw fa-sign-in',
                                 items: [
-                                    {label: 'Submenu 1.2.1', icon: 'fa-sign-in'},
-                                    {label: 'Submenu 1.2.2', icon: 'fa-sign-in'}
+                                    {label: 'Submenu 1.2.1', icon: 'fa fa-fw fa-sign-in'},
+                                    {label: 'Submenu 1.2.2', icon: 'fa fa-fw fa-sign-in'}
                                 ]
                             },
                         ]
                     },
                     {
-                        label: 'Submenu 2', icon: 'fa-sign-in',
+                        label: 'Submenu 2', icon: 'fa fa-fw fa-sign-in',
                         items: [
                             {
-                                label: 'Submenu 2.1', icon: 'fa-sign-in',
+                                label: 'Submenu 2.1', icon: 'fa fa-fw fa-sign-in',
                                 items: [
-                                    {label: 'Submenu 2.1.1', icon: 'fa-sign-in'},
-                                    {label: 'Submenu 2.1.2', icon: 'fa-sign-in'},
-                                    {label: 'Submenu 2.1.3', icon: 'fa-sign-in'},
+                                    {label: 'Submenu 2.1.1', icon: 'fa fa-fw fa-sign-in'},
+                                    {label: 'Submenu 2.1.2', icon: 'fa fa-fw fa-sign-in'},
+                                    {label: 'Submenu 2.1.3', icon: 'fa fa-fw fa-sign-in'},
                                 ]
                             },
                             {
-                                label: 'Submenu 2.2', icon: 'fa-sign-in',
+                                label: 'Submenu 2.2', icon: 'fa fa-fw fa-sign-in',
                                 items: [
-                                    {label: 'Submenu 2.2.1', icon: 'fa-sign-in'},
-                                    {label: 'Submenu 2.2.2', icon: 'fa-sign-in'}
+                                    {label: 'Submenu 2.2.1', icon: 'fa fa-fw fa-sign-in'},
+                                    {label: 'Submenu 2.2.2', icon: 'fa fa-fw fa-sign-in'}
                                 ]
                             },
                         ]
                     }
                 ]
             },
-            {label: 'Documentation', icon: 'fa-book', routerLink: ['/documentation']}
+            {label: 'Documentation', icon: 'fa fa-fw fa-book', routerLink: ['/documentation']}
         ];
     }
 }
@@ -104,7 +104,7 @@ export class AppMenuComponent implements OnInit {
                 <li [ngClass]="{'active-menuitem': isActive(i), 'ui-state-disabled':child.disabled}" [class]="child.badgeStyleClass">
                     <a *ngIf="!child.routerLink" [href]="child.url||'#'" (click)="itemClick($event,child,i)"
                        [attr.tabindex]="!visible ? '-1' : null"  [attr.target]="child.target">
-                        <i class="fa fa-fw" [ngClass]="child.icon"></i>
+                        <i [ngClass]="child.icon"></i>
                         <span>{{child.label}}</span>
                         <span class="menuitem-badge" *ngIf="child.badge">{{child.badge}}</span>
                         <i class="fa fa-fw fa-angle-down" *ngIf="child.items"></i>
@@ -112,7 +112,7 @@ export class AppMenuComponent implements OnInit {
                     <a *ngIf="child.routerLink" (click)="itemClick($event,child,i)" [attr.target]="child.target"
                         [routerLink]="!child.disabled?child.routerLink:null" routerLinkActive="active-menuitem-routerlink"
                        [routerLinkActiveOptions]="{exact: true}">
-                        <i class="fa fa-fw" [ngClass]="child.icon"></i>
+                        <i [ngClass]="child.icon"></i>
                         <span>{{child.label}}</span>
                         <span class="menuitem-badge" *ngIf="child.badge">{{child.badge}}</span>
                         <i class="fa fa-fw fa-angle-down" *ngIf="child.items"></i>

@@ -131,6 +131,77 @@ body {
         }
     }
 
+    /*Severity Buttons*/
+    .ui-button.ui-state-default.ui-button-secondary, .ui-buttonset.ui-button-secondary > .ui-button.ui-state-default  {
+        &:enabled:focus {
+            outline: 0 none;
+        }
+    }
+
+    .ui-button.ui-state-default.ui-button-info, .ui-buttonset.ui-button-info > .ui-button.ui-state-default  {
+        background-color: $blueButton;
+        border-color: $blueButtonBorder;
+
+        &:enabled:hover {
+            background-color:  $blueButtonHover;
+            border-color: $blueButtonBorder;
+        }
+
+        &:enabled:focus {
+            outline: 0 none;
+            background-color: $blueButtonActive;
+            border-color: $blueButtonBorder;
+        }
+    }
+
+    .ui-button.ui-state-default.ui-button-success, .ui-buttonset.ui-button-success > .ui-button.ui-state-default  {
+        background-color: $greenButton;
+        border-color: $greenButtonBorder;
+
+        &:enabled:hover {
+            background-color:  $greenButtonHover;
+            border-color: $greenButtonBorder;
+        }
+
+        &:enabled:focus {
+            outline: 0 none;
+            background-color: $greenButtonActive;
+            border-color: $greenButtonBorder;
+        }
+    }
+
+    .ui-button.ui-state-default.ui-button-warning, .ui-buttonset.ui-button-warning > .ui-button.ui-state-default  {
+        background-color: $yellowButton;
+        border-color: $yellowButtonBorder;
+
+        &:enabled:hover {
+            background-color:  $yellowButtonHover;
+            border-color: $yellowButtonBorder;
+        }
+
+        &:enabled:focus {
+            outline: 0 none;
+            background-color: $yellowButtonHover;
+            border-color: $yellowButtonBorder;
+        }
+    }
+
+    .ui-button.ui-state-default.ui-button-danger, .ui-buttonset.ui-button-danger > .ui-button.ui-state-default  {
+        background-color: $redButton;
+        border-color: $redButtonBorder;
+
+        &:enabled:hover {
+            background-color:  $redButtonHover;
+            border-color: $redButtonBorder;
+        }
+
+        &:enabled:focus {
+            outline: 0 none;
+            background-color: $redButtonActive;
+            border-color: $redButtonBorder;
+        }
+    }
+
     .ui-datepicker {
         width: auto;
     }
@@ -142,5 +213,21 @@ body {
 
     .ui-megamenu .ui-megamenu-panel {
         background-color: #f6f7f9;
+    }
+
+
+
+    .ui-carousel {
+        .ui-carousel-page-links {
+            .ui-carousel-page-link {
+                &.pi-circle-off {
+                    @include icon-override("\F10C")
+                }
+
+                &.pi-circle-on {
+                    @include icon-override("\F192")
+                }
+            }
+        }
     }
 }
