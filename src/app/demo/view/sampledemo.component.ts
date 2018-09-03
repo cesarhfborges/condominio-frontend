@@ -91,9 +91,9 @@ export class SampleDemoComponent implements OnInit {
         this.cities2 = this.cities1.slice(1, 6);
 
         this.splitButtonItems = [
-            {label: 'Update', icon: 'fa fa-refresh'},
-            {label: 'Delete', icon: 'fa fa-close'},
-            {label: 'Home', icon: 'fa fa-home', url: 'http://www.primefaces.org/primeng'}
+            {label: 'Update', icon: 'fa fa-fw fa-refresh'},
+            {label: 'Delete', icon: 'fa fa-fw fa-close'},
+            {label: 'Home', icon: 'fa fa-fw fa-home', url: 'http://www.primefaces.org/primeng'}
         ];
 
         this.carOptions = [];
@@ -116,26 +116,26 @@ export class SampleDemoComponent implements OnInit {
         this.menuItems = [{
             label: 'File',
             items: [
-                {label: 'New', icon: 'fa fa-plus'},
-                {label: 'Open', icon: 'fa fa-external-link'}
+                {label: 'New', icon: 'fa fa-fw fa-plus'},
+                {label: 'Open', icon: 'fa fa-fw fa-external-link'}
             ]
         },
         {
             label: 'Edit',
             items: [
-                {label: 'Copy', icon: 'fa fa-copy'},
-                {label: 'Cut', icon: 'fa fa-cut'},
-                {label: 'Paste', icon: 'fa fa-paste'}
+                {label: 'Copy', icon: 'fa fa-fw fa-copy'},
+                {label: 'Cut', icon: 'fa fa-fw fa-cut'},
+                {label: 'Paste', icon: 'fa fa-fw fa-paste'}
             ]
         }];
 
         this.panelMenuItems = [
             {
                 label: 'File',
-                icon: 'fa fa-file-o',
+                icon: 'fa fa-fw fa-file-o',
                 items: [{
                         label: 'New',
-                        icon: 'fa fa-plus',
+                        icon: 'fa fa-fw fa-plus',
                         items: [
                             {label: 'Project'},
                             {label: 'Other'},
@@ -147,22 +147,22 @@ export class SampleDemoComponent implements OnInit {
             },
             {
                 label: 'Edit',
-                icon: 'fa fa-edit',
+                icon: 'fa fa-fw fa-edit',
                 items: [
-                    {label: 'Undo', icon: 'fa fa-mail-forward'},
-                    {label: 'Redo', icon: 'fa fa-mail-reply'}
+                    {label: 'Undo', icon: 'fa fa-fw fa-mail-forward'},
+                    {label: 'Redo', icon: 'fa fa-fw fa-mail-reply'}
                 ]
             },
             {
                 label: 'Help',
-                icon: 'fa fa-question',
+                icon: 'fa fa-fw fa-question',
                 items: [
                     {
                         label: 'Contents'
                     },
                     {
                         label: 'Search',
-                        icon: 'fa fa-search',
+                        icon: 'fa fa-fw fa-search',
                         items: [
                             {
                                 label: 'Text',
@@ -180,21 +180,21 @@ export class SampleDemoComponent implements OnInit {
             },
             {
                 label: 'Actions',
-                icon: 'fa fa-gear',
+                icon: 'fa fa-fw fa-gear',
                 items: [
                     {
                         label: 'Edit',
-                        icon: 'fa fa-refresh',
+                        icon: 'fa fa-fw fa-refresh',
                         items: [
-                            {label: 'Save', icon: 'fa fa-save'},
-                            {label: 'Update', icon: 'fa fa-save'},
+                            {label: 'Save', icon: 'fa fa-fw fa-save'},
+                            {label: 'Update', icon: 'fa fa-fw fa-save'},
                         ]
                     },
                     {
                         label: 'Other',
-                        icon: 'fa fa-phone',
+                        icon: 'fa fa-fw fa-phone',
                         items: [
-                            {label: 'Delete', icon: 'fa fa-minus'}
+                            {label: 'Delete', icon: 'fa fa-fw fa-minus'}
                         ]
                     }
                 ]

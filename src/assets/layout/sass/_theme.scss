@@ -258,6 +258,10 @@ body {
         width: auto;
     }
 
+    .ui-calendar .ui-datepicker {
+        min-width: 17em;
+    }
+
     .ui-splitbutton.ui-buttonset .ui-menu {
         width: 100%;
         min-width: 12.5em;
