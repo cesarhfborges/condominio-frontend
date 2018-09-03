@@ -278,6 +278,7 @@ a {
                     .fa:last-child {
                         float: right;
                         font-size: 16px;
+                        transition: transform .3s;
                     }
 
                     &:hover {
@@ -285,7 +286,7 @@ a {
                         color: $menuitemHoverColor;
 
                         .menu-badge {
-                            color: #ffffff;
+                            color:#ffffff;
                         }
                     }
                 }
@@ -298,7 +299,8 @@ a {
 
 
                         .fa:last-child {
-                            @include icon-override("\f106");
+                            transform: rotate(180deg);
+                            transition: transform .3s;
                             font-size: 16px;
                         }
                     }

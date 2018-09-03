@@ -219,17 +219,7 @@ body {
         width: auto;
     }
 
-    .ui-carousel {
-        .ui-carousel-page-links {
-            .ui-carousel-page-link {
-                &.pi-circle-off {
-                    @include icon-override("\F10C")
-                }
-
-                &.pi-circle-on {
-                    @include icon-override("\F192")
-                }
-            }
-        }
+    .ui-toolbar-separator {
+        margin: 0 .5em;
     }
 }
