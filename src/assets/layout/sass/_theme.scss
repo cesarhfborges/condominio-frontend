@@ -10,6 +10,10 @@ body {
                     background-color: $greenButtonHover;
                 }
 
+                &:enabled:focus {
+                    background-color: lighten($greenButtonHover, 5%);
+                }
+
                 &:enabled:active {
                     background-color: $greenButtonActive;
                 }
@@ -26,6 +30,10 @@ body {
 
                 &:enabled:hover {
                     background-color: $yellowButtonHover;
+                }
+
+                &:enabled:focus {
+                    background-color: lighten($yellowButtonHover, 5%);
                 }
 
                 &:enabled:active {
@@ -46,6 +54,10 @@ body {
                     background-color: $redButtonHover;
                 }
 
+                &:enabled:focus {
+                    background-color: lighten($redButtonHover, 5%);
+                }
+
                 &:enabled:active {
                     background-color: $redButtonActive;
                 }
@@ -62,6 +74,10 @@ body {
 
                 &:enabled:hover {
                     background-color: $aquaButtonHover;
+                }
+
+                &:enabled:focus {
+                    background-color: lighten($aquaButtonHover, 5%);
                 }
 
                 &:enabled:active {
@@ -82,6 +98,10 @@ body {
                     background-color: $navyButtonHover;
                 }
 
+                &:enabled:focus {
+                    background-color: lighten($navyButtonHover, 5%);
+                }
+
                 &:enabled:active {
                     background-color: $navyButtonActive;
                 }
@@ -98,6 +118,10 @@ body {
 
                 &:enabled:hover {
                     background-color: $blackButtonHover;
+                }
+
+                &:enabled:focus {
+                    background-color: lighten($blackButtonHover, 5%);
                 }
 
                 &:enabled:active {
@@ -122,6 +146,10 @@ body {
 
                 &:enabled:hover {
                     background-color: $greyButtonHover;
+                }
+
+                &:enabled:focus {
+                    background-color: lighten($greyButtonHover, 5%);
                 }
 
                 &:enabled:active {
@@ -149,6 +177,12 @@ body {
 
         &:enabled:focus {
             outline: 0 none;
+            background-color:  lighten($blueButtonHover, 5%);
+            border-color: $blueButtonBorder;
+        }
+
+        &:enabled:active {
+            outline: 0 none;
             background-color: $blueButtonActive;
             border-color: $blueButtonBorder;
         }
@@ -164,6 +198,12 @@ body {
         }
 
         &:enabled:focus {
+            outline: 0 none;
+            background-color:  lighten($greenButtonHover, 5%);
+            border-color: $greenButtonBorder;
+        }
+
+        &:enabled:active {
             outline: 0 none;
             background-color: $greenButtonActive;
             border-color: $greenButtonBorder;
@@ -181,7 +221,13 @@ body {
 
         &:enabled:focus {
             outline: 0 none;
-            background-color: $yellowButtonHover;
+            background-color:  lighten($yellowButtonHover, 5%);
+            border-color: $yellowButtonBorder;
+        }
+
+        &:enabled:active {
+            outline: 0 none;
+            background-color: $yellowButtonActive;
             border-color: $yellowButtonBorder;
         }
     }
@@ -196,6 +242,12 @@ body {
         }
 
         &:enabled:focus {
+            outline: 0 none;
+            background-color:  lighten($redButtonHover, 5%);
+            border-color: $redButtonBorder;
+        }
+
+        &:enabled:active {
             outline: 0 none;
             background-color: $redButtonActive;
             border-color: $redButtonBorder;
