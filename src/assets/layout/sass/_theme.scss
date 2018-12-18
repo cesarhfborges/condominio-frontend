@@ -278,4 +278,12 @@ body {
     .ui-toolbar-separator {
         margin: 0 .5em;
     }
+
+    .ui-virtualscroller {
+        .ui-virtualscroller-list {
+            li {
+                border-bottom: 1px solid #d9d9d9;
+            }
+        }
+    }
 }

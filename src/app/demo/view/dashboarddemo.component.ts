@@ -25,6 +25,8 @@ export class DashboardDemoComponent implements OnInit {
 
     selectedCar: Car;
 
+    fullcalendarOptions: any;
+
     constructor(private carService: CarService, private eventService: EventService) { }
 
     ngOnInit() {
@@ -69,6 +71,10 @@ export class DashboardDemoComponent implements OnInit {
             left: 'prev,next today',
             center: 'title',
             right: 'month,agendaWeek,agendaDay'
+        };
+
+        this.fullcalendarOptions = {
+            defaultDate: '2016-01-12'
         };
     }
 }
