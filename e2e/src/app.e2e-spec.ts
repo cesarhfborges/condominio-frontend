@@ -1,9 +1,14 @@
-import { OmegaPage } from './app.po';
+import {OmegaPage} from './app.po';
 
-describe('omega App', function() {
-  let page: OmegaPage;
+describe('Omega App', () => {
+    let page: OmegaPage;
 
-  beforeEach(() => {
-    page = new OmegaPage();
-  });
+    beforeEach(() => {
+        page = new OmegaPage();
+    });
+
+    it('should display welcome message', () => {
+        page.navigateTo();
+        expect(page.getTitleText()).toEqual('Welcome to Omega!');
+    });
 });

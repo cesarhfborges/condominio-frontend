@@ -30,9 +30,9 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
     public topMenuLeaving: boolean;
 
-    @ViewChild('scroller') public scrollerViewChild: ScrollPanel;
+    @ViewChild('scroller', { static: true }) public scrollerViewChild: ScrollPanel;
 
-    documentClickListener: Function;
+    documentClickListener: () => void;
 
     menuClick: boolean;
 
