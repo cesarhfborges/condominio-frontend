@@ -1,6 +1,6 @@
 import {Component, AfterViewInit, OnDestroy, ViewChild, Renderer2} from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
-import {ScrollPanel} from 'primeng/primeng';
+import {ScrollPanel} from 'primeng/scrollpanel';
 
 @Component({
     selector: 'app-root',

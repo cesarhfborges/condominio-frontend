@@ -11,6 +11,106 @@ import interactionPlugin from '@fullcalendar/interaction';
 @Component({
     templateUrl: './datademo.component.html',
     styles: [`
+         /* Table */
+         .ui-table.ui-table-cars .ui-table-caption.ui-widget-header {
+            border: 0 none;
+            padding: 12px;
+            text-align: left;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .ui-table .ui-table-globalfilter-container {
+            position: relative;
+            top: -4px;
+        }
+
+        .ui-column-filter {
+            margin-top: 1em;
+        }
+
+        .ui-column-filter .ui-multiselect-label {
+            font-weight: 500;
+        }
+
+        .ui-table.ui-table-cars .ui-table-thead > tr > th {
+            border: 0 none;
+            text-align: left;
+        }
+
+        .ui-table-globalfilter-container {
+            float: right;
+            display: inline;
+        }
+
+        .ui-table.ui-table-cars .ui-table-tbody > tr > td {
+            border: 0 none;
+        }
+
+        .ui-table.ui-table-cars .ui-table-tbody .ui-column-title {
+            font-size: 16px;
+        }
+
+        .ui-table.ui-table-cars .ui-paginator {
+            border: 0 none;
+            padding: 1em;
+        }
+
+        /* DataView */
+        .filter-container {
+            text-align: center;
+        }
+
+        .car-details-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em;
+            border-bottom: 1px solid #d9dad9;
+        }
+
+        .car-details-list > div {
+            display: flex;
+            align-items: center;
+        }
+
+        .car-details-list > div img {
+            margin-right: 14px;
+        }
+
+        .car-detail {
+            padding: 0 1em 1em 1em;
+            border-bottom: 1px solid #d9dad9;
+            margin: 1em;
+        }
+
+        .ui-panel-content {
+            padding: 1em;
+        }
+
+        @media (max-width: 1024px) {
+            .car-details-list img {
+                width: 75px;
+            }
+
+            .filter-container {
+                text-align: left;
+            }
+        }
+
+        /* Carousel */
+        .car-item {
+            padding-top: 5px;
+        }
+
+        .title-container {
+            padding: 1em;
+            text-align: right;
+        }
+
+        .sort-container {
+            text-align: left;
+        }
         .car-item {
             padding-top: 5px;
         }
@@ -44,15 +144,38 @@ import interactionPlugin from '@fullcalendar/interaction';
             animation: pulse 1s infinite ease-in-out;
         }
 
-        .title-container {
-            padding: 1em;
-            text-align: right;
+        .ui-carousel .ui-carousel-content .ui-carousel-item .car-details > .p-grid {
+            border: 1px solid #b3c2ca;
+            border-radius: 3px;
+            margin: 0.3em;
+            text-align: center;
+            padding: 2em 0 2.25em 0;
         }
-
-        .sort-container {
-            text-align: left;
+        .ui-carousel .ui-carousel-content .ui-carousel-item .car-data .car-title {
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 24px;
         }
-
+        .ui-carousel .ui-carousel-content .ui-carousel-item .car-data .car-subtitle {
+            margin: 0.25em 0 2em 0;
+        }
+        .ui-carousel .ui-carousel-content .ui-carousel-item .car-data button {
+            margin-left: 0.5em;
+        }
+        .ui-carousel .ui-carousel-content .ui-carousel-item .car-data button:first-child {
+            margin-left: 0;
+        }
+        .ui-carousel.custom-carousel .ui-carousel-dot-icon {
+            width: 16px !important;
+            height: 16px !important;
+            border-radius: 50%;
+        }
+        .ui-carousel.ui-carousel-horizontal .ui-carousel-content .ui-carousel-item.ui-carousel-item-start .car-details > .p-grid {
+            margin-left: 0.6em;
+        }
+        .ui-carousel.ui-carousel-horizontal .ui-carousel-content .ui-carousel-item.ui-carousel-item-end .car-details > .p-grid {
+            margin-right: 0.6em;
+        }
         @media (max-width: 40em) {
             .car-item {
                 text-align: center;
@@ -93,6 +216,10 @@ export class DataDemoComponent implements OnInit {
     cols2: any[];
 
     data: TreeNode[];
+
+    brands: SelectItem[];
+
+    colors: SelectItem[];
 
     selectedNodeOrg: TreeNode;
 
@@ -139,7 +266,7 @@ export class DataDemoComponent implements OnInit {
     constructor(private carService: CarService, private eventService: EventService, private nodeService: NodeService) { }
 
     ngOnInit() {
-        this.carService.getCarsMedium().then(cars => this.cars1 = cars);
+        this.carService.getCarsLarge().then(cars => this.cars1 = cars);
         this.cols = [
             { field: 'vin', header: 'Vin' },
             { field: 'year', header: 'Year' },
@@ -173,7 +300,28 @@ export class DataDemoComponent implements OnInit {
             {vin: '45665e5', year: 2011, brand: 'Mercedes', color: 'Brown'},
             {vin: 'he6sb5v', year: 2015, brand: 'Ford', color: 'Black'}
         ];
-
+        this.brands = [
+            { label: 'Audi', value: 'Audi' },
+            { label: 'BMW', value: 'BMW' },
+            { label: 'Fiat', value: 'Fiat' },
+            { label: 'Honda', value: 'Honda' },
+            { label: 'Jaguar', value: 'Jaguar' },
+            { label: 'Mercedes', value: 'Mercedes' },
+            { label: 'Renault', value: 'Renault' },
+            { label: 'VW', value: 'VW' },
+            { label: 'Volvo', value: 'Volvo' }
+        ];
+        this.colors = [
+            { label: 'White', value: 'White' },
+            { label: 'Green', value: 'Green' },
+            { label: 'Silver', value: 'Silver' },
+            { label: 'Black', value: 'Black' },
+            { label: 'Red', value: 'Red' },
+            { label: 'Maroon', value: 'Maroon' },
+            { label: 'Brown', value: 'Brown' },
+            { label: 'Orange', value: 'Orange' },
+            { label: 'Blue', value: 'Blue' }
+        ];
         this.fullcalendarOptions = {
             plugins: [ dayGridPlugin, timeGridPlugin, interactionPlugin ],
             defaultDate: '2016-01-12',

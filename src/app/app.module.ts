@@ -28,7 +28,6 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { FileUploadModule } from 'primeng/fileupload';
 import { FullCalendarModule } from 'primeng/fullcalendar';
 import { GalleriaModule } from 'primeng/galleria';
-import { GrowlModule } from 'primeng/growl';
 import { InplaceModule } from 'primeng/inplace';
 import { InputMaskModule } from 'primeng/inputmask';
 import { InputSwitchModule } from 'primeng/inputswitch';
@@ -75,6 +74,7 @@ import { VirtualScrollerModule } from 'primeng/virtualscroller';
 
 import {AppComponent} from './app.component';
 import {AppMenuComponent, AppSubMenuComponent} from './app.menu.component';
+import {AppMenuitemComponent} from './app.menuitem.component';
 import {DashboardDemoComponent} from './demo/view/dashboarddemo.component';
 import {SampleDemoComponent} from './demo/view/sampledemo.component';
 import {FormsDemoComponent} from './demo/view/formsdemo.component';
@@ -94,6 +94,7 @@ import {CarService} from './demo/service/carservice';
 import {CountryService} from './demo/service/countryservice';
 import {EventService} from './demo/service/eventservice';
 import {NodeService} from './demo/service/nodeservice';
+import {MenuService} from './app.menu.service';
 
 @NgModule({
     imports: [
@@ -123,7 +124,6 @@ import {NodeService} from './demo/service/nodeservice';
         FileUploadModule,
         FullCalendarModule,
         GalleriaModule,
-        GrowlModule,
         InplaceModule,
         InputMaskModule,
         InputSwitchModule,
@@ -173,6 +173,7 @@ import {NodeService} from './demo/service/nodeservice';
         AppComponent,
         AppMenuComponent,
         AppSubMenuComponent,
+        AppMenuitemComponent,
         DashboardDemoComponent,
         SampleDemoComponent,
         FormsDemoComponent,
@@ -191,7 +192,7 @@ import {NodeService} from './demo/service/nodeservice';
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
-        CarService, CountryService, EventService, NodeService
+        CarService, CountryService, EventService, NodeService, MenuService
     ],
     bootstrap: [AppComponent]
 })
