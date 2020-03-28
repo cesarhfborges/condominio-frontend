@@ -1,6 +1,5 @@
 import {Component, AfterViewInit, OnDestroy, ViewChild, Renderer2} from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
-import {ScrollPanel} from 'primeng/scrollpanel';
 
 @Component({
     selector: 'app-root',
@@ -30,8 +29,6 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
     public topMenuLeaving: boolean;
 
-    @ViewChild('scroller', { static: true }) public scrollerViewChild: ScrollPanel;
-
     documentClickListener: () => void;
 
     menuClick: boolean;
@@ -41,8 +38,6 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     constructor(public renderer: Renderer2) {}
 
     ngAfterViewInit() {
-        setTimeout(() => {this.scrollerViewChild.moveBar(); }, 100);
-
         // hides the overlay menu and top menu if outside is clicked
         this.documentClickListener = this.renderer.listen('body', 'click', (event) => {
             if (!this.isDesktop()) {
@@ -109,8 +104,6 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
     onMenuClick() {
         this.menuClick = true;
-
-        setTimeout(() => {this.scrollerViewChild.moveBar(); }, 500);
     }
 
     isDesktop() {

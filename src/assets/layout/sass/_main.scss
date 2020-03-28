@@ -163,6 +163,7 @@ a {
         width: 250px;
     	height: 100%;
         z-index: 102;
+        overflow: auto;
         @include transition(margin-left .3s);
         @include linear-gradient(#4e5159, #1f2023);
 

@@ -73,7 +73,7 @@ import { TreeTableModule } from 'primeng/treetable';
 import { VirtualScrollerModule } from 'primeng/virtualscroller';
 
 import {AppComponent} from './app.component';
-import {AppMenuComponent, AppSubMenuComponent} from './app.menu.component';
+import {AppMenuComponent} from './app.menu.component';
 import {AppMenuitemComponent} from './app.menuitem.component';
 import {DashboardDemoComponent} from './demo/view/dashboarddemo.component';
 import {SampleDemoComponent} from './demo/view/sampledemo.component';
@@ -172,7 +172,6 @@ import {MenuService} from './app.menu.service';
     declarations: [
         AppComponent,
         AppMenuComponent,
-        AppSubMenuComponent,
         AppMenuitemComponent,
         DashboardDemoComponent,
         SampleDemoComponent,
