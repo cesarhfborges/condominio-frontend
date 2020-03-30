@@ -233,6 +233,8 @@ export class DataDemoComponent implements OnInit {
 
     carouselCars: Car[];
 
+    responsiveOptions;
+
     files1: TreeNode[];
 
     files2: TreeNode[];
@@ -300,6 +302,25 @@ export class DataDemoComponent implements OnInit {
             {vin: '45665e5', year: 2011, brand: 'Mercedes', color: 'Brown'},
             {vin: 'he6sb5v', year: 2015, brand: 'Ford', color: 'Black'}
         ];
+
+        this.responsiveOptions = [
+            {
+                breakpoint: '1024px',
+                numVisible: 3,
+                numScroll: 3
+            },
+            {
+                breakpoint: '768px',
+                numVisible: 2,
+                numScroll: 2
+            },
+            {
+                breakpoint: '560px',
+                numVisible: 1,
+                numScroll: 1
+            }
+        ];
+
         this.brands = [
             { label: 'Audi', value: 'Audi' },
             { label: 'BMW', value: 'BMW' },

@@ -1,39 +1,40 @@
-import { Component, Input, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { trigger, state, style, transition, animate } from '@angular/animations';
-import { Subscription } from 'rxjs';
-import { filter } from 'rxjs/operators';
-import { MenuService } from './app.menu.service';
-import { AppComponent } from './app.component';
+import {ChangeDetectorRef, Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {NavigationEnd, Router} from '@angular/router';
+import {animate, state, style, transition, trigger} from '@angular/animations';
+import {Subscription} from 'rxjs';
+import {filter} from 'rxjs/operators';
+import {MenuService} from './app.menu.service';
+import {AppComponent} from './app.component';
 
 @Component({
     /* tslint:disable:component-selector */
     selector: '[app-menuitem]',
     /* tslint:enable:component-selector */
     template: `
-          <ng-container>
-              <a [attr.href]="item.url" (click)="itemClick($event)" *ngIf="!item.routerLink || item.items"(keydown.enter)="itemClick($event)"
-                [attr.target]="item.target" [attr.tabindex]="0">
-                    <i [ngClass]="item.icon"></i>
-                    <span>{{item.label}}</span>
-                    <span class="menuitem-badge" *ngIf="item.badge">{{item.badge}}</span>
-                    <i class="fa fa-fw fa-angle-down" *ngIf="item.items"></i>
-              </a>
-              <a (click)="itemClick($event)" *ngIf="item.routerLink && !item.items"
-                  [routerLink]="item.routerLink" routerLinkActive="active-menuitem-routerlink"
-                  [routerLinkActiveOptions]="{exact: true}" [attr.target]="item.target" [attr.tabindex]="0">
-                    <i [ngClass]="item.icon"></i>
-                    <span>{{item.label}}</span>
-                    <span class="menuitem-badge" *ngIf="item.badge">{{item.badge}}</span>
-                    <i class="fa fa-fw fa-angle-down" *ngIf="item.items"></i>
-              </a>
-              <ul *ngIf="item.items && active" [@children]="(active ? 'visibleAnimated' : 'hiddenAnimated')">
-                  <ng-template ngFor let-child let-i="index" [ngForOf]="item.items">
-                      <li app-menuitem [item]="child" [index]="i" [parentKey]="key" [class]="child.badgeClass"></li>
-                  </ng-template>
-              </ul>
-          </ng-container>
-      `,
+		<ng-container>
+			<a [attr.href]="item.url" (click)="itemClick($event)"
+			   *ngIf="!item.routerLink || item.items" (keydown.enter)="itemClick($event)"
+			   [attr.target]="item.target" [attr.tabindex]="0">
+				<i [ngClass]="item.icon"></i>
+				<span>{{item.label}}</span>
+				<span class="menuitem-badge" *ngIf="item.badge">{{item.badge}}</span>
+				<i class="fa fa-fw fa-angle-down" *ngIf="item.items"></i>
+			</a>
+			<a (click)="itemClick($event)" *ngIf="item.routerLink && !item.items"
+			   [routerLink]="item.routerLink" routerLinkActive="active-menuitem-routerlink"
+			   [routerLinkActiveOptions]="{exact: true}" [attr.target]="item.target" [attr.tabindex]="0">
+				<i [ngClass]="item.icon"></i>
+				<span>{{item.label}}</span>
+				<span class="menuitem-badge" *ngIf="item.badge">{{item.badge}}</span>
+				<i class="fa fa-fw fa-angle-down" *ngIf="item.items"></i>
+			</a>
+			<ul *ngIf="item.items && active" [@children]="(active ? 'visibleAnimated' : 'hiddenAnimated')">
+				<ng-template ngFor let-child let-i="index" [ngForOf]="item.items">
+					<li app-menuitem [item]="child" [index]="i" [parentKey]="key" [class]="child.badgeClass"></li>
+				</ng-template>
+			</ul>
+		</ng-container>
+    `,
     host: {
         '[class.active-menuitem]': 'active'
     },
@@ -65,7 +66,7 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
 
     @Input() parentKey: string;
 
-    active: boolean = false;
+    active = false;
 
     menuSourceSubscription: Subscription;
 
@@ -134,7 +135,7 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
         }
     }
 
-    ngOnDestroy() {
+    ngOnDestroy() {
         if (this.menuSourceSubscription) {
             this.menuSourceSubscription.unsubscribe();
         }
