@@ -19,6 +19,8 @@ import {AppMainComponent} from './app.main.component';
                     <label for="inputStyle2">Filled</label>
                 </div>
 
+                <hr />
+
                 <h5>Ripple Effect</h5>
                 <p-inputSwitch [ngModel]="app.ripple" (onChange)="appMain.onRippleChange($event)"></p-inputSwitch>
         </div>
