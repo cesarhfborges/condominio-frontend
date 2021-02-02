@@ -1,6 +1,7 @@
 import {Component, AfterViewInit, OnDestroy, ViewChild, Renderer2, OnInit} from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
 import { PrimeNGConfig } from 'primeng/api';
+import { AppComponent } from './app.component';
 
 @Component({
     selector: 'app-main',
@@ -40,11 +41,7 @@ export class AppMainComponent implements AfterViewInit, OnDestroy, OnInit {
 
     configClick: boolean;
 
-    inputStyle = 'outlined';
-
-    ripple = false;
-
-    constructor(public renderer: Renderer2, private primengConfig: PrimeNGConfig) {}
+    constructor(public renderer: Renderer2, private primengConfig: PrimeNGConfig, private app: AppComponent) {}
 
     ngOnInit() {
         this.primengConfig.ripple = true;
@@ -125,7 +122,8 @@ export class AppMainComponent implements AfterViewInit, OnDestroy, OnInit {
     }
 
     onRippleChange(event) {
-        this.ripple = event.checked;
+        this.app.ripple = event.checked;
+        this.primengConfig.ripple = event.checked;
     }
 
     onConfigClick(event) {
