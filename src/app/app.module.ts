@@ -8,13 +8,18 @@ import {AppRoutingModule} from './app-routing.module';
 
 import {AccordionModule} from 'primeng/accordion';
 import {AutoCompleteModule} from 'primeng/autocomplete';
+import {AvatarModule} from 'primeng/avatar';
+import {AvatarGroupModule} from 'primeng/avatargroup';
+import {BadgeModule} from 'primeng/badge';
 import {BreadcrumbModule} from 'primeng/breadcrumb';
 import {ButtonModule} from 'primeng/button';
 import {CalendarModule} from 'primeng/calendar';
 import {CardModule} from 'primeng/card';
 import {CarouselModule} from 'primeng/carousel';
+import {CascadeSelectModule} from 'primeng/cascadeselect';
 import {ChartModule} from 'primeng/chart';
 import {CheckboxModule} from 'primeng/checkbox';
+import {ChipModule} from 'primeng/chip';
 import {ChipsModule} from 'primeng/chips';
 import {CodeHighlighterModule} from 'primeng/codehighlighter';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
@@ -57,8 +62,10 @@ import {RadioButtonModule} from 'primeng/radiobutton';
 import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
+import {ScrollTopModule} from 'primeng/scrolltop';
 import {SelectButtonModule} from 'primeng/selectbutton';
 import {SidebarModule} from 'primeng/sidebar';
+import {SkeletonModule} from 'primeng/skeleton';
 import {SlideMenuModule} from 'primeng/slidemenu';
 import {SliderModule} from 'primeng/slider';
 import {SplitButtonModule} from 'primeng/splitbutton';
@@ -67,6 +74,7 @@ import {StepsModule} from 'primeng/steps';
 import {TabMenuModule} from 'primeng/tabmenu';
 import {TableModule} from 'primeng/table';
 import {TabViewModule} from 'primeng/tabview';
+import {TagModule} from 'primeng/tag';
 import {TerminalModule} from 'primeng/terminal';
 import {TieredMenuModule} from 'primeng/tieredmenu';
 import {TimelineModule} from 'primeng/timeline';
@@ -140,14 +148,19 @@ import {MenuService} from './app.menu.service';
         BrowserAnimationsModule,
         AccordionModule,
         AutoCompleteModule,
+        AvatarModule,
+        AvatarGroupModule,
+        BadgeModule,
         BreadcrumbModule,
         ButtonModule,
         CalendarModule,
         CardModule,
         CarouselModule,
+        CascadeSelectModule,
         ChartModule,
         CheckboxModule,
         ChipsModule,
+        ChipModule,
         CodeHighlighterModule,
         ConfirmDialogModule,
         ConfirmPopupModule,
@@ -189,13 +202,16 @@ import {MenuService} from './app.menu.service';
         RatingModule,
         RippleModule,
         ScrollPanelModule,
+        ScrollTopModule,
         SelectButtonModule,
         SidebarModule,
+        SkeletonModule,
         SlideMenuModule,
         SliderModule,
         SplitButtonModule,
         SplitterModule,
         StepsModule,
+        TagModule,
         TableModule,
         TabMenuModule,
         TabViewModule,
