@@ -22,6 +22,7 @@ import {ColorPickerModule} from 'primeng/colorpicker';
 import {ContextMenuModule} from 'primeng/contextmenu';
 import {DataViewModule} from 'primeng/dataview';
 import {DialogModule} from 'primeng/dialog';
+import {DividerModule} from 'primeng/divider';
 import {DropdownModule} from 'primeng/dropdown';
 import {FieldsetModule} from 'primeng/fieldset';
 import {FileUploadModule} from 'primeng/fileupload';
@@ -60,6 +61,7 @@ import {SidebarModule} from 'primeng/sidebar';
 import {SlideMenuModule} from 'primeng/slidemenu';
 import {SliderModule} from 'primeng/slider';
 import {SplitButtonModule} from 'primeng/splitbutton';
+import {SplitterModule} from 'primeng/splitter';
 import {StepsModule} from 'primeng/steps';
 import {TabMenuModule} from 'primeng/tabmenu';
 import {TableModule} from 'primeng/table';
@@ -151,6 +153,7 @@ import {MenuService} from './app.menu.service';
         ContextMenuModule,
         DataViewModule,
         DialogModule,
+        DividerModule,
         DropdownModule,
         FieldsetModule,
         FileUploadModule,
@@ -189,6 +192,7 @@ import {MenuService} from './app.menu.service';
         SlideMenuModule,
         SliderModule,
         SplitButtonModule,
+        SplitterModule,
         StepsModule,
         TableModule,
         TabMenuModule,
