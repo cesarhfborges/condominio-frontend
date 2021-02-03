@@ -33,6 +33,7 @@ import {InputMaskModule} from 'primeng/inputmask';
 import {InputSwitchModule} from 'primeng/inputswitch';
 import {InputTextModule} from 'primeng/inputtext';
 import {InputTextareaModule} from 'primeng/inputtextarea';
+import {KnobModule} from 'primeng/knob';
 import {LightboxModule} from 'primeng/lightbox';
 import {ListboxModule} from 'primeng/listbox';
 import {MegaMenuModule} from 'primeng/megamenu';
@@ -161,6 +162,7 @@ import {MenuService} from './app.menu.service';
         InputSwitchModule,
         InputTextModule,
         InputTextareaModule,
+        KnobModule,
         LightboxModule,
         ListboxModule,
         MegaMenuModule,
