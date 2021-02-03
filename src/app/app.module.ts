@@ -18,6 +18,7 @@ import {CheckboxModule} from 'primeng/checkbox';
 import {ChipsModule} from 'primeng/chips';
 import {CodeHighlighterModule} from 'primeng/codehighlighter';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import {ConfirmPopupModule} from 'primeng/confirmpopup';
 import {ColorPickerModule} from 'primeng/colorpicker';
 import {ContextMenuModule} from 'primeng/contextmenu';
 import {DataViewModule} from 'primeng/dataview';
@@ -149,6 +150,7 @@ import {MenuService} from './app.menu.service';
         ChipsModule,
         CodeHighlighterModule,
         ConfirmDialogModule,
+        ConfirmPopupModule,
         ColorPickerModule,
         ContextMenuModule,
         DataViewModule,
