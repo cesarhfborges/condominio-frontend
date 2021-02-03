@@ -36,6 +36,7 @@ import {AppCalendarComponent} from './pages/app.calendar.component';
 import {AppInvoiceComponent} from './pages/app.invoice.component';
 import {AppHelpComponent} from './pages/app.help.component';
 import {FloatLabelDemoComponent} from './demo/view/floatlabeldemo.component';
+import { InvalidStateDemoComponent } from './demo/view/invalidstatedemo.component';
 
 @NgModule({
     imports: [
@@ -47,6 +48,7 @@ import {FloatLabelDemoComponent} from './demo/view/floatlabeldemo.component';
                     {path: 'uikit/formlayout', component: FormLayoutDemoComponent},
                     {path: 'uikit/input', component: InputDemoComponent},
                     {path: 'uikit/floatlabel', component: FloatLabelDemoComponent},
+                    {path: 'uikit/invalidstate', component: InvalidStateDemoComponent},
                     {path: 'uikit/button', component: ButtonDemoComponent},
                     {path: 'uikit/table', component: TableDemoComponent},
                     {path: 'uikit/list', component: ListDemoComponent},
