@@ -37,6 +37,7 @@ import {AppInvoiceComponent} from './pages/app.invoice.component';
 import {AppHelpComponent} from './pages/app.help.component';
 import {FloatLabelDemoComponent} from './demo/view/floatlabeldemo.component';
 import { InvalidStateDemoComponent } from './demo/view/invalidstatedemo.component';
+import { AppTimelineDemoComponent } from './pages/app.timelinedemo.component';
 
 @NgModule({
     imports: [
@@ -72,6 +73,7 @@ import { InvalidStateDemoComponent } from './demo/view/invalidstatedemo.componen
                     {path: 'utilities/text', component: TextComponent},
                     {path: 'pages/crud', component: AppCrudComponent},
                     {path: 'pages/calendar', component: AppCalendarComponent},
+                    {path: 'pages/timeline', component: AppTimelineDemoComponent},
                     {path: 'pages/invoice', component: AppInvoiceComponent},
                     {path: 'pages/help', component: AppHelpComponent},
                     {path: 'pages/empty', component: EmptyDemoComponent},
