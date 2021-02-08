@@ -304,6 +304,12 @@ a {
                         transition: transform .3s;
                     }
 
+                    &.rotated-icon {
+                        .layout-menuitem-icon {
+                            transform: rotate(90deg);
+                        }
+                    }
+
                     &:hover {
                         padding-left: 20px;
                         color: $menuitemHoverColor;

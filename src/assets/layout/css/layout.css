@@ -378,6 +378,9 @@ a {
   font-size: 16px;
   transition: transform 0.3s;
 }
+.wrapper .sidebar ul li > a.rotated-icon .layout-menuitem-icon {
+  transform: rotate(90deg);
+}
 .wrapper .sidebar ul li > a:hover {
   padding-left: 20px;
   color: #2399e5;
