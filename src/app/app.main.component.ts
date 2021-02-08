@@ -41,7 +41,7 @@ export class AppMainComponent implements AfterViewInit, OnDestroy, OnInit {
 
     configClick: boolean;
 
-    constructor(public renderer: Renderer2, private primengConfig: PrimeNGConfig, private app: AppComponent) {}
+    constructor(public renderer: Renderer2, private primengConfig: PrimeNGConfig, public app: AppComponent) {}
 
     ngOnInit() {
         this.primengConfig.ripple = true;
