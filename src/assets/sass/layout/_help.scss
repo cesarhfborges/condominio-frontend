@@ -4,7 +4,7 @@
     }
 
     .help-search {
-        background: url("../images/pages/bg-help.png") repeat;
+        background: url("\#{resource['omega-layout:images/pages/bg-help.png']}") repeat;
         padding: 0;
         text-align: center;
 
@@ -30,7 +30,7 @@
                 width: 2rem;
                 position: absolute;
                 margin-left: 1rem;
-                top: 50%;
+                top: 44%;
                 margin-top: -.5rem;
             }
         }
@@ -42,7 +42,7 @@
 
         .status-bar {
             flex: 1 1 0;
-            -ms-flex: 1 1 0px;
+            -ms-flex: 1 1 0;
             background: #8BC34A;
             height: 50px;
             margin-right: .25rem;
@@ -118,20 +118,20 @@
         }
 
         &:nth-child(1) {
-            background-image: url("../../layout/images/pages/help/blog1.jpg");
+            background-image: url("\#{resource['omega-layout:images/pages/help/blog1.jpg']}");
         }
 
         &:nth-child(2) {
-            background-image: url("../../layout/images/pages/help/blog2.jpg");
+            background-image: url("\#{resource['omega-layout:images/pages/help/blog2.jpg']}");
         }
 
         &:nth-child(3) {
-            background-image: url("../../layout/images/pages/help/blog3.jpg");
+            background-image: url("\#{resource['omega-layout:images/pages/help/blog3.jpg']}");
         }
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
     .help-page {
         .help-search {
             .help-search-content {

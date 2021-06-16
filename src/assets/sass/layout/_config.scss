@@ -25,6 +25,12 @@
         }
     }
 
+    .ui-selectoneradio {
+        td {
+            padding: .5rem;
+        }
+    }
+
     p {
         line-height: 1.5rem;
         color: #6c757d;
@@ -48,7 +54,7 @@
             @include flex-align-center();
             @include flex-justify-center();
             transition: transform .2s;
-            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 
             i {
                 font-size: 1rem;
@@ -57,6 +63,7 @@
                 left: 50%;
                 margin-left: -.5rem;
                 margin-top: -.5rem;
+                color: $primaryTextColor;
             }
 
             &:hover {
@@ -72,8 +79,8 @@
     width: 3rem;
     height: 3rem;
     line-height: 3rem;
-    background: #2c78c7;
-    color: #ffffff;
+    background: $primaryColor;
+    color: $primaryTextColor;
     text-align: center;
     top: 50%;
     right: 0;
@@ -84,7 +91,7 @@
     overflow: hidden;
     cursor: pointer;
     z-index: 999;
-    box-shadow: -.25rem 0 1rem rgba(0,0,0,.15);
+    box-shadow: -.25rem 0 1rem rgba(0, 0, 0, .15);
 
     i {
         font-size: 2rem;
@@ -94,6 +101,6 @@
     }
 
     &:hover {
-        background: lighten(#2c78c7, 5%);
+        background: lighten($primaryColor, 5%);
     }
 }
