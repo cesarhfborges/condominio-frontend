@@ -245,12 +245,6 @@ a {
                     a {
                         border: 0 none;
                     }
-
-                    &:last-child {
-                        > a {
-                            border: 0 none;
-                        }
-                    }
                 }
             }
         }
