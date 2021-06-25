@@ -3,64 +3,64 @@
     .card {
         margin-top: 0px;
     }
-    
+
     .summary {
         height: 75px;
 
         .title {
             font-size: 20px;
         }
-        
+
         .detail {
             color: #a4a4a4;
             display: block;
             margin-top: 10px;
         }
-        
+
         .count {
             color: #ffffff;
             font-size: 24px;
             @include border-radius(4px);
-            
+
             &.visitors {
                 background-color: #20d077;
             }
-            
+
             &.purchases {
                 background-color: #f9c851;
             }
-            
+
             &.revenue {
                 background-color: #007be5;
             }
         }
     }
-    
+
     .task-list {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        
+
         li {
             padding: 8px 4px;
             border-bottom: 1px solid $dividerColor;
         }
-        
-        .ui-chkbox {
+
+        .p-checkbox {
             vertical-align: middle;
-            margin-right: 5px;
+            margin-right: .5rem;
         }
-        
+
         .task-name {
             vertical-align: middle;
         }
-        
-        .ui-button {
+
+        .p-button {
             width: 50px;
             float: right;
             padding: 2px 0;
 
-            .ui-button-text {
+            .p-button-text {
                 padding: .1em;
             }
         }
@@ -87,10 +87,10 @@
         }
 
         &.paypal {
-            .ui-progressbar {
+            .p-progressbar {
                 background: #d1e8fa;
 
-                .ui-progressbar-value{
+                .p-progressbar-value{
                     background: #253b80;
                 }
             }
@@ -102,10 +102,10 @@
         }
 
         &.amazon {
-            .ui-progressbar {
+            .p-progressbar {
                 background: #ffedd1;
 
-                .ui-progressbar-value{
+                .p-progressbar-value{
                     background: #ff9900;
                 }
             }
@@ -117,10 +117,10 @@
         }
 
         &.youtube {
-            .ui-progressbar {
+            .p-progressbar {
                 background: #ffe0e0;
 
-                .ui-progressbar-value{
+                .p-progressbar-value{
                     background: #ff0000;
                 }
             }
@@ -132,10 +132,10 @@
         }
 
         &.apple {
-            .ui-progressbar {
+            .p-progressbar {
                 background: #e5e5e5;
 
-                .ui-progressbar-value{
+                .p-progressbar-value{
                     background: #000000;
                 }
             }
@@ -146,10 +146,10 @@
             }
         }
     }
-    
+
     .highlight-box {
         height: 100px;
-        
+
         .initials {
             float: left;
             width: 50%;
@@ -159,14 +159,14 @@
             padding-top: 20px;
             text-align: center;
         }
-        
+
         .card {
             color: #a4a4a4;
             float: left;
             width: 50%;
-            box-sizing: border-box; 
-            height: 100%; 
-            
+            box-sizing: border-box;
+            height: 100%;
+
             .count {
                 font-size: 36px;
                 display: block;
@@ -178,16 +178,16 @@
             }
         }
     }
-    
+
     .activity-list {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        
+
         li {
             border-bottom: 1px solid $dividerColor;
             padding: 16px 8px;
-            
+
             .count {
                 font-size: 20px;
                 color: #ffffff;
@@ -198,30 +198,30 @@
                 @include border-radius(4px);
             }
 
-            .ui-progressbar {
+            .p-progressbar {
                 height: .5em;
             }
 
-            .ui-g-6:first-child {
+            .p-col-6:first-child {
                 font-size: 18px;
                 padding-left: 0;
             }
-            
-            .ui-g-6:last-child {
+
+            .p-col-6:last-child {
                 text-align: right;
                 color: #a4a4a4;
             }
         }
     }
-    
+
     .contacts {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        
+
         li {
             border-bottom: 1px solid $dividerColor;
-            
+
             a {
                 padding: 9px;
                 width: 100%;
@@ -231,14 +231,14 @@
                 display: block;
                 @include border-radius(2px);
                 @include transition(background-color .2s);
-                
+
                 .name {
                     position: absolute;
                     right: 10px;
                     top: 10px;
                     font-size: 18px;
                 }
-                
+
                 .email {
                     position: absolute;
                     right: 10px;
@@ -246,16 +246,40 @@
                     font-size: 14px;
                     color: #a4a4a4;
                 }
-                
+
                 &:hover {
                     cursor: pointer;
                     background-color: #eeeeee;
                 }
             }
-            
+
             &:last-child {
                 border: 0;
             }
+        }
+    }
+
+    .product-badge {
+        border-radius: 2px;
+        padding: .25em .5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: .3px;
+
+        &.status-instock {
+            background: #C8E6C9;
+            color: #256029;
+        }
+
+        &.status-outofstock {
+            background: #FFCDD2;
+            color: #C63737;
+        }
+
+        &.status-lowstock {
+            background: #FEEDAF;
+            color: #8A5340;
         }
     }
 }

@@ -4,7 +4,7 @@
     }
 
     .help-search {
-        background: url("\#{resource['omega-layout:images/pages/bg-help.png']}") repeat;
+        background: url("../images/pages/bg-help.png") repeat;
         padding: 0;
         text-align: center;
 
@@ -118,15 +118,15 @@
         }
 
         &:nth-child(1) {
-            background-image: url("\#{resource['omega-layout:images/pages/help/blog1.jpg']}");
+            background-image: url("../images/pages/help/blog1.jpg");
         }
 
         &:nth-child(2) {
-            background-image: url("\#{resource['omega-layout:images/pages/help/blog2.jpg']}");
+            background-image: url("../images/pages/help/blog2.jpg");
         }
 
         &:nth-child(3) {
-            background-image: url("\#{resource['omega-layout:images/pages/help/blog3.jpg']}");
+            background-image: url("../images/pages/help/blog3.jpg");
         }
     }
 }

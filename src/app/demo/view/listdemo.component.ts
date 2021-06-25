@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {SelectItem} from 'primeng/api';
 import {Product} from '../domain/product';
 import {ProductService} from '../service/productservice';
+import {BreadcrumbService} from '../../app.breadcrumb.service';
 
 @Component({
     templateUrl: './listdemo.component.html',
@@ -23,7 +24,11 @@ export class ListDemoComponent implements OnInit {
 
     orderCities: any[];
 
-    constructor(private productService: ProductService) {}
+    constructor(private productService: ProductService, private breadcrumbService: BreadcrumbService) {
+        this.breadcrumbService.setItems([
+            {label: 'List'}
+        ]);
+    }
 
     ngOnInit() {
         this.productService.getProducts().then(data => this.products = data);

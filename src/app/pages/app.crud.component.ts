@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import { Product } from '../demo/domain/product';
-import { ProductService } from '../demo/service/productservice';
-import { ConfirmationService } from 'primeng/api';
-import { MessageService } from 'primeng/api';
+import {Product} from '../demo/domain/product';
+import {ProductService} from '../demo/service/productservice';
+import {ConfirmationService} from 'primeng/api';
+import {MessageService} from 'primeng/api';
+import {BreadcrumbService} from '../app.breadcrumb.service';
 
 @Component({
     templateUrl: './app.crud.component.html',
@@ -31,17 +32,21 @@ export class AppCrudComponent implements OnInit {
     cols: any[];
 
     constructor(private productService: ProductService, private messageService: MessageService,
-                private confirmationService: ConfirmationService) {}
+                private confirmationService: ConfirmationService, private breadcrumbService: BreadcrumbService) {
+        this.breadcrumbService.setItems([
+            {label: 'Crud'}
+        ]);
+    }
 
     ngOnInit() {
         this.productService.getProducts().then(data => this.products = data);
 
         this.cols = [
-            { field: 'name', header: 'Name' },
-            { field: 'price', header: 'Price' },
-            { field: 'category', header: 'Category' },
-            { field: 'rating', header: 'Reviews' },
-            { field: 'inventoryStatus', header: 'Status' }
+            {field: 'name', header: 'Name'},
+            {field: 'price', header: 'Price'},
+            {field: 'category', header: 'Category'},
+            {field: 'rating', header: 'Reviews'},
+            {field: 'inventoryStatus', header: 'Status'}
         ];
     }
 
@@ -59,7 +64,12 @@ export class AppCrudComponent implements OnInit {
             accept: () => {
                 this.products = this.products.filter(val => !this.selectedProducts.includes(val));
                 this.selectedProducts = null;
-                this.messageService.add({severity: 'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
+                this.messageService.add({
+                    severity: 'success',
+                    summary: 'Successful',
+                    detail: 'Products Deleted',
+                    life: 3000
+                });
             }
         });
     }
@@ -77,7 +87,12 @@ export class AppCrudComponent implements OnInit {
             accept: () => {
                 this.products = this.products.filter(val => val.id !== product.id);
                 this.product = {};
-                this.messageService.add({severity: 'success', summary: 'Successful', detail: 'Product Deleted', life: 3000});
+                this.messageService.add({
+                    severity: 'success',
+                    summary: 'Successful',
+                    detail: 'Product Deleted',
+                    life: 3000
+                });
             }
         });
     }
@@ -93,13 +108,22 @@ export class AppCrudComponent implements OnInit {
         if (this.product.name.trim()) {
             if (this.product.id) {
                 this.products[this.findIndexById(this.product.id)] = this.product;
-                this.messageService.add({severity: 'success', summary: 'Successful', detail: 'Product Updated', life: 3000});
-            }
-            else {
+                this.messageService.add({
+                    severity: 'success',
+                    summary: 'Successful',
+                    detail: 'Product Updated',
+                    life: 3000
+                });
+            } else {
                 this.product.id = this.createId();
                 this.product.image = 'product-placeholder.svg';
                 this.products.push(this.product);
-                this.messageService.add({severity: 'success', summary: 'Successful', detail: 'Product Created', life: 3000});
+                this.messageService.add({
+                    severity: 'success',
+                    summary: 'Successful',
+                    detail: 'Product Created',
+                    life: 3000
+                });
             }
 
             this.products = [...this.products];
@@ -123,7 +147,7 @@ export class AppCrudComponent implements OnInit {
     createId(): string {
         let id = '';
         const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        for ( let i = 0; i < 5; i++ ) {
+        for (let i = 0; i < 5; i++) {
             id += chars.charAt(Math.floor(Math.random() * chars.length));
         }
         return id;

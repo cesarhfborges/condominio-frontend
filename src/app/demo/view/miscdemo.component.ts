@@ -1,26 +1,27 @@
 import {Component, OnInit} from '@angular/core';
+import {BreadcrumbService} from '../../app.breadcrumb.service';
 
 @Component({
     templateUrl: './miscdemo.component.html',
     styles: [`
-		:host ::ng-deep .misc-demo .p-button.p-widget {
-		    min-width: 6rem;
-	    }
+        :host ::ng-deep .misc-demo .p-button.p-widget {
+            min-width: 6rem;
+        }
 
-		:host ::ng-deep .misc-demo .badges .p-badge {
-		    margin-right: .5rem;
-		}
+        :host ::ng-deep .misc-demo .badges .p-badge {
+            margin-right: .5rem;
+        }
 
-		:host ::ng-deep .misc-demo .badges .p-tag {
-			margin-right: .5rem;
-		}
+        :host ::ng-deep .misc-demo .badges .p-tag {
+            margin-right: .5rem;
+        }
 
         :host ::ng-deep .p-chip.custom-chip {
             background: var(--primary-color);
             color: var(--primary-color-text);
         }
 
-        :host ::ng-deep .custom-scrolltop{
+        :host ::ng-deep .custom-scrolltop {
             width: 2rem;
             height: 2rem;
             border-radius: 4px;
@@ -33,15 +34,15 @@ import {Component, OnInit} from '@angular/core';
         }
 
         :host ::ng-deep .custom-scrolltop:hover {
-             background-color: var(--primary-color);
+            background-color: var(--primary-color);
         }
 
-        :host ::ng-deep  .custom-skeleton {
+        :host ::ng-deep .custom-skeleton {
             border: 1px solid var(--surface-d);
             border-borderRadius: 4px;
         }
 
-        :host ::ng-deep  .custom-skeleton ul {
+        :host ::ng-deep .custom-skeleton ul {
             list-style: none;
         }
     `]
@@ -49,6 +50,12 @@ import {Component, OnInit} from '@angular/core';
 export class MiscDemoComponent implements OnInit {
 
     value = 0;
+
+    constructor(private breadcrumbService: BreadcrumbService) {
+        this.breadcrumbService.setItems([
+            {label: 'Misc'}
+        ]);
+    }
 
     ngOnInit() {
         const interval = setInterval(() => {

@@ -5047,7 +5047,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 
 .p-progressbar {
   border: 0 none;
-  height: 1.5rem;
+  height: 1rem;
   background: #dee2e6;
   border-radius: 3px;
 }
@@ -5058,7 +5058,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 }
 .p-progressbar .p-progressbar-label {
   color: #495057;
-  line-height: 1.5rem;
+  line-height: 1rem;
 }
 
 .p-scrolltop {

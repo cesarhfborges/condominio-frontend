@@ -132,6 +132,10 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
 
             // hide overlay menus
             this.app.menuActiveMobile = false;
+
+            if (this.app.isDesktop() && this.app.isOVerlay()) {
+                this.app.menuInactiveDesktop = true;
+            }
         }
     }
 

@@ -5,15 +5,6 @@
 		}
 	}
 
-	.p-progressbar {
-		height: .5rem;
-		background-color: #D8DADC;
-
-		.p-progressbar-value {
-			background-color: #607D8B;
-		}
-	}
-
 	.table-header {
 		display: flex;
 		justify-content: space-between;
@@ -45,6 +36,15 @@
 		.p-dropdown-label:not(.p-placeholder) {
 			text-transform: uppercase;
 		}
+
+        .p-progressbar {
+            height: .5rem;
+            background-color: #D8DADC;
+
+            .p-progressbar-value {
+                background-color: #607D8B;
+            }
+        }
 	}
 
 	.p-datatable.p-datatable-customers:not(.p-datatable-gridlines) {

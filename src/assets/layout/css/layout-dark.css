@@ -62,7 +62,7 @@ a {
 .wrapper .topbar #topbar-icons a {
   position: relative;
   color: #ffffff;
-  margin-left: 20px;
+  margin-left: 1.5rem;
   display: inline-block;
   text-decoration: none;
   -moz-transition: color 0.3s;
@@ -248,7 +248,6 @@ a {
   color: #2399e5;
 }
 .wrapper .sidebar .profile > ul {
-  display: none;
   background-color: #2e3035;
   text-align: left;
   overflow: hidden;
@@ -271,6 +270,7 @@ a {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   box-sizing: border-box;
 }
 .wrapper .sidebar ul li > a {
@@ -281,10 +281,6 @@ a {
   padding: 15px;
   outline: none;
   cursor: pointer;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
   user-select: none;
   display: block;
   box-sizing: border-box;
@@ -343,7 +339,6 @@ a {
   background-color: #2e3035;
 }
 .wrapper .sidebar ul li > ul {
-  display: none;
   padding-left: 20px;
 }
 .wrapper .sidebar ul li > ul li a {
@@ -410,22 +405,20 @@ a {
 .wrapper .footer .footer-text {
   vertical-align: middle;
 }
-
-.menu-layout-overlay .wrapper .topbar {
+.wrapper.menu-layout-overlay .topbar {
   left: 0;
 }
-.menu-layout-overlay .wrapper .main {
+.wrapper.menu-layout-overlay .main {
   margin-left: 0;
 }
-.menu-layout-overlay .wrapper .sidebar {
-  margin-left: -250px;
+.wrapper.menu-layout-overlay .sidebar {
   margin-top: 50px;
   width: 250px;
 }
-.menu-layout-overlay .wrapper .footer {
+.wrapper.menu-layout-overlay .footer {
   margin-left: 0;
 }
-.menu-layout-overlay .wrapper.sidebar-active-m .sidebar {
+.wrapper.menu-layout-overlay.sidebar-active-m .sidebar {
   margin-left: 0;
 }
 
@@ -580,7 +573,7 @@ a {
   vertical-align: middle;
   margin-right: 10px;
 }
-#login-wrapper #login-container .ui-chkbox {
+#login-wrapper #login-container .p-checkbox {
   vertical-align: middle;
   font-size: 14px;
 }
@@ -590,7 +583,7 @@ a {
   vertical-align: middle;
   font-size: 16px;
 }
-#login-wrapper #login-container input.ui-inputtext {
+#login-wrapper #login-container input.p-inputtext {
   font-size: 1em;
   color: #4f575b;
   margin: 0;
@@ -601,27 +594,27 @@ a {
   border: 1px solid #d6d6d6;
   border-radius: 3px;
 }
-#login-wrapper #login-container input.ui-inputtext:hover {
+#login-wrapper #login-container input.p-inputtext:hover {
   border-color: #c0c0c0;
 }
-#login-wrapper #login-container input.ui-inputtext:focus {
+#login-wrapper #login-container input.p-inputtext:focus {
   outline: 0 none;
   box-shadow: 0 0 5px #1f89ce;
 }
 #login-wrapper #login-container .p-col-12, #login-wrapper #login-container .p-col-6 {
   padding: 0.8em;
 }
-#login-wrapper #login-container .ui-button {
+#login-wrapper #login-container .p-button {
   border-radius: 3px;
   border: 1px solid #2399e5;
   color: #FFFFFF;
   background: #2399e5;
   font-size: 16px;
 }
-#login-wrapper #login-container .ui-button:hover {
+#login-wrapper #login-container .p-button:hover {
   background: #1f89ce;
 }
-#login-wrapper #login-container .ui-button:focus {
+#login-wrapper #login-container .p-button:focus {
   outline: 0 none;
   background: #186ba0;
 }
@@ -676,21 +669,21 @@ a {
 .exception-wrapper.error {
   background-color: #e82424;
 }
-.exception-wrapper.error a:hover, .exception-wrapper.error a.ui-link:hover, .exception-wrapper.error a.ui-commandlink:hover {
+.exception-wrapper.error a:hover, .exception-wrapper.error a.p-link:hover, .exception-wrapper.error a.p-commandlink:hover {
   background-color: #ffffff;
   color: #e82424;
 }
 .exception-wrapper.notfound {
   background-color: #66719c;
 }
-.exception-wrapper.notfound a:hover, .exception-wrapper.notfound a.ui-link:hover, .exception-wrapper.notfound a.ui-commandlink:hover {
+.exception-wrapper.notfound a:hover, .exception-wrapper.notfound a.p-link:hover, .exception-wrapper.notfound a.p-commandlink:hover {
   background-color: #ffffff;
   color: #66719c;
 }
 .exception-wrapper.access {
   background-color: #e88524;
 }
-.exception-wrapper.access a:hover, .exception-wrapper.access a.ui-link:hover, .exception-wrapper.access a.ui-commandlink:hover {
+.exception-wrapper.access a:hover, .exception-wrapper.access a.p-link:hover, .exception-wrapper.access a.p-commandlink:hover {
   background-color: #ffffff;
   color: #e88524;
 }
@@ -698,7 +691,7 @@ a {
   font-size: 24px;
   font-weight: bold;
 }
-.exception-wrapper a, .exception-wrapper a.ui-link, .exception-wrapper a.ui-commandlink {
+.exception-wrapper a, .exception-wrapper a.p-link, .exception-wrapper a.p-commandlink {
   display: inline-block;
   text-decoration: none;
   border: 1px solid #ffffff;
@@ -711,7 +704,7 @@ a {
   -webkit-transition: color 0.15s;
   transition: color 0.15s;
 }
-.exception-wrapper a span, .exception-wrapper a.ui-link span, .exception-wrapper a.ui-commandlink span {
+.exception-wrapper a span, .exception-wrapper a.p-link span, .exception-wrapper a.p-commandlink span {
   margin-left: 0.5em;
 }
 .exception-wrapper .footer {
@@ -794,19 +787,19 @@ a {
   padding: 8px 4px;
   border-bottom: 1px solid #e3e3e3;
 }
-.dashboard .task-list .ui-chkbox {
+.dashboard .task-list .p-checkbox {
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 0.5rem;
 }
 .dashboard .task-list .task-name {
   vertical-align: middle;
 }
-.dashboard .task-list .ui-button {
+.dashboard .task-list .p-button {
   width: 50px;
   float: right;
   padding: 2px 0;
 }
-.dashboard .task-list .ui-button .ui-button-text {
+.dashboard .task-list .p-button .p-button-text {
   padding: 0.1em;
 }
 .dashboard .overview-box h5 {
@@ -824,40 +817,40 @@ a {
   border-radius: 8px;
   font-size: 2.5rem;
 }
-.dashboard .overview-box.paypal .ui-progressbar {
+.dashboard .overview-box.paypal .p-progressbar {
   background: #d1e8fa;
 }
-.dashboard .overview-box.paypal .ui-progressbar .ui-progressbar-value {
+.dashboard .overview-box.paypal .p-progressbar .p-progressbar-value {
   background: #253b80;
 }
 .dashboard .overview-box.paypal .logo {
   color: #253b80;
   background-color: #d1e8fa;
 }
-.dashboard .overview-box.amazon .ui-progressbar {
+.dashboard .overview-box.amazon .p-progressbar {
   background: #ffedd1;
 }
-.dashboard .overview-box.amazon .ui-progressbar .ui-progressbar-value {
+.dashboard .overview-box.amazon .p-progressbar .p-progressbar-value {
   background: #ff9900;
 }
 .dashboard .overview-box.amazon .logo {
   color: #ff9900;
   background-color: #ffedd1;
 }
-.dashboard .overview-box.youtube .ui-progressbar {
+.dashboard .overview-box.youtube .p-progressbar {
   background: #ffe0e0;
 }
-.dashboard .overview-box.youtube .ui-progressbar .ui-progressbar-value {
+.dashboard .overview-box.youtube .p-progressbar .p-progressbar-value {
   background: #ff0000;
 }
 .dashboard .overview-box.youtube .logo {
   color: #ff0000;
   background-color: #ffe0e0;
 }
-.dashboard .overview-box.apple .ui-progressbar {
+.dashboard .overview-box.apple .p-progressbar {
   background: #e5e5e5;
 }
-.dashboard .overview-box.apple .ui-progressbar .ui-progressbar-value {
+.dashboard .overview-box.apple .p-progressbar .p-progressbar-value {
   background: #000000;
 }
 .dashboard .overview-box.apple .logo {
@@ -911,14 +904,14 @@ a {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-.dashboard .activity-list li .ui-progressbar {
+.dashboard .activity-list li .p-progressbar {
   height: 0.5em;
 }
-.dashboard .activity-list li .ui-g-6:first-child {
+.dashboard .activity-list li .p-col-6:first-child {
   font-size: 18px;
   padding-left: 0;
 }
-.dashboard .activity-list li .ui-g-6:last-child {
+.dashboard .activity-list li .p-col-6:last-child {
   text-align: right;
   color: #a4a4a4;
 }
@@ -965,6 +958,26 @@ a {
 .dashboard .contacts li:last-child {
   border: 0;
 }
+.dashboard .product-badge {
+  border-radius: 2px;
+  padding: 0.25em 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+.dashboard .product-badge.status-instock {
+  background: #C8E6C9;
+  color: #256029;
+}
+.dashboard .product-badge.status-outofstock {
+  background: #FFCDD2;
+  color: #C63737;
+}
+.dashboard .product-badge.status-lowstock {
+  background: #FEEDAF;
+  color: #8A5340;
+}
 
 /* Landing */
 .landing-body {
@@ -974,12 +987,12 @@ a {
   padding: 0;
 }
 
-.landing-wrapper .ui-button {
+.landing-wrapper .p-button {
   border: 1px solid #2399e5;
   color: #FFFFFF;
   background: #2399e5;
 }
-.landing-wrapper .ui-button:hover {
+.landing-wrapper .p-button:hover {
   background: #1f89ce;
 }
 .landing-wrapper #menu-button {
@@ -1038,8 +1051,8 @@ a {
 }
 .landing-wrapper #introduction {
   padding-top: 80px;
-  height: 703px;
-  background-image: url("#{resource['omega-layout:images/landing/section1_bg.jpg']}");
+  height: 623px;
+  background-image: url("../images/landing/section1_bg.jpg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1066,11 +1079,11 @@ a {
   right: 0px;
   top: 125px;
 }
-.landing-wrapper #introduction .introduction-content .ui-button {
+.landing-wrapper #introduction .introduction-content .p-button {
   position: absolute;
   top: 350px;
 }
-.landing-wrapper #introduction .introduction-content .ui-button .ui-button-text {
+.landing-wrapper #introduction .introduction-content .p-button .p-button-text {
   padding: 1em 5em;
 }
 .landing-wrapper #features {
@@ -1139,11 +1152,11 @@ a {
   right: 0px;
   top: 125px;
 }
-.landing-wrapper #mobile .mobile-content .ui-button {
+.landing-wrapper #mobile .mobile-content .p-button {
   position: absolute;
   top: 300px;
 }
-.landing-wrapper #mobile .mobile-content .ui-button .ui-button-text {
+.landing-wrapper #mobile .mobile-content .p-button .p-button-text {
   padding: 1em 5em;
 }
 .landing-wrapper #pricing {
@@ -1327,7 +1340,7 @@ a {
     display: inline-block;
     padding-bottom: 30px;
   }
-  .landing-wrapper #introduction .introduction-content .ui-button {
+  .landing-wrapper #introduction .introduction-content .p-button {
     display: block;
     position: static;
     width: 250px;
@@ -1367,7 +1380,7 @@ a {
     position: absolute;
     top: 260px;
   }
-  .landing-wrapper #mobile .mobile-content .ui-button {
+  .landing-wrapper #mobile .mobile-content .p-button {
     position: static;
     display: block;
     width: 250px;
@@ -1458,7 +1471,7 @@ a {
   margin: 0;
 }
 .help-page .help-search {
-  background: url("#{resource['omega-layout:images/pages/bg-help.png']}") repeat;
+  background: url("../images/pages/bg-help.png") repeat;
   padding: 0;
   text-align: center;
 }
@@ -1556,13 +1569,13 @@ a {
   border-radius: 50%;
 }
 .help-page .blog-post:nth-child(1) {
-  background-image: url("#{resource['omega-layout:images/pages/help/blog1.jpg']}");
+  background-image: url("../images/pages/help/blog1.jpg");
 }
 .help-page .blog-post:nth-child(2) {
-  background-image: url("#{resource['omega-layout:images/pages/help/blog2.jpg']}");
+  background-image: url("../images/pages/help/blog2.jpg");
 }
 .help-page .blog-post:nth-child(3) {
-  background-image: url("#{resource['omega-layout:images/pages/help/blog3.jpg']}");
+  background-image: url("../images/pages/help/blog3.jpg");
 }
 
 @media screen and (max-width: 1024px) {
@@ -1972,12 +1985,19 @@ p:last-child {
 .layout-config.layout-config-active .layout-config-content .layout-config-button i {
   transform: rotate(360deg);
 }
-.layout-config .ui-selectoneradio td {
-  padding: 0.5rem;
+.layout-config h5 {
+  margin-top: 1.5rem;
+}
+.layout-config .p-field-radiobutton {
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
 }
 .layout-config p {
   line-height: 1.5rem;
   color: #6c757d;
+}
+.layout-config hr {
+  margin-top: 2rem;
 }
 .layout-config .layout-themes {
   display: -ms-flexbox;

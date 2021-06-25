@@ -6,6 +6,10 @@ import { PrimeNGConfig } from 'primeng/api';
     templateUrl: './app.component.html'
 })
 export class AppComponent {
+    menuMode = 'static';
+
+    lightMenu = false;
+
     inputStyle = 'outlined';
 
     ripple: boolean;

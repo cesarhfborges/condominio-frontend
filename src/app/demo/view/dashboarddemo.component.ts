@@ -1,14 +1,16 @@
 import {Component, OnInit} from '@angular/core';
 import {EventService} from '../service/eventservice';
-import {SelectItem} from 'primeng/api';
+import {SelectItem, MenuItem} from 'primeng/api';
 import {Product} from '../domain/product';
 import {ProductService} from '../service/productservice';
+import {BreadcrumbService} from '../../app.breadcrumb.service';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 
 @Component({
-    templateUrl: './dashboard.component.html'
+    templateUrl: './dashboard.component.html',
+    styleUrls: ['./tabledemo.scss']
 })
 export class DashboardDemoComponent implements OnInit {
 
@@ -26,7 +28,12 @@ export class DashboardDemoComponent implements OnInit {
 
     fullcalendarOptions: any;
 
-    constructor(private productService: ProductService, private eventService: EventService) {
+    items: MenuItem[];
+
+    constructor(private productService: ProductService, private eventService: EventService, private breadcrumbService: BreadcrumbService) {
+        this.breadcrumbService.setItems([
+            {label: 'Dashboard', routerLink: ['/']}
+        ]);
     }
 
     ngOnInit() {
@@ -35,6 +42,11 @@ export class DashboardDemoComponent implements OnInit {
         this.eventService.getEvents().then(events => {
             this.events = events;
         });
+
+        this.items = [
+            { label: 'Display More', icon: 'pi pi-chart-bar' },
+            { label: 'Settings', icon: 'pi pi-cog' }
+        ];
 
         this.cities = [];
         this.cities.push({label: 'Select City', value: null});
@@ -70,7 +82,7 @@ export class DashboardDemoComponent implements OnInit {
 
         this.fullcalendarOptions = {
             plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
-            defaultDate: '2017-02-12',
+            defaultDate: '2021-07-12',
             header: {
                 left: 'prev,next,today',
                 center: 'title',

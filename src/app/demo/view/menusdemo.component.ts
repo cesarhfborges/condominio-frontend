@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {MegaMenuItem, MenuItem} from 'primeng/api';
+import {BreadcrumbService} from '../../app.breadcrumb.service';
 
 @Component({
     templateUrl: './menusdemo.component.html',
@@ -24,6 +25,12 @@ export class MenusDemoComponent implements OnInit {
     slideItems: MenuItem[];
 
     menuItems: MenuItem[];
+
+    constructor(private breadcrumbService: BreadcrumbService) {
+        this.breadcrumbService.setItems([
+            {label: 'Menu'}
+        ]);
+    }
 
     ngOnInit() {
 
@@ -102,7 +109,7 @@ export class MenusDemoComponent implements OnInit {
                     }
                 ]
             },
-            { separator: true },
+            {separator: true},
             {
                 label: 'Quit',
                 icon: 'pi pi-fw pi-sign-out'
@@ -243,12 +250,12 @@ export class MenusDemoComponent implements OnInit {
         ];
 
         this.breadcrumbItems = [];
-        this.breadcrumbItems.push({ label: 'Electronics' });
-        this.breadcrumbItems.push({ label: 'Computer' });
-        this.breadcrumbItems.push({ label: 'Notebook' });
-        this.breadcrumbItems.push({ label: 'Accessories' });
-        this.breadcrumbItems.push({ label: 'Backpacks' });
-        this.breadcrumbItems.push({ label: 'Item' });
+        this.breadcrumbItems.push({label: 'Electronics'});
+        this.breadcrumbItems.push({label: 'Computer'});
+        this.breadcrumbItems.push({label: 'Notebook'});
+        this.breadcrumbItems.push({label: 'Accessories'});
+        this.breadcrumbItems.push({label: 'Backpacks'});
+        this.breadcrumbItems.push({label: 'Item'});
 
         this.tabMenuItems = [
             {label: 'Overview', icon: 'pi pi-fw pi-home'},

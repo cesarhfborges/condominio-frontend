@@ -59,6 +59,11 @@ export class AppMainComponent implements AfterViewInit, OnDestroy, OnInit {
                     this.hideTopMenu();
                 }
             }
+            else {
+                if (!this.menuClick && this.isOVerlay()) {
+                    this.menuInactiveDesktop = true;
+                }
+            }
 
             if (this.configActive && !this.configClick) {
                 this.configActive = false;
@@ -128,6 +133,14 @@ export class AppMainComponent implements AfterViewInit, OnDestroy, OnInit {
 
     onConfigClick(event) {
         this.configClick = true;
+    }
+
+    isStatic() {
+        return this.app.menuMode === 'static';
+    }
+
+    isOVerlay() {
+        return this.app.menuMode === 'overlay';
     }
 
     isDesktop() {
