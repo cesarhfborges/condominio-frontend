@@ -267,6 +267,12 @@ a {
             }
         }
 
+        ul.layout-menu {
+            > li.active-menuitem {
+                    background-color: $menuitemActiveBgColor;
+            }
+        }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -334,7 +340,6 @@ a {
                 &.active-menuitem {
                     > a {
                         border-bottom: 0 none;
-                        background-color: $menuitemActiveBgColor;
                         color: $menuitemActiveColor;
 
 
@@ -343,10 +348,6 @@ a {
                             transition: transform .3s;
                             font-size: 16px;
                         }
-                    }
-
-                    > ul {
-                        background-color: $menuitemActiveBgColor;
                     }
                 }
 
