@@ -1,5 +1,20 @@
 # Changelog
 
+## 11.1.0
+**Migration Guide**
+- Update app.main.component.ts, app.main.component.html and app.component.ts.
+- Update app.topbar.component.ts, app.topbar.component.html.
+- Update app.menuitem.component.ts.
+- Add app.breadcrummb.service.ts.
+- Update theme files and layout files.
+
+**Implemented New Features and Enhancements:**
+
+- New 4 Omega themes included
+- New 3 topbar layouts included
+- New light menu included
+- Dashboard remastered
+
 ## 11.0.0
 **Migration Guide**
 - Update your project to Angular 11.
