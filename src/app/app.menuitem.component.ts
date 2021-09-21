@@ -13,14 +13,14 @@ import {AppMainComponent} from './app.main.component';
     template: `
 		<ng-container>
 			<a [attr.href]="item.url" (click)="itemClick($event)" [ngClass]="item.class"
-			   *ngIf="!item.routerLink || item.items" (keydown.enter)="itemClick($event)"
+			   *ngIf="(!item.routerLink || item.items) && item.visible !== false" (keydown.enter)="itemClick($event)"
 			   [attr.target]="item.target" [attr.tabindex]="0" pRipple>
 				<i [ngClass]="item.icon" class="layout-menuitem-icon"></i>
 				<span>{{item.label}}</span>
 				<span class="menuitem-badge" *ngIf="item.badge">{{item.badge}}</span>
 				<i class="pi pi-fw pi-angle-down layout-submenu-toggler" *ngIf="item.items"></i>
 			</a>
-			<a (click)="itemClick($event)" *ngIf="item.routerLink && !item.items" [ngClass]="item.class"
+			<a (click)="itemClick($event)" *ngIf="(item.routerLink && !item.items) && item.visible !== false" [ngClass]="item.class"
 			   [routerLink]="item.routerLink" routerLinkActive="active-menuitem-routerlink"
 			   [routerLinkActiveOptions]="{exact: true}" [attr.target]="item.target" [attr.tabindex]="0" pRipple>
 				<i [ngClass]="item.icon" class="layout-menuitem-icon"></i>
@@ -28,7 +28,7 @@ import {AppMainComponent} from './app.main.component';
 				<span class="menuitem-badge" *ngIf="item.badge">{{item.badge}}</span>
 				<i class="pi pi-fw pi-angle-down layout-submenu-toggler" *ngIf="item.items"></i>
 			</a>
-			<ul *ngIf="item.items && active" [@children]="(active ? 'visibleAnimated' : 'hiddenAnimated')">
+			<ul *ngIf="(item.items && active) && item.visible !== false" [@children]="(active ? 'visibleAnimated' : 'hiddenAnimated')">
 				<ng-template ngFor let-child let-i="index" [ngForOf]="item.items">
 					<li app-menuitem [item]="child" [index]="i" [parentKey]="key" [class]="child.badgeClass"></li>
 				</ng-template>
@@ -112,7 +112,7 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
         // avoid processing disabled items
         if (this.item.disabled) {
             event.preventDefault();
-            return true;
+            return;
         }
 
         // notify other items

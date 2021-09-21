@@ -4,9 +4,6 @@ import {SelectItem, MenuItem} from 'primeng/api';
 import {Product} from '../domain/product';
 import {ProductService} from '../service/productservice';
 import {BreadcrumbService} from '../../app.breadcrumb.service';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import timeGridPlugin from '@fullcalendar/timegrid';
-import interactionPlugin from '@fullcalendar/interaction';
 
 @Component({
     templateUrl: './dashboard.component.html',
@@ -24,8 +21,6 @@ export class DashboardDemoComponent implements OnInit {
 
     selectedCity: any;
 
-    scheduleHeader: any;
-
     fullcalendarOptions: any;
 
     items: MenuItem[];
@@ -41,6 +36,7 @@ export class DashboardDemoComponent implements OnInit {
 
         this.eventService.getEvents().then(events => {
             this.events = events;
+            this.fullcalendarOptions = {...this.fullcalendarOptions, ...{events: events}};
         });
 
         this.items = [
@@ -63,31 +59,30 @@ export class DashboardDemoComponent implements OnInit {
                     label: 'First Dataset',
                     data: [65, 59, 80, 81, 56, 55, 40],
                     fill: false,
-                    borderColor: '#007be5'
+                    borderColor: '#007be5',
+                    tension: .4
                 },
                 {
                     label: 'Second Dataset',
                     data: [28, 48, 40, 19, 86, 27, 90],
                     fill: false,
-                    borderColor: '#20d077'
+                    borderColor: '#20d077',
+                    tension: .4
                 }
             ]
         };
 
-        this.scheduleHeader = {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'month,agendaWeek,agendaDay'
-        };
-
         this.fullcalendarOptions = {
-            plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
-            defaultDate: '2021-07-12',
-            header: {
-                left: 'prev,next,today',
+            initialDate: '2021-07-01',
+            headerToolbar: {
+                left: 'prev,next today',
                 center: 'title',
-                right: ''
-            }
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            editable: true,
+            selectable: true,
+            selectMirror: true,
+            dayMaxEvents: true,
         };
     }
 }

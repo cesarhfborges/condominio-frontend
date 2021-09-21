@@ -1,14 +1,18 @@
 import {Component, OnInit} from '@angular/core';
 import {EventService} from '../demo/service/eventservice';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import timeGridPlugin from '@fullcalendar/timegrid';
-import interactionPlugin from '@fullcalendar/interaction';
-import {BreadcrumbService} from '../app.breadcrumb.service';
 
 @Component({
-    templateUrl: './app.calendar.component.html'
+    templateUrl: './app.calendar.component.html',
+    styles: [`
+        @media screen and (max-width: 960px) {
+            :host ::ng-deep .fc-header-toolbar {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    `]
 })
-export class AppCalendarComponent implements OnInit{
+export class AppCalendarComponent implements OnInit {
 
     events: any[];
 
@@ -22,25 +26,26 @@ export class AppCalendarComponent implements OnInit{
 
     clickedEvent = null;
 
-    constructor(private eventService: EventService, private breadcrumbService: BreadcrumbService) {
-        this.breadcrumbService.setItems([
-            {label: 'Calendar'}
-        ]);
+    constructor(private eventService: EventService) {
     }
 
     ngOnInit() {
-        this.eventService.getEvents().then(events => {this.events = events; });
-        this.changedEvent = {title: '', start: null, end: '', allDay: null};
+        this.eventService.getEvents().then(events => {
+            this.events = events;
+            this.options = {...this.options, ...{events: events}};
+        });
 
         this.options = {
-            plugins: [ dayGridPlugin, timeGridPlugin, interactionPlugin ],
-            defaultDate: '2021-07-01',
-            header: {
-                left: 'prev,next',
+            initialDate: '2021-07-01',
+            headerToolbar: {
+                left: 'prev,next today',
                 center: 'title',
                 right: 'dayGridMonth,timeGridWeek,timeGridDay'
             },
             editable: true,
+            selectable: true,
+            selectMirror: true,
+            dayMaxEvents: true,
             eventClick: (e) => {
                 this.eventDialog = true;
 
@@ -51,6 +56,8 @@ export class AppCalendarComponent implements OnInit{
                 this.changedEvent.end = this.clickedEvent.end;
             }
         };
+
+        this.changedEvent = {title: '', start: null, end: '', allDay: null};
     }
 
     save() {
