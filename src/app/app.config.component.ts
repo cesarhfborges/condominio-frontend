@@ -12,11 +12,11 @@ import {AppMainComponent} from './app.main.component';
         <div id="layout-config" class="layout-config" [ngClass]="{'layout-config-active': appMain.configActive}"
              (click)="appMain.onConfigClick($event)">
             <h5>Menu Mode</h5>
-            <div class="p-field-radiobutton">
+            <div class="field-radiobutton">
                 <p-radioButton name="menuMode" value="static" [(ngModel)]="app.menuMode" inputId="menuMode1" (click)="appMain.menuInactiveDesktop = true"></p-radioButton>
                 <label for="menuMode1">Static</label>
             </div>
-            <div class="p-field-radiobutton">
+            <div class="field-radiobutton">
                 <p-radioButton name="menuMode" value="overlay" [(ngModel)]="app.menuMode" inputId="menuMode2" (click)="appMain.menuInactiveDesktop = true"></p-radioButton>
                 <label for="menuMode2">Overlay</label>
             </div>
@@ -24,11 +24,11 @@ import {AppMainComponent} from './app.main.component';
             <hr/>
 
             <h5>Menu Color</h5>
-            <div class="p-field-radiobutton">
+            <div class="field-radiobutton">
                 <p-radioButton name="lightMenu" [value]="true" [(ngModel)]="app.lightMenu" inputId="lightMenu1"></p-radioButton>
                 <label for="lightMenu1">Light</label>
             </div>
-            <div class="p-field-radiobutton">
+            <div class="field-radiobutton">
                 <p-radioButton name="lightMenu" [value]="false" [(ngModel)]="app.lightMenu" inputId="lightMenu2"></p-radioButton>
                 <label for="lightMenu2">Dark</label>
             </div>
@@ -36,12 +36,12 @@ import {AppMainComponent} from './app.main.component';
             <hr/>
 
             <h5>Input Style</h5>
-            <div class="p-field-radiobutton">
+            <div class="field-radiobutton">
                 <p-radioButton name="inputStyle" value="outlined" [(ngModel)]="app.inputStyle"
                                inputId="inputStyle1"></p-radioButton>
                 <label for="inputStyle1">Outlined</label>
             </div>
-            <div class="p-field-radiobutton">
+            <div class="field-radiobutton">
                 <p-radioButton name="inputStyle" value="filled" [(ngModel)]="app.inputStyle"
                                inputId="inputStyle2"></p-radioButton>
                 <label for="inputStyle2">Filled</label>

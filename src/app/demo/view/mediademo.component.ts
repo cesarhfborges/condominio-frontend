@@ -1,19 +1,19 @@
 import {Component, OnInit} from '@angular/core';
-import {ProductService} from '../service/productservice';
-import {PhotoService} from '../service/photoservice';
-import {Product} from '../domain/product';
-import {BreadcrumbService} from '../../app.breadcrumb.service';
+import { ProductService } from '../service/productservice';
+import { PhotoService } from '../service/photoservice';
+import { Product } from '../domain/product';
+import {BreadcrumbService} from "../../app.breadcrumb.service";
 
 @Component({
     templateUrl: './mediademo.component.html',
-    styleUrls: ['./mediademo.scss'],
+    styleUrls: ['../../../assets/demo/badges.scss']
 })
-export class MediaDemoComponent implements OnInit {
+export class MediaDemoComponent implements OnInit{
 
     products: Product[];
 
     images: any[];
-
+  
     galleriaResponsiveOptions: any[] = [
         {
             breakpoint: '1024px',
@@ -32,7 +32,7 @@ export class MediaDemoComponent implements OnInit {
             numVisible: 1
         }
     ];
-
+  
     carouselResponsiveOptions: any[] = [
         {
             breakpoint: '1024px',
@@ -50,18 +50,18 @@ export class MediaDemoComponent implements OnInit {
             numScroll: 1
         }
     ];
-
+  
     constructor(private productService: ProductService, private photoService: PhotoService, private breadcrumbService: BreadcrumbService) {
         this.breadcrumbService.setItems([
             {label: 'Media'}
         ]);
-    }
+    }  
 
     ngOnInit() {
         this.productService.getProductsSmall().then(products => {
             this.products = products;
         });
-
+  
         this.photoService.getImages().then(images => {
             this.images = images;
         });

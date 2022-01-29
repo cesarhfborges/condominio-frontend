@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {EventService} from '../demo/service/eventservice';
+import {BreadcrumbService} from "../app.breadcrumb.service";
 
 @Component({
     templateUrl: './app.calendar.component.html',
@@ -8,6 +9,16 @@ import {EventService} from '../demo/service/eventservice';
             :host ::ng-deep .fc-header-toolbar {
                 display: flex;
                 flex-wrap: wrap;
+
+                .fc-dayGridMonth-button {
+                    margin-top: 1rem;
+                }
+                .fc-timeGridWeek-button{
+                    margin-top: 1rem;
+                }
+                .fc-timeGridDay-button{
+                    margin-top: 1rem;
+                }
             }
         }
     `]
@@ -26,7 +37,10 @@ export class AppCalendarComponent implements OnInit {
 
     clickedEvent = null;
 
-    constructor(private eventService: EventService) {
+    constructor(private eventService: EventService, private breadcrumbService: BreadcrumbService) {
+        this.breadcrumbService.setItems([
+            {label: 'Calendar'}
+        ]);
     }
 
     ngOnInit() {
@@ -36,7 +50,7 @@ export class AppCalendarComponent implements OnInit {
         });
 
         this.options = {
-            initialDate: '2021-07-01',
+            initialDate: '2021-02-01',
             headerToolbar: {
                 left: 'prev,next today',
                 center: 'title',

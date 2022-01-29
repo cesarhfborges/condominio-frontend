@@ -4,7 +4,6 @@ import {BreadcrumbService} from '../../app.breadcrumb.service';
 
 @Component({
     templateUrl: './floatlabeldemo.component.html',
-    styleUrls: ['./floatlabeldemo.scss']
 })
 export class FloatLabelDemoComponent implements OnInit {
 
@@ -42,6 +41,7 @@ export class FloatLabelDemoComponent implements OnInit {
         this.breadcrumbService.setItems([
             {label: 'Float Label'}
         ]);
+        
         this.cities = [
             {name: 'New York', code: 'NY'},
             {name: 'Rome', code: 'RM'},

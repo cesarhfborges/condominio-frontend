@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core';
+import {BreadcrumbService} from '../../app.breadcrumb.service';
 
 @Component({
     templateUrl: './chartsdemo.component.html'
 })
-export class ChartsDemoComponent implements OnInit {
+export class ChartsDemoComponent implements OnInit{
 
     lineData: any;
 
@@ -24,6 +25,12 @@ export class ChartsDemoComponent implements OnInit {
     polarOptions: any;
 
     radarOptions: any;
+
+    constructor(private breadcrumbService: BreadcrumbService) {
+        this.breadcrumbService.setItems([
+            {label: 'Charts'}
+        ]);
+    }
 
     ngOnInit() {
         this.lineData = {

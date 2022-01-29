@@ -19,6 +19,7 @@ import {BreadcrumbService} from '../../app.breadcrumb.service';
 
 	}
 
+
 	:host ::ng-deep .multiselect-custom .country-item.country-item-value {
 		padding: .25rem .5rem;
 		border-radius: 3px;

@@ -5,12 +5,12 @@ import {BreadcrumbService} from '../../app.breadcrumb.service';
 @Component({
     templateUrl: './messagesdemo.component.html',
     styles: [`
-        :host ::ng-deep .p-button {
-            min-width: 8em;
-        }
+		:host ::ng-deep .p-message {
+			margin-left: .25em;
+		}
 
-        :host ::ng-deep .p-message {
-            margin-left: .25em;
+        :host ::ng-deep .p-toast{
+            z-index:99999;
         }
     `],
     providers: [MessageService]
@@ -34,30 +34,30 @@ export class MessagesDemoComponent {
     }
 
     showErrorViaToast() {
-        this.service.add({key: 'tst', severity: 'error', summary: 'Error Message', detail: 'Validation failed'});
+        this.service.add({ key: 'tst', severity: 'error', summary: 'Error Message', detail: 'Validation failed' });
     }
 
     showSuccessViaToast() {
-        this.service.add({key: 'tst', severity: 'success', summary: 'Success Message', detail: 'Message sent'});
+        this.service.add({ key: 'tst', severity: 'success', summary: 'Success Message', detail: 'Message sent' });
     }
 
     showInfoViaMessages() {
         this.msgs = [];
-        this.msgs.push({severity: 'info', summary: 'Info Message', detail: 'PrimeNG rocks'});
+        this.msgs.push({ severity: 'info', summary: 'Info Message', detail: 'PrimeNG rocks' });
     }
 
     showWarnViaMessages() {
         this.msgs = [];
-        this.msgs.push({severity: 'warn', summary: 'Warn Message', detail: 'There are unsaved changes'});
+        this.msgs.push({ severity: 'warn', summary: 'Warn Message', detail: 'There are unsaved changes' });
     }
 
     showErrorViaMessages() {
         this.msgs = [];
-        this.msgs.push({severity: 'error', summary: 'Error Message', detail: 'Validation failed'});
+        this.msgs.push({ severity: 'error', summary: 'Error Message', detail: 'Validation failed' });
     }
 
     showSuccessViaMessages() {
         this.msgs = [];
-        this.msgs.push({severity: 'success', summary: 'Success Message', detail: 'Message sent'});
+        this.msgs.push({ severity: 'success', summary: 'Success Message', detail: 'Message sent' });
     }
 }
