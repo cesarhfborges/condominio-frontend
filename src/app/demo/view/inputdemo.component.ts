@@ -86,6 +86,8 @@ export class InputDemoComponent implements OnInit{
     valSelect2: string;
 
     valueKnob = 20;
+    
+    valCheck2: boolean;
 
     constructor(private countryService: CountryService, private breadcrumbService: BreadcrumbService) {
         this.breadcrumbService.setItems([
