@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "omega": {
+        "omega-ng": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -75,14 +75,14 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "omega:build"
+                        "browserTarget": "omega-ng:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "omega:build:production"
+                            "browserTarget": "omega-ng:build:production"
                         },
                         "development": {
-                            "browserTarget": "omega:build:development"
+                            "browserTarget": "omega-ng:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -90,7 +90,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "omega:build"
+                        "browserTarget": "omega-ng:build"
                     }
                 },
                 "test": {
