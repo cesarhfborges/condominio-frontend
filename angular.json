@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "omega-cli": {
+        "omega": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -20,14 +20,16 @@
                         "outputPath": "dist/omega-ng",
                         "index": "src/index.html",
                         "main": "src/main.ts",
-                        "polyfills": "src/polyfills.ts",
+                        "polyfills": [
+                            "zone.js"
+                        ],
                         "tsConfig": "tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
                         "aot": true,
                         "assets": [
                             "src/assets",
-                            "src/favicon.ico",
-                            "src/upload.php"
+                            "src/upload.php",
+                            "src/favicon.ico"
                         ],
                         "styles": [
                             "src/styles.scss"
@@ -73,14 +75,14 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "omega-cli:build"
+                        "browserTarget": "omega:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "omega-cli:build:production"
+                            "browserTarget": "omega:build:production"
                         },
                         "development": {
-                            "browserTarget": "omega-cli:build:development"
+                            "browserTarget": "omega:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -88,14 +90,17 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "omega-cli:build"
+                        "browserTarget": "omega:build"
                     }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
                         "main": "src/test.ts",
-                        "polyfills": "src/polyfills.ts",
+                        "polyfills": [
+                            "zone.js",
+                            "zone.js/testing"
+                        ],
                         "tsConfig": "tsconfig.spec.json",
                         "karmaConfig": "karma.conf.js",
                         "inlineStyleLanguage": "scss",
@@ -105,8 +110,8 @@
                         "scripts": [],
                         "assets": [
                             "src/assets",
-                            "src/favicon.ico",
-                            "src/upload.php"
+                            "src/upload.php",
+                            "src/favicon.ico"
                         ]
                     }
                 },
@@ -125,7 +130,6 @@
             }
         }
     },
-    "defaultProject": "omega-cli",
     "cli": {
       "analytics": false
     }

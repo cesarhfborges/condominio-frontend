@@ -2,7 +2,6 @@
 src/assets/theme/*.css
 src/assets/layout/css/*.css
 src/assets/demo/*.css
-src/assets/sass/theme/designer
 
 # compiled output
 /dist
