@@ -1,0 +1,27 @@
+<div class="inline-block">
+  <form [formGroup]="form" (ngSubmit)="save()">
+    <div class="p-fluid p-formgrid grid">
+      <div class="field col-12 py-0 mb-2">
+        <label for="nome">Nome</label>
+        <input pInputText formControlName="nome" id="nome" type="text"/>
+      </div>
+      <div class="field col-12 py-0 mb-2">
+        <label for="numero">Numero de telefone</label>
+        <p-inputMask
+          mask="(99) 99999-9999"
+          [unmask]="true"
+          id="numero"
+          formControlName="numero"
+        ></p-inputMask>
+      </div>
+
+      <div class="col-5 md:col-4">
+        <button pButton pRipple label="Cancelar" type="button" class="p-button-secondary" (click)="close()"></button>
+      </div>
+      <div class="col-5 md:col-4 col-offset-2 md:col-offset-4">
+        <button pButton pRipple label="Salvar" type="submit" class="p-button-success"></button>
+      </div>
+    </div>
+  </form>
+</div>
+

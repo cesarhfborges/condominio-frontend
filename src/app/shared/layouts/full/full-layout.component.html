@@ -1,0 +1,38 @@
+<div class="wrapper"
+     [ngClass]="{
+        'menu-layout-overlay':isOVerlay(),
+        'menu-layout-static':isStatic(),
+        'layout-light':app.lightMenu,
+        'sidebar-inactive-l':menuInactiveDesktop,
+        'sidebar-active-m':menuActiveMobile,
+        'p-ripple-disabled': !app.ripple,
+        'p-input-filled': app.inputStyle === 'filled'
+     }"
+>
+    <app-topbar></app-topbar>
+
+    <div class="sidebar" (click)="onMenuClick()">
+        <div class="sidebar-scroll-content">
+            <div class="logo" routerLink="/" style="outline: none; cursor: pointer;">
+                <img [src]="'assets/layout/images/omega-' + (app.lightMenu ? 'black.svg' : 'white.svg')" alt="" width="113">
+            </div>
+            <div class="profile">
+                <img ngSrc="assets/layout/images/profile.png" alt="" height="50" width="56"/>
+                <p id="profile-button">
+                    <span class="username">Peggy Olson</span>
+                </p>
+            </div>
+            <app-menu></app-menu>
+        </div>
+    </div>
+    <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+
+    <app-config></app-config>
+
+    <div class="footer text-center">
+        <img ngSrc="assets/layout/images/logo-colored.png" alt="" width="32" height="32">
+        <span class="footer-text">PrimeNG Omega Theme and Layout</span>
+    </div>
+</div>

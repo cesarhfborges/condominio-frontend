@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-8 col-12 mx-auto">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p-card>
+
+          <ng-template pTemplate="header">
+            <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" width="518" height="220"/>
+          </ng-template>
+
+          <div class="field">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" pInputText formControlName="email" class="w-full" autofocus/>
+            <app-form-validation-errors [control]="form.get('email')"></app-form-validation-errors>
+          </div>
+          <div class="field">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" pInputText formControlName="password" class="w-full"/>
+            <app-form-validation-errors [control]="form.get('password')"></app-form-validation-errors>
+          </div>
+
+          <div class="field-checkbox">
+            <p-checkbox id="remember" formControlName="remember" inputId="remember" [binary]="true"></p-checkbox>
+            <label for="remember" class="my-0">Permanecer logado</label>
+          </div>
+
+          <button pButton pRipple label="Submit" class="p-button-success w-full"></button>
+
+          <ng-template pTemplate="footer">
+          </ng-template>
+        </p-card>
+      </form>
+    </div>
+  </div>
+</div>
