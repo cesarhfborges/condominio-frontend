@@ -90,6 +90,7 @@ import {PhoneMaskPipe} from './pipes/phone-mask.pipe';
 import {SessionService} from "../core/session/session.service";
 import {AuthService} from "../core/services/auth.service";
 import { FormValidationErrorsComponent } from './components/form-validation-errors/form-validation-errors.component';
+import {StyleClassModule} from "primeng/styleclass";
 
 const PRIME_MODULES = [
   AccordionModule,
@@ -170,6 +171,7 @@ const PRIME_MODULES = [
   TreeModule,
   TreeTableModule,
   VirtualScrollerModule,
+  StyleClassModule,
 ]
 
 @NgModule({
